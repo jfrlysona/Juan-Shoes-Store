@@ -7,13 +7,13 @@ function BannerHome() {
         <div className="banner-home banner1">
           <div className="banner-container">
             <span>SPORTS SHOES</span>
-            <h2>20% OFF FOR SPORTS MEN</h2>
+            <h2>20% OFF <br /> FOR SPORTS MEN</h2>
           </div>
         </div>
         <div className="banner-home banner2">
           <div className="banner-container">
             <span>SPORTS SHOES</span>
-            <h2>20% OFF FOR SPORTS MEN</h2>
+            <h2>20% OFF <br /> FOR SPORTS MEN</h2>
           </div>
         </div>
       </div>
