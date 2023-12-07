@@ -1,0 +1,45 @@
+#banner-home {
+    .banner-home-container {
+        display: flex;
+        justify-content: center;
+        height: 250px;
+        max-width: 1320px;
+        .banner-home {
+            width: 100%;
+            max-width: 685px;
+            height: 250px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            .banner-container {
+                span {
+                    font-size: 18px;
+                    font-family: 'Montserrat', sans-serif;
+                    color: white;
+                    font-weight: 500;
+                    line-height: 22px;  
+                    margin: 0;
+                }
+
+                h2 {
+                    font-size: 30px;
+                    font-family: 'Montserrat', sans-serif;
+                    color: white;
+                    font-weight: 600;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.banner1 {
+    background-image: url("https://htmldemo.net/juan/juan/assets/img/banner/banner-1.jpg");
+}
+
+.banner2 {
+    background-image: url("https://htmldemo.net/juan/juan/assets/img/banner/banner-2.jpg");
+}

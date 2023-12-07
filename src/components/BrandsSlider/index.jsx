@@ -4,36 +4,117 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 function BrandsSlider() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 1,
+    speed: 600,
+    slidesToShow: 4,
     slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
+
   return (
-    <div>
-      <h2> Single Item</h2>
-      <Slider {...settings}>
+    <section id="brands-logo">
+      <Slider {...settings} className="slider-brands">
         <div>
-          <h3>1</h3>
+          <img
+            src="https://htmldemo.net/juan/juan/assets/img/brand/br1.png"
+            alt="brand logo"
+          />
         </div>
         <div>
-          <h3>2</h3>
+          <img
+            src="https://htmldemo.net/juan/juan/assets/img/brand/br2.png"
+            alt="brand logo"
+          />
         </div>
         <div>
-          <h3>3</h3>
+          <img
+            src="https://htmldemo.net/juan/juan/assets/img/brand/br3.png"
+            alt="brand logo"
+          />
         </div>
         <div>
-          <h3>4</h3>
+          <img
+            src="https://htmldemo.net/juan/juan/assets/img/brand/br4.png"
+            alt="brand logo"
+          />
         </div>
         <div>
-          <h3>5</h3>
+          <img
+            src="https://htmldemo.net/juan/juan/assets/img/brand/br5.png"
+            alt="brand logo"
+          />
         </div>
         <div>
-          <h3>6</h3>
+          <img
+            src="https://htmldemo.net/juan/juan/assets/img/brand/br1.png"
+            alt="brand logo"
+          />
+        </div>
+        <div>
+          <img
+            src="https://htmldemo.net/juan/juan/assets/img/brand/br2.png"
+            alt="brand logo"
+          />
+        </div>
+        <div>
+          <img
+            src="https://htmldemo.net/juan/juan/assets/img/brand/br3.png"
+            alt="brand logo"
+          />
+        </div>
+        <div>
+          <img
+            src="https://htmldemo.net/juan/juan/assets/img/brand/br4.png"
+            alt="brand logo"
+          />
+        </div>
+        <div>
+          <img
+            src="https://htmldemo.net/juan/juan/assets/img/brand/br5.png"
+            alt="brand logo"
+          />
+        </div>
+        <div>
+          <img
+            src="https://htmldemo.net/juan/juan/assets/img/brand/br3.png"
+            alt="brand logo"
+          />
+        </div>
+        <div>
+          <img
+            src="https://htmldemo.net/juan/juan/assets/img/brand/br2.png"
+            alt="brand logo"
+          />
         </div>
       </Slider>
-    </div>
+    </section>
   );
 }
 

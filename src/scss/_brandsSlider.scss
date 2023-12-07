@@ -1,0 +1,21 @@
+#brands-logo {
+    height: 211px;
+    padding: 80px 0;
+    .slider-brands {
+        height: 51px;
+        max-width: 1320px;
+        margin: 0 auto;
+        div {
+            img {
+                max-width: max-content;
+                height: 51px;
+                opacity: 0.3;
+                transition: all 500ms;
+                outline: none;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
