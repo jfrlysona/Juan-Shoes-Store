@@ -1,6 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from "./Pages/Home";
+import HomePage from "./Pages/HomePage";
+import ShopPage from "./Pages/ShopPage";
+import Wishlist from "./Pages/Wishlist";
+import Cart from "./Pages/Cart";
 
 function App() {
   return (
@@ -8,6 +11,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/shop" element={<ShopPage />} />
+          <Route path="/wishlist" element={<Wishlist/>} />
+          <Route path="/cart" element={<Cart/>} />
         </Routes>
       </BrowserRouter>
     </>

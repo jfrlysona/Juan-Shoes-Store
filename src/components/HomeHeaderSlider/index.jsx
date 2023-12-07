@@ -12,12 +12,12 @@ function HomeHeaderSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    // arrows: true,
-    // nextArrow: <i className="fa-solid fa-arrow-right"></i>,
-    // prevArrow: <i className="fa-solid fa-arrow-left"></i>,
+    arrows: true,
+    nextArrow: <i className="fa-solid fa-arrow-right"></i>,
+    prevArrow: <i className="fa-solid fa-arrow-left"></i>,
     autoplay: true,
     speed: 2000,
-    autoplaySpeed: 10000,
+    autoplaySpeed: 5000,
     responsive: [
       {
         breakpoint: 1024,

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { CartContext } from "../../context/CartProvider";
 
 function Navbar() {
+  const { cart } = useContext(CartContext);
   return (
     <nav>
       <div className="nav">
@@ -14,23 +16,36 @@ function Navbar() {
         <div className="navigation-pages">
           <ul>
             <li>
-              <NavLink to='/' className="nav-link">HOME</NavLink>
+              <NavLink to="/" className="nav-link">
+                HOME
+              </NavLink>
             </li>
             <li>
-              <NavLink to='/shop' className="nav-link">SHOP</NavLink>
+              <NavLink to="/shop" className="nav-link">
+                SHOP
+              </NavLink>
             </li>
             <li>
-              <NavLink to='/blog' className="nav-link">BLOG</NavLink>
+              <NavLink to="/blog" className="nav-link">
+                BLOG
+              </NavLink>
             </li>
             <li>
-              <NavLink to='/contact-us' className="nav-link">CONTACT US</NavLink>
+              <NavLink to="/contact-us" className="nav-link">
+                CONTACT US
+              </NavLink>
             </li>
           </ul>
         </div>
         <div className="nav-icons">
-        <i className="fa-sharp fa-regular fa-magnifying-glass"></i>
-        <i className="fa-sharp fa-light fa-gear-complex"></i>
-        <i className="fa-sharp fa-light fa-bag-shopping" style={{position:"relative"}}><sup>0</sup></i>
+          <i className="fa-sharp fa-regular fa-magnifying-glass"></i>
+          <i className="fa-sharp fa-light fa-gear-complex"></i>
+          <i
+            className="fa-sharp fa-light fa-bag-shopping"
+            style={{ position: "relative" }}
+          >
+            <sup>{cart.length ? cart.length : ""}</sup>
+          </i>
         </div>
       </div>
     </nav>

@@ -1,0 +1,41 @@
+.cart-table {
+  max-width: 1320px;
+  width: 100%;
+  padding: 0 12px;
+  .cart-table-container {
+    border-collapse: collapse;
+    thead {
+      border-collapse: collapse;
+      border: none;
+      box-shadow: (0, 0, 0, 0) 0px 0px 0px 9999px inset;
+      tr {
+        height: 55px;
+        background-color: #e3a51e;
+        th {
+            width: 10%;
+          color: white;
+          font-size: 14px;
+          line-height: 24px;
+          text-align: center;
+        }
+      }
+    }
+    tbody{
+        border: 1px solid #ccc;
+        tr{
+        border: 1px solid #ccc;
+        td{
+                height: 123px;
+                width: 140px;
+                border: 1px solid #ccc;
+                img{
+                    max-width: max-content;
+                    width: 100%;
+                    max-height: max-content;
+                    height: 100%;
+                }
+            }
+        }
+    }
+  }
+}
