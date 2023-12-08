@@ -13,11 +13,15 @@ function ProductCard({ title, price, image, item }) {
         <p>${price}</p>
       </div>
       <div className="product-card-icons">
-        {/* <i className="fa-sharp fa-light fa-heart"></i> */}
-        <div className="product-card-icon" onClick={() => addCart(item)}>
+        <div className="product-card-icon heart">
+          <i className="fa-sharp fa-light fa-heart"></i>
+        </div>
+        <div className="product-card-icon bag" onClick={() => addCart(item)}>
           <i className="fa-sharp fa-light fa-bag-shopping"></i>
         </div>
-        {/* <i className="fa-sharp fa-light fa-eye"></i> */}
+        <div className="product-card-icon eye">
+          <i className="fa-sharp fa-light fa-eye"></i>
+        </div>
       </div>
     </div>
   );

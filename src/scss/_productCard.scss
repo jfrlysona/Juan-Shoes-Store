@@ -4,6 +4,7 @@
   column-gap: 25px;
   row-gap: 50px;
   max-width: 966px;
+
   .product-card {
     width: 305px;
     height: 391px;
@@ -11,19 +12,31 @@
     border-radius: 5px;
     transition: all 500ms;
     position: relative;
+
     &:hover {
       border: 1px solid #e3a51e;
     }
+    &:hover .eye{
+      left:188.5px !important; 
+    }
+    &:hover .heart{
+      left:70px !important;
+    }
+
     .product-card-image {
       padding: 10px 50px;
+      overflow: hidden;
+
       img {
         max-width: 270px;
         object-fit: contain;
         height: 280px;
       }
     }
+
     .product-card-text {
       text-align: center;
+
       h3 {
         font-size: 18px;
         color: #333;
@@ -31,17 +44,25 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
         transition: all 500ms;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 90%;
+        overflow: hidden;
+
         &:hover {
           color: #e3a51e;
         }
       }
+
       p {
+        margin-top: 10px;
         font-size: 18px;
         line-height: 18px;
         color: #333;
         font-family: "Montserrat", sans-serif;
       }
     }
+
     .product-card-icons {
       .product-card-icon {
         border-radius: 50%;
@@ -53,19 +74,25 @@
         background-color: white;
         transition: all 500ms;
         position: absolute;
-        bottom: -20px;
+        bottom: -23px;
         left: 128.5px;
+
         i {
           color: #e3a51e;
           font-size: 20px;
         }
+
         &:hover i {
           color: #fff;
         }
+
         &:hover {
           background-color: #e3a51e;
         }
       }
     }
   }
+}
+.bag{
+  z-index: 5;
 }

@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
+import CartModal from "../../components/CartModal";
 import { CartContext } from "../../context/CartProvider";
 
 function Navbar() {
   const { cart } = useContext(CartContext);
+  const [openCartModal, setOpenCartModal] = useState(false);
   return (
     <nav>
       <div className="nav">
@@ -43,11 +45,15 @@ function Navbar() {
           <i
             className="fa-sharp fa-light fa-bag-shopping"
             style={{ position: "relative" }}
+            onClick={() => setOpenCartModal(true)}
           >
             <sup>{cart.length ? cart.length : ""}</sup>
           </i>
         </div>
       </div>
+      {openCartModal ? (
+        <CartModal closeModal={() => setOpenCartModal(false)} />
+      ) : null}
     </nav>
   );
 }

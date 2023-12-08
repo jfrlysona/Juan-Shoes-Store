@@ -10,7 +10,7 @@ function CartTable() {
         <thead>
           <tr>
             <th>THUMBNAIL</th>
-            <th>PRODUCT</th>
+            <th style={{ width: "594px" }}>PRODUCT</th>
             <th>PRICE</th>
             <th>QUANTITY</th>
             <th>TOTAL</th>
@@ -24,13 +24,18 @@ function CartTable() {
                 <td>
                   <img src={x.image} alt="card item" />
                 </td>
-                <td style={{maxWidth:'595px'}}>{x.title}</td>
-                <td>{x.price}</td>
-                <td>
-                  <span onClick={() => decreaseCount(x)}>-</span>
-                  {x.count} <span onClick={() => increaseCount(x)}>+</span>
+                <td className="product-name">
+                  <a href="#">{x.title}</a>
                 </td>
-                <td></td>
+                <td>${x.price}</td>
+                <td>
+                  <div className="count-item">
+                    <span onClick={() => decreaseCount(x)}>-</span>
+                    <span className="count">{x.count} </span>
+                    <span onClick={() => increaseCount(x)}>+</span>
+                  </div>
+                </td>
+                <td>${x.price * x.count}</td>
                 <td>
                   <i
                     onClick={() => removeItem(x)}
@@ -40,7 +45,7 @@ function CartTable() {
               </tr>
             ))
           ) : (
-            <p>Cart is empty</p>
+            <p className="empty-cart">Cart is empty</p>
           )}
         </tbody>
       </table>
