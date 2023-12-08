@@ -109,3 +109,62 @@
   height: 55px;
   line-height: 55px;
 }
+.coupon-code {
+  height: 80px;
+  border: 1px solid rgb(204, 204, 204);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  .coupon {
+    max-width: 689px;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    input {
+      width: 503px;
+      height: 49px;
+      border: 1px solid #ccc;
+      outline: none;
+      font-size: 14px;
+      color: #000;
+      padding: 10px 12px;
+      margin: 0;
+      &:focus {
+        border-color: #e3a51e;
+      }
+      &::placeholder {
+        font-style: italic;
+        font-size: 13px;
+      }
+    }
+    button {
+      margin: 0;
+      width: 171px;
+      height: 46px;
+      border: none;
+      background-color: #333;
+      color: #e3a51e;
+      font-size: 16px;
+      transition: all 600ms;
+      &:hover {
+        color: #666;
+        background-color: transparent;
+      }
+    }
+  }
+  button {
+    width: 155px;
+    height: 46px;
+    border: none;
+    background-color: #333;
+    color: #e3a51e;
+    font-size: 16px;
+    transition: all 600ms;
+    &:hover {
+      color: #666;
+      background-color: transparent;
+    }
+  }
+}

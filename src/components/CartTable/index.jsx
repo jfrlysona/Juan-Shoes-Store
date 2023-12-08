@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../context/CartProvider";
+import { Link } from "react-router-dom";
 
 function CartTable() {
   const { cart, increaseCount, decreaseCount, removeItem } =
@@ -35,7 +36,7 @@ function CartTable() {
                     <span onClick={() => increaseCount(x)}>+</span>
                   </div>
                 </td>
-                <td>${x.price * x.count}</td>
+                <td>${(x.price * x.count).toFixed(2)}</td>
                 <td>
                   <i
                     onClick={() => removeItem(x)}
@@ -49,6 +50,40 @@ function CartTable() {
           )}
         </tbody>
       </table>
+        <div className="coupon-code">
+          <div className="coupon">
+            <input type="text" placeholder="Enter Your Coupon Code" />
+            <button>APPLY COUPON</button>
+          </div>
+          <Link to="/shop">
+            <button>UPDATE CART</button>
+          </Link>
+        </div>
+      {/* <table className="cart-totals">
+        <thead>
+          <tr>
+            <th>Cart Totals</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Sub Total <span>$230</span>
+            </td>
+            <td>
+              Shipping <span>$70</span>
+            </td>
+            <td>
+              Total <span>$300</span>
+            </td>
+            <td>
+              <Link><button>
+                PROCEED CHECKOUT
+                </button></Link>
+            </td>
+          </tr>
+        </tbody>
+      </table> */}
     </div>
   );
 }

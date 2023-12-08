@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import CartModal from "../../components/CartModal";
 import { CartContext } from "../../context/CartProvider";
 
@@ -41,7 +41,9 @@ function Navbar() {
         </div>
         <div className="nav-icons">
           <i className="fa-sharp fa-regular fa-magnifying-glass"></i>
-          <i className="fa-sharp fa-light fa-gear-complex"></i>
+          <Link to="/wishlist">
+            <i className="fa-sharp fa-light fa-gear-complex"></i>
+          </Link>
           <i
             className="fa-sharp fa-light fa-bag-shopping"
             style={{ position: "relative" }}

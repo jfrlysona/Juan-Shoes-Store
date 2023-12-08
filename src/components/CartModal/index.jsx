@@ -50,7 +50,7 @@ function CartModal({ closeModal }) {
         </div>
         <div className="modal-text">
           <p className="total-price-modal">
-            Total <span>${priceItem}</span>
+            Total <span>${priceItem.toFixed(2)}</span>
           </p>
         </div>
         <div className="modal-buttons">
