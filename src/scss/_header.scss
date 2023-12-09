@@ -1,0 +1,43 @@
+.header {
+    height: 175px;
+    background-image: url("https://htmldemo.net/juan/juan/assets/img/banner/breadcrumb-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: grid;
+    place-content: center;
+
+    .header-container {
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            font-size: 24px;
+            line-height: 50px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .header-links {
+            font-size: 16px;
+            line-height: 20px;
+
+            .header-link {
+                color: #333;
+                text-align: center;
+                transition: all 500ms;
+                padding: 0 10px;
+
+                &:hover {
+                    color: #e3a51e;
+                }
+            }
+
+            .activeLink {
+                color: #e3a51e;
+                text-align: center;
+            }
+        }
+    }
+}
