@@ -23,16 +23,16 @@ function CartModal({ closeModal }) {
             cart.map((x) => (
               <div className="cart-modal-card" key={x.id}>
                 <div className="cart-modal-card-image">
-                  <img src={x.image} alt="" />
+                  <img src={x.thumbnail} alt="" />
                 </div>
                 <div className="cart-modal-card-textcontent">
                   <div className="cart-modal-card-text">
                     <Link to="#">
-                      <h4>{x.title}</h4>
+                      <h4>{x.name}</h4>
                     </Link>
                     <p>
                       <span className="modal-count">{x.count}</span>×
-                      <span className="modal-price">${x.price}</span>
+                      <span className="modal-price">${(x.price).toFixed(2)}</span>
                     </p>
                   </div>
                   <div className="cart-modal-card-icon">

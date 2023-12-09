@@ -16,23 +16,27 @@
     &:hover {
       border: 1px solid #e3a51e;
     }
-    &:hover .eye{
-      left:188.5px !important; 
+
+    &:hover .eye {
+      left: 188.5px !important;
     }
-    &:hover .heart{
-      left:70px !important;
+
+    &:hover .heart {
+      left: 70px !important;
     }
-    &:hover img{
-      scale: 110%;
+
+    &:hover img {
+      scale: 115%;
     }
 
     .product-card-image {
-      padding: 10px 50px;
+      padding: 10px 65px 10px 35px;
       overflow: hidden;
 
       img {
-        max-width: 270px;
+        max-width: 245px;
         object-fit: contain;
+        object-position: center;
         height: 280px;
         transition: all 500ms;
       }
@@ -64,6 +68,14 @@
         line-height: 18px;
         color: #333;
         font-family: "Montserrat", sans-serif;
+
+        span {
+          font-size: 16px;
+          line-height: 16px;
+          color: #666;
+          text-decoration: line-through;
+          font-family: "Montserrat", sans-serif;
+        }
       }
     }
 
@@ -97,6 +109,7 @@
     }
   }
 }
-.bag{
+
+.bag {
   z-index: 5;
 }

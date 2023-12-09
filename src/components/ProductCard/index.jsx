@@ -3,7 +3,7 @@ import { CartContext } from "../../context/CartProvider";
 import { Tooltip } from "react-tooltip";
 import { WishlistContext } from "../../context/WIshlistProvider";
 
-function ProductCard({ title, price, image, item }) {
+function ProductCard({ title, price,oldPrice, image, item }) {
   const { addCart } = useContext(CartContext);
   const { addWishlist } = useContext(WishlistContext);
   return (
@@ -13,7 +13,7 @@ function ProductCard({ title, price, image, item }) {
       </div>
       <div className="product-card-text">
         <h3>{title}</h3>
-        <p>${price}</p>
+        <p>${(price).toFixed(2)} <span>{(oldPrice !== undefined) ? `$${oldPrice.toFixed(2)}` : ''}</span></p>
       </div>
       <div className="product-card-icons">
         <div

@@ -23,12 +23,12 @@ function CartTable() {
             cart.map((x) => (
               <tr key={x.id}>
                 <td>
-                  <img src={x.image} alt="card item" />
+                  <img src={x.thumbnail} alt="card item" />
                 </td>
                 <td className="product-name">
-                  <a href="#">{x.title}</a>
+                  <a href="#">{x.name}</a>
                 </td>
-                <td>${x.price}</td>
+                <td>${(x.price).toFixed(2)}</td>
                 <td>
                   <div className="count-item">
                     <span onClick={() => decreaseCount(x)}>-</span>

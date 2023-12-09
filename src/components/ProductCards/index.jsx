@@ -4,7 +4,7 @@ import ProductCard from "../ProductCard";
 function ProductCards() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
+    fetch("https://6573ac96f941bda3f2af125e.mockapi.io/juan-store/api/v1/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -12,7 +12,7 @@ function ProductCards() {
   return (
     <div className="product-cards">
       {products.map((x) => (
-        <ProductCard title={x.title} price={x.price} image={x.image} item={x}/>
+        <ProductCard title={x.name} price={x.price} oldPrice={x?.oldPrice} image={x.thumbnail} item={x}/>
       ))}
     </div>
   );

@@ -24,13 +24,13 @@ function WishlistTable() {
             wishlist.map((x) => (
               <tr key={x.id}>
                 <td>
-                  <img src={x.image} alt="card item" />
+                  <img src={x.thumbnail} alt="card item" />
                 </td>
                 <td className="product-name">
-                  <a href="#">{x.title}</a>
+                  <a href="#">{x.name}</a>
                 </td>
-                <td>${x.price}</td>
-                <td>In Stock</td>
+                <td>${(x.price).toFixed(2)}</td>
+                <td>{x.stockStatus}</td>
                 <td>
                   <Link to="/cart" className="wishlist-add-cart" onClick={()=>addCart(x)}>
                     Add to Cart
