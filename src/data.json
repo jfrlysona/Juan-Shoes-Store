@@ -21,7 +21,6 @@
       "https://cdn.media.amplience.net/s/scvl/119059_327358_SET/1?fmt=auto&$webPdpProduct$"
     ],
     "price": 29.98,
-    "vat": 10,
     "oldPrice": 39.99,
     "information": {
       "color": "black,bone patent,cognac",
@@ -55,14 +54,13 @@
       "https://cdn.media.amplience.net/s/scvl/3550_6681_SET/1?fmt=auto&$webPdpProduct$"
     ],
     "price": 109.99,
-    "vat": 10,
     "information": {
       "color": "brown,black",
       "size": "6,6.5,7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,13,14"
     },
     "reviews": 704,
     "category": "Mens",
-    "model": "Oxfords",
+    "model": "Loafers",
     "id": "2"
   },
   {
@@ -78,7 +76,6 @@
       "https://cdn.media.amplience.net/s/scvl/130392_355466_SET/1?fmt=auto&$webPdpProduct$"
     ],
     "price": 89.98,
-    "vat": 20,
     "oldPrice": 109.99,
     "information": {
       "color": "alloy/black,black/blue/orange",
@@ -111,7 +108,6 @@
       "https://cdn.media.amplience.net/s/scvl/13751_253102_SET/1?fmt=auto&$webPdpProduct$"
     ],
     "price": 109.99,
-    "vat": 3,
     "information": {
       "color": "stone,mocha,black,desert dust black",
       "size": "7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5,13,13.5"
@@ -168,7 +164,6 @@
       "https://cdn.media.amplience.net/s/scvl/153299_332288_SET/1?fmt=auto&$webPdpProduct$"
     ],
     "price": 49.98,
-    "vat": 7,
     "oldPrice": 59.99,
     "information": {
       "color": "black,dover",
@@ -231,7 +226,6 @@
       "https://cdn.media.amplience.net/s/scvl/94531_189359_SET/1?fmt=auto&$webPdpProduct$"
     ],
     "price": 29.98,
-    "vat": 3,
     "oldPrice": 44.99,
     "information": { "color": "taupe,chestnut", "size": "1,2,3,4,5,11,12,13" },
     "reviews": 391,
@@ -259,7 +253,6 @@
       "https://cdn.media.amplience.net/s/scvl/121445_255874_SET/1?fmt=auto&$webPdpProduct$"
     ],
     "price": 39.99,
-    "vat": 11,
     "information": { "color": "black/multi", "size": "4,5,6,7,8,9,10" },
     "reviews": 38,
     "category": "Kids",
@@ -288,7 +281,6 @@
       "https://cdn.media.amplience.net/s/scvl/113500_319622_SET/1?fmt=auto&$webPdpProduct$"
     ],
     "price": 67,
-    "vat": 2,
     "information": {
       "color": "blk/pulse/wht,white/ppl/mint,wht/gold/coral",
       "size": "1,1.5,2,2.5,3,11,11.5,12,12.5,13,13.5"
@@ -317,7 +309,6 @@
       "https://cdn.media.amplience.net/s/scvl/153879_333651_SET/1?fmt=auto&$webPdpProduct$"
     ],
     "price": 44.98,
-    "vat": 20,
     "oldPrice": 59.99,
     "information": {
       "color": "wheat/black",
@@ -355,7 +346,7 @@
     },
     "reviews": 40,
     "category": "Mens",
-    "model": "Oxfords",
+    "model": "Loafers",
     "id": "12"
   },
   {
@@ -378,7 +369,6 @@
       "https://cdn.media.amplience.net/s/scvl/127455_271514_SET/1?fmt=auto&$webPdpProduct$"
     ],
     "price": 79.98,
-    "vat": 10,
     "oldPrice": 85,
     "information": {
       "color": "wht/blk/volt,black/red/grey,mlk/pnk/blu 103",
@@ -409,7 +399,6 @@
       "https://cdn.media.amplience.net/s/scvl/123462_266187_SET/1?fmt=auto&$webPdpProduct$"
     ],
     "price": 27.45,
-    "vat": 5,
     "oldPrice": 49.99,
     "information": {
       "color": "black,nude summer",
@@ -443,7 +432,6 @@
       "https://cdn.media.amplience.net/s/scvl/113620_233475_SET/1?fmt=auto&$webPdpProduct$"
     ],
     "price": 44.99,
-    "vat": 15,
     "oldPrice": 59.99,
     "information": {
       "color": "black,black suede,cognac,black cherry",
@@ -507,7 +495,6 @@
       "https://cdn.media.amplience.net/s/scvl/98523_318915_SET/1?fmt=auto&$webPdpProduct$"
     ],
     "price": 30,
-    "vat": 20,
     "oldPrice": 50,
     "information": {
       "color": "black nubuck,lipstick nubuck,natural hl nub,white,new pink",
@@ -541,7 +528,6 @@
       "https://cdn.media.amplience.net/s/scvl/127483_315404_SET/1?fmt=auto&$webPdpProduct$"
     ],
     "price": 95,
-    "vat": 6,
     "information": {
       "color": "nvy/crm/wht 102,navy/bl/wht,wht/org/gry,grn/gry/blk 009",
       "size": "7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,13,14"
@@ -552,483 +538,721 @@
     "id": "18"
   },
   {
-    "thumbnail": "thumbnail 19",
-    "name": "name 19",
-    "description": {},
-    "stockStatus": "stockStatus 19",
-    "images": [],
-    "price": 14,
-    "vat": 68,
-    "oldPrice": 85,
-    "information": {},
-    "reviews": 15,
-    "category": "category 19",
-    "model": "model 19",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/122938_259836_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "MEN'S BEARPAW TALLAC WATERPROOF HIKING BOOTS",
+    "description": {
+      "text": "With Bearpaw's Brock hiking boot, you can tackle the terrain with comfort and ease. Protected with NeverWet®, the Brock will stay dry, while the memory foam insole, compression EVA midsole, and the durable rubber outsole provides you total comfort with every step."
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/122938_259836_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/122938_259828_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 49.98,
+    "oldPrice": 74.99,
+    "information": { "color": "tan,taupe", "size": "8,9,10,11,12,13" },
+    "reviews": 0,
+    "category": "Mens",
+    "model": "Boots",
     "id": "19"
   },
   {
-    "thumbnail": "thumbnail 20",
-    "name": "name 20",
-    "description": {},
-    "stockStatus": "stockStatus 20",
-    "images": [],
-    "price": 55,
-    "vat": 56,
-    "oldPrice": 24,
-    "information": {},
-    "reviews": 75,
-    "category": "category 20",
-    "model": "model 20",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/155992_339101_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "WOMEN'S MAKALU DELLA",
+    "description": {
+      "text": "Introducing Women's Makalu Della Boots – the perfect blend of style, warmth, and comfort for those chilly winter days. These boots are thoughtfully designed to keep your feet cozy while adding a touch of fashion to your winter wardrobe.",
+      "list": [
+        "Slip on for easy entry",
+        "Cushioned insole for added comfort",
+        "Lightly padded footbed"
+      ]
+    },
+    "stockStatus": "Stock Out",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/155992_339101_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/155992_339099_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/155992_339102_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 50,
+    "information": {
+      "color": "chesnut,black,winter white",
+      "size": "5,5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,11,12"
+    },
+    "reviews": 210,
+    "category": "Womens",
+    "model": "Boots",
     "id": "20"
   },
   {
-    "thumbnail": "thumbnail 21",
-    "name": "name 21",
-    "description": {},
-    "stockStatus": "stockStatus 21",
-    "images": [],
-    "price": 72,
-    "vat": 81,
-    "oldPrice": 82,
-    "information": {},
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/122405_267827_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "GIRLS' SHAQ LITTLE KID & BIG KID WHISTLE BASKETBALL SHOES",
+    "description": {
+      "list": [
+        "Synthetic leather upper with holographic trim detail",
+        "High-top design with padded collar and fabric lining",
+        "Lace-up closure for a custom fit",
+        "Classic round toe",
+        "Absorbent insole with fabric lining",
+        "Sculpted rubber midsole and durable outsole",
+        "Shaq branding details"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/122405_267827_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 29.98,
+    "oldPrice": 40,
+    "information": {
+      "color": "blk/pink/irides",
+      "size": "4,5,5.5,6,11,11.5,12"
+    },
     "reviews": 12,
-    "category": "category 21",
-    "model": "model 21",
+    "category": "Kids",
+    "model": "Sneakers",
     "id": "21"
   },
   {
-    "thumbnail": "thumbnail 22",
-    "name": "name 22",
-    "description": {},
-    "stockStatus": "stockStatus 22",
-    "images": [],
-    "price": 39,
-    "vat": 91,
-    "oldPrice": 72,
-    "information": {},
-    "reviews": 33,
-    "category": "category 22",
-    "model": "model 22",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/94463_200448_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "MEN'S ITASCA SONOMA ICE HOUSE II WINTER BOOTS",
+    "description": {
+      "text": "Men's Itasca Ice House Winter Boots. Gear up for the snowy season with the updated Itasca Ice House II boots! Designed to keep your feet warm and dry, these rugged winter boots combine a rubber traction outsole, genuine suede uppers, and 3M Thinsulate™ Insulation lining for warmth. From braving blizzards to playing in the snow with the kids, the Itasca Ice House II will keep your feet comfy and cozy all winter long!",
+      "list": [
+        "Lugged rubber outsole for excellent traction",
+        "Lace-up front with metal d-rings for a secure fit",
+        "Genuine suede upper",
+        "Removable fleece insole for added warmth",
+        "Pull tab at the heel for easy pull on",
+        "Plushly padded collar",
+        "3M Thinsulate™ Insulation lining for thin insulation",
+        "Nylon tongue",
+        "Water-resistant shell"
+      ]
+    },
+    "stockStatus": "Stock Out",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/94463_200448_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/94463_182068_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/94463_182067_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 39.98,
+    "information": {
+      "color": "realtree camo,black,brown",
+      "size": "7,8,9,10,11,12,13"
+    },
+    "reviews": 151,
+    "category": "Mens",
+    "model": "Boots",
     "id": "22"
   },
   {
-    "thumbnail": "thumbnail 23",
-    "name": "name 23",
-    "description": {},
-    "stockStatus": "stockStatus 23",
-    "images": [],
-    "price": 99,
-    "vat": 64,
-    "oldPrice": 21,
-    "information": {},
-    "reviews": 63,
-    "category": "category 23",
-    "model": "model 23",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/144079_307503_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "BOYS' HEELYS LITTLE KID & BIG KID PRO 20 MINECRAFT WHEELED SNEAKERS",
+    "description": {
+      "list": [
+        "Fabric upper featuring Minecraft print",
+        "Padded collar and fabric lining for added comfort",
+        "Lace-up closure for a secure fit",
+        "Absorbent fabric lined insole",
+        "Durable rubber sidewall trim and traction outsole",
+        "Set of wheels for skating with included hardware",
+        "Hidden wheel compartment for storage when not skating",
+        "Heelys® branding details"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/144079_307503_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 54.99,
+    "information": { "color": "blk/grn", "size": "1,2,3,4,5,6,7,13" },
+    "reviews": 0,
+    "category": "Kids",
+    "model": "Sneakers",
     "id": "23"
   },
   {
-    "thumbnail": "thumbnail 24",
-    "name": "name 24",
-    "description": {},
-    "stockStatus": "stockStatus 24",
-    "images": [],
-    "price": 65,
-    "vat": 10,
-    "oldPrice": 5,
-    "information": {},
-    "reviews": 65,
-    "category": "category 24",
-    "model": "model 24",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/154232_334580_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "WOMEN'S CITY CLASSIFIED ADAGE DRESS SANDALS",
+    "description": {
+      "list": [
+        "Synthetic strap upper",
+        "Easy slip-on entry",
+        "Open square toe",
+        "Approx. 2 1/2 inch heel height",
+        "Smooth synthetic lined insole",
+        "Synthetic wrapped midsole and durable rubber outsole",
+        "City Classified® branding details"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/154232_334580_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 19.98,
+    "oldPrice": 39,
+    "information": {
+      "color": "black,white",
+      "size": "5,6,6.5,7,7.5,8,8.5,9,10"
+    },
+    "reviews": 1,
+    "category": "Womens",
+    "model": "Sandals",
     "id": "24"
   },
   {
-    "thumbnail": "thumbnail 25",
-    "name": "name 25",
-    "description": {},
-    "stockStatus": "stockStatus 25",
-    "images": [],
-    "price": 81,
-    "vat": 65,
-    "oldPrice": 47,
-    "information": {},
-    "reviews": 70,
-    "category": "category 25",
-    "model": "model 25",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/151500_327048_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "GIRLS' CROCS INFANT CLASSIC RETRO FLORAL CLOG 4-10",
+    "description": {
+      "text": "Perfect for various occasions, from everyday wear to family outings, these clogs are a versatile addition to your infant's wardrobe. They are easy to clean, making them a convenient choice for busy parents. Simply wipe them down or give them a gentle hand wash to keep them looking their best.",
+      "list": [
+        "Adorable and charming retro floral design for a sweet and stylish look",
+        "Made from soft and comfortable materials for delicate infant skin",
+        "Easy-to-use snap closures for quick and hassle-free dressing",
+        "Features a classic and timeless pattern that adds a touch of vintage flair",
+        "Designed with attention to detail and craftsmanship for a high-quality finish",
+        "Machine washable for convenient and easy care"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/151500_327048_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 35.98,
+    "information": { "color": "blue/multi", "size": "4,5,6,7,8,9,10" },
+    "reviews": 24,
+    "category": "Kids",
+    "model": "Sandals",
     "id": "25"
   },
   {
-    "thumbnail": "thumbnail 26",
-    "name": "name 26",
-    "description": {},
-    "stockStatus": "stockStatus 26",
-    "images": [],
-    "price": 32,
-    "vat": 36,
-    "oldPrice": 91,
-    "information": {},
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/151835_328132_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "WOMEN'S CROCS CLASSIC RETRO FLORAL",
+    "description": {
+      "text": "A retro floral graphic provides extra style to this version of the iconic clog. The unique graphic helps you show off your creative spirit, and Croslite™ foam construction keeps them light and easy to wear. Grounded in comfort, spiked with personality.",
+      "list": [
+        "Retro floral graphic",
+        "Incredibly light and fun to wear",
+        "Ventilation ports add breathability and help shed water and debris",
+        "Pivoting heel straps for a more secure fit",
+        "Customizable with Jibbitz™ charms",
+        "Iconic Crocs Comfort™: Lightweight. Flexible. 360-degree comfort."
+      ]
+    },
+    "stockStatus": "Stock Out",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/151835_328132_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 54.99,
+    "information": { "color": "navy/multi", "size": "3,4,5,6,7,8,9,10" },
     "reviews": 71,
-    "category": "category 26",
-    "model": "model 26",
+    "category": "Womens",
+    "model": "Sandals",
     "id": "26"
   },
   {
-    "thumbnail": "thumbnail 27",
-    "name": "name 27",
-    "description": {},
-    "stockStatus": "stockStatus 27",
-    "images": [],
-    "price": 32,
-    "vat": 15,
-    "oldPrice": 33,
-    "information": {},
-    "reviews": 34,
-    "category": "category 27",
-    "model": "model 27",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/125526_266505_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "GIRLS' UNR8ED LITTLE KID & BIG KID BRIDGET MARY JANE HEELS",
+    "description": {
+      "text": "Step into the world of classic sophistication with the Unr8ted Bridget Mary Jane shoes, where modern style seamlessly merges with timeless design. These Mary Jane shoes are a perfect blend of fashion-forward elements and utmost comfort, making them a must-have addition to any shoe collection.",
+      "list": [
+        "Synthetic patent leather upper",
+        "Adjustable Mary Jane strap with buckle closure",
+        "Approx. 2 inch block heel height",
+        "Classic round toe",
+        "Synthetic leather insole",
+        "Durable synthetic midsole and lugged outsole",
+        "Unr8ed™ branding details"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/125526_266505_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 22.98,
+    "oldPrice": 34.99,
+    "information": { "color": "black", "size": "3,4,5,6,7,8,9,10" },
+    "reviews": 320,
+    "category": "Kids",
+    "model": "Heels",
     "id": "27"
   },
   {
-    "thumbnail": "thumbnail 28",
-    "name": "name 28",
-    "description": {},
-    "stockStatus": "stockStatus 28",
-    "images": [],
-    "price": 53,
-    "vat": 95,
-    "oldPrice": 4,
-    "information": {},
-    "reviews": 62,
-    "category": "category 28",
-    "model": "model 28",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/78412_147995_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "MEN'S FREEMAN HENSON SLIP-ON DRESS LOAFERS",
+    "description": {
+      "text": "Men's Freeman Slip-On Dress Loafers. Polish off your look in the sleek Freeman Henson! A smooth synthetic upper combines with stitching details for well put together style, while the cushioned footbed and soft suede lining are sure to keep you comfortable. From date night to the boardroom, you'll be confident in the Freeman Henson Slip On!",
+      "list": [
+        "Squared apron style toe",
+        "Synthetic upper",
+        "Heel overlay for added support",
+        "Textured traction outsole",
+        "Dual elastic gore panels for easy on wear",
+        "Soft fabric lining",
+        "Stitching details",
+        "Perforated footbed for ventilation",
+        "Cushioned insole for added comfort"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/78412_147995_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 34.98,
+    "oldPrice": 59.99,
+    "information": {
+      "color": "black",
+      "size": "7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,13,14"
+    },
+    "reviews": 334,
+    "category": "Mens",
+    "model": "Loafers",
     "id": "28"
   },
   {
-    "thumbnail": "thumbnail 29",
-    "name": "name 29",
-    "description": {},
-    "stockStatus": "stockStatus 29",
-    "images": [],
-    "price": 24,
-    "vat": 83,
-    "oldPrice": 67,
-    "information": {},
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/143722_306502_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "WOMEN'S LONDON RAG SPRUCE DESSERT BLOCK HEEL DRESS SANDALS",
+    "description": {
+      "text": "With Square Block Heels and string details, this one looks great on feet and is comfortable. The tie-up Spring Sandal is available in fun colors to choose from!",
+      "list": [
+        "Faux Leather upper",
+        "Ankle wrap lace up closure",
+        "Approx. 1.5' block heel",
+        "Open square toe",
+        "Polyurethane insole",
+        "TPR outsole"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/143722_306502_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/143722_306503_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/143722_306504_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 39.98,
+    "information": { "color": "black,gold,lilac", "size": "5,6,7,8,9,10" },
     "reviews": 77,
-    "category": "category 29",
-    "model": "model 29",
+    "category": "Womens",
+    "model": "Heels",
     "id": "29"
   },
   {
-    "thumbnail": "thumbnail 30",
-    "name": "name 30",
-    "description": {},
-    "stockStatus": "stockStatus 30",
-    "images": [],
-    "price": 34,
-    "vat": 31,
-    "oldPrice": 94,
-    "information": {},
-    "reviews": 12,
-    "category": "category 30",
-    "model": "model 30",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/109168_220560_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "WOMEN'S JOURNEE COLLECTION KYLLIE KNEE HIGH BOOTS",
+    "description": {
+      "text": "The Kyllie boot is extravagant and perfect for your fall and winter events. This boot features a soft faux suede material, an almond toe, and a tall chunky heel. The inside zipper helps with ease of access, and the knee-high design is slimming and fitted. The unique decorate detail on the outside of the boot creates a beautiful refreshing design.",
+      "list": [
+        "Faux suede upper",
+        "Zip-up closure",
+        "Approx. 3 3/4 inch block heel",
+        "Foot flattering almond toe",
+        "Padded insole for added comfort"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/109168_220560_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/109168_220568_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/109168_220565_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/109168_220557_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 54.98,
+    "oldPrice": 129.99,
+    "information": {
+      "color": "black,grey,burgundy,animal",
+      "size": "5,6,6.5,7,7.5,8,8.5,9,10,11,12"
+    },
+    "reviews": 8,
+    "category": "Womens",
+    "model": "Boots",
     "id": "30"
   },
   {
-    "thumbnail": "thumbnail 31",
-    "name": "name 31",
+    "thumbnail": "",
+    "name": "",
     "description": {},
-    "stockStatus": "stockStatus 31",
+    "stockStatus": "",
     "images": [],
     "price": 99,
-    "vat": 77,
     "oldPrice": 94,
     "information": {},
     "reviews": 15,
-    "category": "category 31",
-    "model": "model 31",
+    "category": "",
+    "model": "",
     "id": "31"
   },
   {
-    "thumbnail": "thumbnail 32",
-    "name": "name 32",
-    "description": {},
-    "stockStatus": "stockStatus 32",
-    "images": [],
-    "price": 26,
-    "vat": 47,
-    "oldPrice": 42,
-    "information": {},
-    "reviews": 79,
-    "category": "category 32",
-    "model": "model 32",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/152109_329225_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "GIRLS' VINTAGE HAVANA KALLY 13-6",
+    "description": {
+      "text": "Introducing the Vintage Havana Grande Slip-On Sneaker, where style and comfort unite in perfect harmony. These sneakers are a trendy and effortless choice for those seeking a fashionable yet laid-back look. Crafted with high-quality materials, these slip-on sneakers offer both durability and comfort, making them a reliable choice for everyday wear.",
+      "list": [
+        "Lace-up closure",
+        "Padded Shock Foam insole",
+        "1.5' platform height",
+        "Easy slip-on style",
+        "Synthetic lining",
+        "Round toe",
+        "Traction rubber sole"
+      ]
+    },
+    "stockStatus": "Stock Out",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/152109_329225_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 84.99,
+    "information": {
+      "color": "white/gold mult",
+      "size": "1,1.5,2,2.5,3,11,11.5,12,12.5,13,13.5"
+    },
+    "reviews": 108,
+    "category": "Kids",
+    "model": "Sneakers",
     "id": "32"
   },
   {
-    "thumbnail": "thumbnail 33",
-    "name": "name 33",
+    "thumbnail": "",
+    "name": "",
     "description": {},
-    "stockStatus": "stockStatus 33",
+    "stockStatus": "",
     "images": [],
     "price": 12,
-    "vat": 18,
     "oldPrice": 60,
     "information": {},
     "reviews": 10,
-    "category": "category 33",
-    "model": "model 33",
+    "category": "",
+    "model": "",
     "id": "33"
   },
   {
-    "thumbnail": "thumbnail 34",
-    "name": "name 34",
+    "thumbnail": "",
+    "name": "",
     "description": {},
-    "stockStatus": "stockStatus 34",
+    "stockStatus": "",
     "images": [],
     "price": 46,
-    "vat": 85,
     "oldPrice": 89,
     "information": {},
     "reviews": 76,
-    "category": "category 34",
-    "model": "model 34",
+    "category": "",
+    "model": "",
     "id": "34"
   },
   {
-    "thumbnail": "thumbnail 35",
-    "name": "name 35",
-    "description": {},
-    "stockStatus": "stockStatus 35",
-    "images": [],
-    "price": 95,
-    "vat": 32,
-    "oldPrice": 52,
-    "information": {},
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/7409_24845_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "WOMEN'S SCHOOL ISSUE VARSITY OXFORDS",
+    "description": {
+      "list": [
+        "Leather upper",
+        "Lace-up closure for a custom",
+        "Approx. 1 inch heel",
+        "Classic round toe",
+        "Cushioned footbed for added comfort",
+        "Textured rubber outsole",
+        "Soft leather lining",
+        "Available in Medium and Wide Width",
+        "School Issue branding details"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/7409_24845_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 79.99,
+    "information": {
+      "color": "white/black",
+      "size": "6,6.5,7,7.5,8,8.5,9,9.5,10,11,12"
+    },
     "reviews": 19,
-    "category": "category 35",
-    "model": "model 35",
+    "category": "Womens",
+    "model": "Loafers",
     "id": "35"
   },
   {
-    "thumbnail": "thumbnail 36",
-    "name": "name 36",
+    "thumbnail": "",
+    "name": "",
     "description": {},
-    "stockStatus": "stockStatus 36",
+    "stockStatus": "",
     "images": [],
     "price": 71,
-    "vat": 8,
     "oldPrice": 23,
     "information": {},
     "reviews": 19,
-    "category": "category 36",
-    "model": "model 36",
+    "category": "",
+    "model": "",
     "id": "36"
   },
   {
-    "thumbnail": "thumbnail 37",
-    "name": "name 37",
+    "thumbnail": "",
+    "name": "",
     "description": {},
-    "stockStatus": "stockStatus 37",
+    "stockStatus": "",
     "images": [],
     "price": 89,
-    "vat": 27,
     "oldPrice": 45,
     "information": {},
     "reviews": 74,
-    "category": "category 37",
-    "model": "model 37",
+    "category": "",
+    "model": "",
     "id": "37"
   },
   {
-    "thumbnail": "thumbnail 38",
-    "name": "name 38",
+    "thumbnail": "",
+    "name": "",
     "description": {},
-    "stockStatus": "stockStatus 38",
+    "stockStatus": "",
     "images": [],
     "price": 37,
-    "vat": 51,
     "oldPrice": 3,
     "information": {},
     "reviews": 63,
-    "category": "category 38",
-    "model": "model 38",
+    "category": "",
+    "model": "",
     "id": "38"
   },
   {
-    "thumbnail": "thumbnail 39",
-    "name": "name 39",
+    "thumbnail": "",
+    "name": "",
     "description": {},
-    "stockStatus": "stockStatus 39",
+    "stockStatus": "",
     "images": [],
     "price": 54,
-    "vat": 30,
     "oldPrice": 7,
     "information": {},
     "reviews": 71,
-    "category": "category 39",
-    "model": "model 39",
+    "category": "",
+    "model": "",
     "id": "39"
   },
   {
-    "thumbnail": "thumbnail 40",
-    "name": "name 40",
-    "description": {},
-    "stockStatus": "stockStatus 40",
-    "images": [],
-    "price": 70,
-    "vat": 88,
-    "oldPrice": 2,
-    "information": {},
-    "reviews": 59,
-    "category": "category 40",
-    "model": "model 40",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/84882_185846_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "BOYS' NAUTICA LITTLE KID & BIG KID SPINNAKER BOAT SHOES",
+    "description": {
+      "text": "Boy's Nautica Casual Lace-Up Boat Shoes. Let him show off his preppy style in the Nautica Spinnaker 13-6! He'll love the look and feel of soft canvas uppers, cushioned footbed for all day comfort, and moc stitched toe front. From khakis to denim, the Nautica Spinnaker 13-6 will be his go to shoe for any occasion!",
+      "list": [
+        "Flexible rubber traction outsole",
+        "Cushioned footbed for added comfort",
+        "Heel overlay for added durability",
+        "Moc stitched toe",
+        "Canvas upper"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/84882_185846_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/84882_172955_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/84882_185874_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 26.99,
+    "oldPrice": 39.99,
+    "information": {
+      "color": "costl cml twill,grey washed,navy twill",
+      "size": "1,2,3,4,5,6,13"
+    },
+    "reviews": 408,
+    "category": "Kids",
+    "model": "Flats",
     "id": "40"
   },
   {
-    "thumbnail": "thumbnail 41",
-    "name": "name 41",
+    "thumbnail": "",
+    "name": "",
     "description": {},
-    "stockStatus": "stockStatus 41",
+    "stockStatus": "",
     "images": [],
     "price": 80,
-    "vat": 13,
     "oldPrice": 1,
     "information": {},
     "reviews": 15,
-    "category": "category 41",
-    "model": "model 41",
+    "category": "",
+    "model": "",
     "id": "41"
   },
   {
-    "thumbnail": "thumbnail 42",
-    "name": "name 42",
+    "thumbnail": "",
+    "name": "",
     "description": {},
-    "stockStatus": "stockStatus 42",
+    "stockStatus": "",
     "images": [],
     "price": 73,
-    "vat": 40,
     "oldPrice": 1,
     "information": {},
     "reviews": 60,
-    "category": "category 42",
-    "model": "model 42",
+    "category": "",
+    "model": "",
     "id": "42"
   },
   {
-    "thumbnail": "thumbnail 43",
-    "name": "name 43",
+    "thumbnail": "",
+    "name": "",
     "description": {},
-    "stockStatus": "stockStatus 43",
+    "stockStatus": "",
     "images": [],
     "price": 28,
-    "vat": 92,
     "oldPrice": 6,
     "information": {},
     "reviews": 27,
-    "category": "category 43",
-    "model": "model 43",
+    "category": "",
+    "model": "",
     "id": "43"
   },
   {
-    "thumbnail": "thumbnail 44",
-    "name": "name 44",
+    "thumbnail": "",
+    "name": "",
     "description": {},
-    "stockStatus": "stockStatus 44",
+    "stockStatus": "",
     "images": [],
     "price": 58,
-    "vat": 97,
     "oldPrice": 89,
     "information": {},
     "reviews": 37,
-    "category": "category 44",
-    "model": "model 44",
+    "category": "",
+    "model": "",
     "id": "44"
   },
   {
-    "thumbnail": "thumbnail 45",
-    "name": "name 45",
-    "description": {},
-    "stockStatus": "stockStatus 45",
-    "images": [],
-    "price": 7,
-    "vat": 17,
-    "oldPrice": 12,
-    "information": {},
-    "reviews": 2,
-    "category": "category 45",
-    "model": "model 45",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/18876_28573_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "BOYS' SCHOOL ISSUE LITTLE KID & BIG KID SEMESTER DRESS OXFORDS",
+    "description": {
+      "text": "Send your little one back back to school in classic syle with the School Issue Semester Shoes! The Semester is perfect to pair with their school uniform or with their favorite dressed-up looks.",
+      "list": [
+        "Suede upper",
+        "Lace-up closure for a custom and secure fit",
+        "Approx. 1 inch heel",
+        "Classic round toe",
+        "Cushioned footbed for added comfort",
+        "Durable textured rubber outsole",
+        "Soft leather lining",
+        "Available in Medium and Wide Width"
+      ]
+    },
+    "stockStatus": "Stock Out",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/18876_28573_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 59.99,
+    "information": {
+      "color": "tan",
+      "size": "1,1.5,2,2.5,3,11,11.5,12,12.5,13,13.5"
+    },
+    "reviews": 201,
+    "category": "Kids",
+    "model": "Loafers",
     "id": "45"
   },
   {
-    "thumbnail": "thumbnail 46",
-    "name": "name 46",
+    "thumbnail": "",
+    "name": "",
     "description": {},
-    "stockStatus": "stockStatus 46",
+    "stockStatus": "",
     "images": [],
     "price": 71,
-    "vat": 90,
     "oldPrice": 75,
     "information": {},
     "reviews": 83,
-    "category": "category 46",
-    "model": "model 46",
+    "category": "",
+    "model": "",
     "id": "46"
   },
   {
-    "thumbnail": "thumbnail 47",
-    "name": "name 47",
+    "thumbnail": "",
+    "name": "",
     "description": {},
-    "stockStatus": "stockStatus 47",
+    "stockStatus": "",
     "images": [],
     "price": 60,
-    "vat": 71,
     "oldPrice": 17,
     "information": {},
     "reviews": 95,
-    "category": "category 47",
-    "model": "model 47",
+    "category": "",
+    "model": "",
     "id": "47"
   },
   {
-    "thumbnail": "thumbnail 48",
-    "name": "name 48",
-    "description": {},
-    "stockStatus": "stockStatus 48",
-    "images": [],
-    "price": 56,
-    "vat": 64,
-    "oldPrice": 2,
-    "information": {},
-    "reviews": 57,
-    "category": "category 48",
-    "model": "model 48",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/115745_248600_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "MEN'S VINTAGE FOUNDRY CO REMINGTON BOOTS",
+    "description": {
+      "text": "Classics are classics for a reason! Vintage Foundry Co. artisanally crafted the Remington with a timeless construction and reinvented it with a subtle vintage, burnished toe and a touch of texture on a sleek silhouette, giving you confidence in every step.",
+      "list": [
+        "Leather and textile upper",
+        "Lace-up closure for a custom and secure fit",
+        "Approx. 1 inch heel",
+        "Classic cap toe",
+        "Cushioned insole",
+        "Durable and flexible rubber outsole",
+        "Vintage Foundry Co branding details"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/115745_248600_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/115745_239450_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 99.98,
+    "oldPrice": 129.99,
+    "information": {
+      "color": "burgundy,tan",
+      "size": "7.5,8,8.5,9,9.5,10,10.5,11,12,13"
+    },
+    "reviews": 87,
+    "category": "Mens",
+    "model": "Boots",
     "id": "48"
   },
   {
-    "thumbnail": "thumbnail 49",
-    "name": "name 49",
-    "description": {},
-    "stockStatus": "stockStatus 49",
-    "images": [],
-    "price": 29,
-    "vat": 78,
-    "oldPrice": 44,
-    "information": {},
-    "reviews": 20,
-    "category": "category 49",
-    "model": "model 49",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/145232_310787_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "MEN'S DOCKERS STAFFORD DRESS LOAFERS",
+    "description": {
+      "text": "A fresh modern take on a classic fashion necessity, these Dockers loafers are everything you’ve been looking for to elevate your business casual look. These men’s dress shoes are made to easily add a touch of polished class to any outfit from jeans to slacks with their synthetic leather uppers, detailed stitching, and modern, moc-toe design. These loafers are also made to keep your feet relaxed, even on your longest days, with their ultra-cushioned footbed and shock-absorbing, lightweight outsoles. Whether you’re working from home or spending time at the office, these Dockers are sure to be your new favorites thanks to their fresh design and long-lasting comfort.",
+      "list": [
+        "Synthetic Leather upper",
+        "Slip on for easy entry",
+        "Approx. 1' stacked heel",
+        "Closed Moc Toe",
+        "Removable insole with ultra-cushioned footbed",
+        "Shock absorbing lightweight rubber outsole"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/145232_310787_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/145232_310788_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 54.98,
+    "oldPrice": 79.99,
+    "information": {
+      "color": "mahogany,black",
+      "size": "8,8.5,9,9.5,10,10.5,11,12,13"
+    },
+    "reviews": 332,
+    "category": "Mens",
+    "model": "Loafers",
     "id": "49"
   },
   {
-    "thumbnail": "thumbnail 50",
-    "name": "name 50",
-    "description": {},
-    "stockStatus": "stockStatus 50",
-    "images": [],
-    "price": 86,
-    "vat": 34,
-    "oldPrice": 55,
-    "information": {},
-    "reviews": 90,
-    "category": "category 50",
-    "model": "model 50",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/96794_187719_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "WOMEN'S FILA MEMORY RECKONING 9 SLIP-RESISTANT COMPOSITE TOE WORK SHOES",
+    "description": {
+      "text": "Get footwear that works hard to keep you safe and comfortable with the Fila® Memory Reckoning 9 SR CT! These durable composite toe work shoes have a Memory Foam insole with COOLMAX® technology for all season comfort, and a durable slip-resistant rubber outsole for solid traction. The padded tongue and collar provides added protection and comfort. Add the Fila® Memory Reckoning 9 SR CT to your cart today and start working in comfort!",
+      "list": [
+        "Combination upper with breathable mesh and synthetic overlays",
+        "Slip-resistant rubber outsole for solid traction",
+        "EVA midsole",
+        "Fila® branding details"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/96794_187719_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 74.99,
+    "information": {
+      "color": "castle r/silver",
+      "size": "6,6.5,7,7.5,8,8.5,9,9.5,10,11,12"
+    },
+    "reviews": 397,
+    "category": "Womens",
+    "model": "Sneakers",
     "id": "50"
   }
 ]
