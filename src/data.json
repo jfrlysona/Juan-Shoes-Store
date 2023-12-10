@@ -868,17 +868,33 @@
     "id": "30"
   },
   {
-    "thumbnail": "",
-    "name": "",
-    "description": {},
-    "stockStatus": "",
-    "images": [],
-    "price": 99,
-    "oldPrice": 94,
-    "information": {},
-    "reviews": 15,
-    "category": "",
-    "model": "",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/118412_246907_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "MEN'S THOMAS & VINE THATCHER DRESS SHOES",
+    "description": {
+      "text": "Clean and contemporary, the Thatcher by Thomas & Vine is an instant classic. Rendered with genuine leather uppers, this monk strap dress shoe is topped with a dual buckle closure. A padded tongue, an 8 mm Comfort Foam™ insole, and an EVA outsole perfect this sleek design.",
+      "list": [
+        "Genuine leather upper",
+        "Adjustable buckle closure for a custom and secure fit",
+        "Approx. 1 inch heel",
+        "Classic round toe",
+        "Comfort Foam™ padded footbed for added comfort",
+        "Lightweight and durable EVA ousole",
+        "Thomas & Vine branding details"
+      ]
+    },
+    "stockStatus": "Stock Out",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/118412_246907_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/118412_246901_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 149.99,
+    "information": {
+      "color": "cognac,black",
+      "size": "8,8.5,9,9.5,10,10.5,11,12,13"
+    },
+    "reviews": 159,
+    "category": "Mens",
+    "model": "Loafers",
     "id": "31"
   },
   {
@@ -911,31 +927,64 @@
     "id": "32"
   },
   {
-    "thumbnail": "",
-    "name": "",
-    "description": {},
-    "stockStatus": "",
-    "images": [],
-    "price": 12,
-    "oldPrice": 60,
-    "information": {},
-    "reviews": 10,
-    "category": "",
-    "model": "",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/86482_164977_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "MEN'S SKECHERS BOSNIA 64152 FLIP-FLOPS",
+    "description": {
+      "text": "Men's Skechers Relaxed Fit® Canvas Flip-Flops. For the ultimate blend of island style and comfort, slide into the Skechers Bosnia! These flip-flops feature Memory Foam padded strap linings for 360° of comfort, full-length Memory Foam footbed, and distressed canvas uppers for added style. Keep your feet cool and comfortable in the rugged Skechers Bosnia!",
+      "list": [
+        "Flexible rubber traction outsole",
+        "Memory Foam 360° padded fabric strap lining",
+        "Distressed canvas upper with frayed edges for rugged style",
+        "Nylon toe thong post",
+        "Stitching accents",
+        "Shock absorbing lightweight and flexible midsole",
+        "Memory Foam full length soft fabric topped cushioned comfort footbed"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/86482_164977_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 39.98,
+    "oldPrice": 49.99,
+    "information": {
+      "color": "chocolate,black",
+      "size": "7,8,9,10,11,12,13,14,15"
+    },
+    "reviews": 949,
+    "category": "Mens",
+    "model": "Sandals",
     "id": "33"
   },
   {
-    "thumbnail": "",
-    "name": "",
-    "description": {},
-    "stockStatus": "",
-    "images": [],
-    "price": 46,
-    "oldPrice": 89,
-    "information": {},
-    "reviews": 76,
-    "category": "",
-    "model": "",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/101955_200571_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "MEN'S US POLO ASSN FAIRFIELD BOOTS",
+    "description": {
+      "text": "Step into timeless style with the U.S. Polo Assn Fairfield Boots. These boots seamlessly blend classic aesthetics with durability, making them a versatile choice for various occasions.",
+      "list": [
+        "Durable combination upper",
+        "Secure lace-up closure with Velcro strap for a more secure fit",
+        "Cushioned insole",
+        "Durable outsole",
+        "Breathable boot lining",
+        "Padded collar and tongue",
+        "Synthetic loop at back for easier on and off",
+        "U.S. Polo Assn. branding details"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/101955_200571_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 62.98,
+    "oldPrice": 79.99,
+    "information": {
+      "color": "redwood",
+      "size": "7,7.5,8,8.5,9,9.5,10,10.5,11,12,13"
+    },
+    "reviews": 39,
+    "category": "Mens",
+    "model": "Boots",
     "id": "34"
   },
   {
@@ -969,59 +1018,128 @@
     "id": "35"
   },
   {
-    "thumbnail": "",
-    "name": "",
-    "description": {},
-    "stockStatus": "",
-    "images": [],
-    "price": 71,
-    "oldPrice": 23,
-    "information": {},
-    "reviews": 19,
-    "category": "",
-    "model": "",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/108901_219419_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "WOMEN'S JOURNEE COLLECTION ESTER FLATS",
+    "description": {
+      "text": "The Ester flats by Journee Collection feature soft faux suede uppers and a pointed toe style. A chic D'orsay style is cut-close to the soles for a flattering appearance, while padded insoles create comfortable all-day wear.",
+      "list": [
+        "Faux suede upper",
+        "Slip-on entry",
+        "Flat heel",
+        "Classic pointed toe",
+        "Padded insole for added comfort",
+        "Synthetic outsole"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/108901_219419_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/108901_219595_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/108901_219596_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/108901_219597_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/108901_219598_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 36.99,
+    "oldPrice": 64.98,
+    "information": {
+      "color": "black,blue,nude,plum,taupe",
+      "size": "6,6.5,7,7.5,8,8.5,9,10,11,12"
+    },
+    "reviews": 132,
+    "category": "Womens",
+    "model": "Flats",
     "id": "36"
   },
   {
-    "thumbnail": "",
-    "name": "",
-    "description": {},
-    "stockStatus": "",
-    "images": [],
-    "price": 89,
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/123410_261048_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "BOYS' NAUTICA TODDLER & LITTLE KID NEAVE EMBOSS LIGHT-UP SNEAKERS",
+    "description": {
+      "list": [
+        "Lights-up with every step!",
+        "Breathable fabric upper with crossover elastic band details",
+        "Easy slip-on entry with bungee lace panel for a secure fit",
+        "Classic round toe",
+        "Cushioned fabric lined insole",
+        "Rubber midsole with light-up action",
+        "Durable rubber outsole",
+        "Nautica branding details"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/123410_261048_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 32.99,
     "oldPrice": 45,
-    "information": {},
+    "information": { "color": "black/cobalt", "size": "5,6,7,8" },
     "reviews": 74,
-    "category": "",
-    "model": "",
+    "category": "Kids",
+    "model": "Sneakers",
     "id": "37"
   },
   {
-    "thumbnail": "",
-    "name": "",
-    "description": {},
-    "stockStatus": "",
-    "images": [],
-    "price": 37,
-    "oldPrice": 3,
-    "information": {},
-    "reviews": 63,
-    "category": "",
-    "model": "",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/79993_172148_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "MEN'S VANS ASHER SLIP-ON SKATE SHOES",
+    "description": {
+      "text": "Men's Vans Asher Slip-On Skate Shoes. Get off-the-wall skate style with the Vans Asher sneakers. Featuring a grippy outsole, classic styling and a canvas upper, these sleek sneaks feature everything you need to stay confident, on or off the board!",
+      "list": [
+        "Padded collar",
+        "Vulcanized midsole with sidewall trim",
+        "Breathable canvas upper",
+        "Vans label at the heel",
+        "Flexible textured traction outsole"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/79993_172148_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/79993_271011_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/79993_291844_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/79993_305185_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/79993_306266_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/79993_314767_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/79993_314768_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/79993_314769_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 54.99,
+    "information": {
+      "color": "blk/crm checker,red sw check,blue sw check,cord mid grey,blk/wht block,flame blk/wht,gum/black,rally red/wht",
+      "size": "7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,13"
+    },
+    "reviews": 121,
+    "category": "Mens",
+    "model": "Flats",
     "id": "38"
   },
   {
-    "thumbnail": "",
-    "name": "",
-    "description": {},
-    "stockStatus": "",
-    "images": [],
-    "price": 54,
-    "oldPrice": 7,
-    "information": {},
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/106420_335577_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "WOMEN'S CONVERSE CHUCK TAYLOR ALL STAR LUGGED PLATFORM SNEAKERS",
+    "description": {
+      "text": "Designed to keep up with you, whatever the weather—the Converse Chuck Taylor All Start Lugged Hi returns with a durable, easy-to-clean canvas upper. A bold, chevron-inspired outsole adds a little lift and a lot of grip.",
+      "list": [
+        "Durable and lightweight canvas upper",
+        "Easy lace-up closure for a custom and secure fit",
+        "Vulcanized midsole",
+        "Soft, breathable lining",
+        "Iconic toe cap and textured toe bumper",
+        "Iconic Chuck Taylor inner ankle patch",
+        "Converse® branding details"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/106420_335577_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/106420_229788_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/106420_212957_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 80,
+    "information": {
+      "color": "cave shadow,black/white,white mono",
+      "size": "5,6,6.5,7,7.5,8,9,10,11"
+    },
     "reviews": 71,
-    "category": "",
-    "model": "",
+    "category": "Womens",
+    "model": "Sneakers",
     "id": "39"
   },
   {
@@ -1055,59 +1173,111 @@
     "id": "40"
   },
   {
-    "thumbnail": "",
-    "name": "",
-    "description": {},
-    "stockStatus": "",
-    "images": [],
-    "price": 80,
-    "oldPrice": 1,
-    "information": {},
-    "reviews": 15,
-    "category": "",
-    "model": "",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/143158_305243_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "GIRLS' FILA LITTLE KID & BIG KID VULC 13 KNOCKOUT HIGH-TOP SNEAKERS",
+    "description": {
+      "text": "Unleash knockout style for your young trendsetters with the Fila Vulc 13 Knockout High-Top Sneakers. These high-top sneakers are designed to make a bold statement, featuring a sleek and dynamic design that adds a touch of streetwise cool to any outfit.",
+      "list": [
+        "Synthetic upper with padded collar and fabric lining",
+        "High-top design with adjustable Velcro strap and lace-up closure",
+        "Absorbent fabric lined insole",
+        "Durable rubber midsole and outsole with traction design",
+        "Fila® branding details"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/143158_305243_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 39.98,
+    "oldPrice": 63.99,
+    "information": {
+      "color": "pink/pink/pink",
+      "size": "1,1.5,2,2.5,3,11,11.5,12,12.5,13,13.5"
+    },
+    "reviews": 25,
+    "category": "Kids",
+    "model": "Sneakers",
     "id": "41"
   },
   {
-    "thumbnail": "",
-    "name": "",
-    "description": {},
-    "stockStatus": "",
-    "images": [],
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/115731_253158_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "ADIDAS INFANT & TODDLER RACER TR 21 SUSTAINABLE RUNNING SHOES",
+    "description": {
+      "text": "Little feet - big style! With adidas' Racer TR 21 Running Shoes your little one will be doing laps around the jungle gym with comfort and ease! Crafted with a lightweight and durable construction, these tiny runners can keep up with your little one effortlessly and then when it's time for a nap they slip-off with ease.",
+      "list": [
+        "This product is part of the adidas® End Plastic Waste movement and made with recycled content",
+        "Breathable mesh upper with padded collar and fabric lining",
+        "Easy slip-on entry with bungee lacing for a more secure fit",
+        "Cushioned insole for added comfort for little feet",
+        "adidas® branding details including iconic three stripes"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/115731_253158_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/115731_268762_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/115731_268763_SET/1?fmt=auto&$webPdpProduct$"
+    ],
     "price": 73,
-    "oldPrice": 1,
-    "information": {},
-    "reviews": 60,
-    "category": "",
-    "model": "",
+    "information": {
+      "color": "tiger camo/orng,grey/red/speck,blk/carbon/orng",
+      "size": "1,2,3,4,5,6"
+    },
+    "reviews": 63,
+    "category": "Kids",
+    "model": "Sneakers",
     "id": "42"
   },
   {
-    "thumbnail": "",
-    "name": "",
-    "description": {},
-    "stockStatus": "",
-    "images": [],
-    "price": 28,
-    "oldPrice": 6,
-    "information": {},
-    "reviews": 27,
-    "category": "",
-    "model": "",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/116069_240271_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "JOURNEE COLLECTION SUNLIGHT SANDALS",
+    "description": {
+      "text": "Get cozy after a long day in our new Sunlight slippers. Snuggly soft teddy bear faux fur shapes this backless open-toe silhouette. True to the Journee Collection brand, we've finished the design with a cushioned footbed for a foot-hugging fit.",
+      "list": [
+        "Faux fur upper",
+        "Easy slip-on entry",
+        "Flat heel",
+        "Open toe",
+        "Cushioned footbed for added comfort",
+        "Durable manmade outsole"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/116069_240271_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/116069_240273_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/116069_240274_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 24.98,
+    "oldPrice": 53.99,
+    "information": { "color": "grey,mint,ivory", "size": "8,9,10,11,12" },
+    "reviews": 253,
+    "category": "Womens",
+    "model": "Sandals",
     "id": "43"
   },
   {
-    "thumbnail": "",
-    "name": "",
-    "description": {},
-    "stockStatus": "",
-    "images": [],
-    "price": 58,
-    "oldPrice": 89,
-    "information": {},
-    "reviews": 37,
-    "category": "",
-    "model": "",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/85498_162797_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "MEN'S CREVO BAJA II SANDALS",
+    "description": {
+      "text": "Great for your next trip to the lake, walking around town, traveling, or just giving your feet a break. The support and cushion provided will make your whole body happy.",
+      "list": [
+        "Easy slip-on entry",
+        "Cushioned foam midsole and traction outsole",
+        "Rainbow® branding details"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/85498_162797_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 31.99,
+    "oldPrice": 44.99,
+    "information": { "color": "beige", "size": "8,9,10,11,12,13,14" },
+    "reviews": 45,
+    "category": "Mens",
+    "model": "Sandals",
     "id": "44"
   },
   {
@@ -1141,31 +1311,57 @@
     "id": "45"
   },
   {
-    "thumbnail": "",
-    "name": "",
-    "description": {},
-    "stockStatus": "",
-    "images": [],
-    "price": 71,
-    "oldPrice": 75,
-    "information": {},
-    "reviews": 83,
-    "category": "",
-    "model": "",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/144294_308189_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "WOMEN'S SOLANZ SUMMER FLAT SANDALS",
+    "description": {
+      "list": [
+        "Synthetic strap upper",
+        "Adjustable ankle strap with buckle closure",
+        "Open round toe",
+        "Smooth synthetic lined insole",
+        "Foam sole with woodgrain print midsole and traction outsole",
+        "Solanz™ branding details"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/144294_308189_SET/1?fmt=auto&$webPdpProduct$",
+      "https://cdn.media.amplience.net/s/scvl/144294_308190_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 16.98,
+    "oldPrice": 38.99,
+    "information": {
+      "color": "black,dk tan",
+      "size": "5.5,6,6.5,7,7.5,8,8.5,9,9.5,10,11"
+    },
+    "reviews": 13,
+    "category": "Womens",
+    "model": "Sandals",
     "id": "46"
   },
   {
-    "thumbnail": "",
-    "name": "",
-    "description": {},
-    "stockStatus": "",
-    "images": [],
-    "price": 60,
-    "oldPrice": 17,
-    "information": {},
-    "reviews": 95,
-    "category": "",
-    "model": "",
+    "thumbnail": "https://cdn.media.amplience.net/s/scvl/120468_252593_SET/1?fmt=auto&$webPdpProduct$",
+    "name": "WOMEN'S STEVE MADDEN BRADSHAW DRESS SANDALS",
+    "description": {
+      "text": "Step up your look this season with Steve Madden's Bradshaw! These simple, yet so stylish stilettos will keep you looking your best with every step, regardless of what you've paired with them! The 4 1/4 inch heel will keep your legs looking long and streamline, while the minimalistic silhouette keeps you looking on-trend all the time.",
+      "list": [
+        "Smooth synthetic upper",
+        "Adjustable buckle closure for a custom and secure fit",
+        "Approx. 4 1/4 inch stiletto heel",
+        "Classic rounded open toe",
+        "Durable synthetic outsole",
+        "Steve Madden® branding details"
+      ]
+    },
+    "stockStatus": "In Stock",
+    "images": [
+      "https://cdn.media.amplience.net/s/scvl/120468_252593_SET/1?fmt=auto&$webPdpProduct$"
+    ],
+    "price": 99.99,
+    "information": { "color": "black", "size": "7" },
+    "reviews": 0,
+    "category": "Womens",
+    "model": "Heels",
     "id": "47"
   },
   {
