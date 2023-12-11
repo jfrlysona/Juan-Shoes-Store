@@ -1,12 +1,20 @@
 #service-policy {
+    display: flex;
+    width: 100%;
+    justify-content: center;
     .service-policy-container {
+        padding: 0 12px;
         max-width: 1320px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        margin: 0;
         margin-top: 30px;
+        width: 100%;
+        column-gap: 30px;
         .service-item {
             max-width: 415px;
             min-height: 111px;
+            width: 100%;
             padding: 30px 90px 30px 20px;
             display: flex;
             margin: 0;

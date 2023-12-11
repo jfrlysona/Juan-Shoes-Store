@@ -1,28 +1,29 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
+import Header from "../../Layout/Header";
 import Navbar from "../../Layout/Navbar";
 import NavbarHeading from "../../Layout/NavbarHeading";
-import ProductCards from "../../components/ProductCards";
-import Header from "../../Layout/Header";
-import { Helmet } from "react-helmet-async";
-function ShopPage() {
+import BlogCards from "../../components/BlogCards";
+
+function BlogPage() {
   return (
     <>
       <Helmet>
-        <title>Juan - Shoes Store | Shop</title>
+        <title>Juan - Shoes Store | Blog</title>
         {/* <link rel="canonical" href="https://www.tacobell.com/" /> */}
       </Helmet>
       <NavbarHeading />
       <Navbar />
       <Header
-        title="shop"
+        title="blog"
         prevLink="/"
-        currentLink="/shop"
+        currentLink="/blog"
         prevPage="Home"
-        currentPage="Shop"
+        currentPage="Blog"
       />
-      <ProductCards />
+      <BlogCards />
     </>
   );
 }
 
-export default ShopPage;
+export default BlogPage;

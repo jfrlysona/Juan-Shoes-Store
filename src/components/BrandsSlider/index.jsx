@@ -10,6 +10,7 @@ function BrandsSlider() {
     slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
+    arrows:false,
     responsive: [
       {
         breakpoint: 1024,

@@ -1,0 +1,24 @@
+#ourBlog {
+  padding-top: 75px;
+  .ourBlog-text {
+    text-align: center;
+    padding-bottom: 40px;
+    h1 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      line-height: 36px;
+      color: #333;
+      font-weight: 600;
+    }
+    p {
+      font-size: 18px;
+      line-height: 31px;
+    }
+  }
+  .ourBlog-cards {
+    max-width: 1320px;
+    padding: 0 12px;
+    display: flex;
+    gap: 30px;
+  }
+}

@@ -1,0 +1,80 @@
+#banner-home {
+  .banner-home-container {
+    max-width: 1320px;
+    padding: 0 12px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .banner-home {
+      height: 278px;
+      overflow: hidden;
+      &:hover img {
+        scale: 110%;
+      }
+      &:hover .banner-text1 {
+        background-color: rgba(0, 0, 0, 0.404);
+      }
+      &:hover .banner-text2 {
+        background-color: rgba(0, 0, 0, 0.404);
+      }
+      .banner-img {
+        img {
+          max-width: 649px;
+          min-height: 278px;
+          transition: all 400ms;
+        }
+      }
+      .banner-content {
+        .banner-text1 {
+          max-width: 649px;
+          width: 100%;
+          min-height: 278px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 69px 62px;
+          margin-left: 12px;
+          transition: all 400ms;
+          span {
+            font-family: "Montserrat", sans-serif;
+            font-size: 18px;
+            color: #fff;
+            line-height: 52px;
+            font-weight: 500;
+          }
+          h2 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 30px;
+            color: #fff;
+            line-height: 42px;
+            font-weight: 600;
+          }
+        }
+        .banner-text2 {
+          max-width: 649px;
+          min-height: 278px;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          padding: 69px 62px;
+          width: 100%;
+          transition: all 400ms;
+          span {
+            font-family: "Montserrat", sans-serif;
+            font-size: 18px;
+            color: #fff;
+            line-height: 52px;
+            font-weight: 500;
+          }
+          h2 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 30px;
+            color: #fff;
+            line-height: 42px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

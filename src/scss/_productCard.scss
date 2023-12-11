@@ -1,115 +1,106 @@
-.product-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 25px;
-  row-gap: 50px;
-  max-width: 966px;
+.product-card {
+  width: 305px;
+  height: 391px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  transition: all 500ms;
+  position: relative;
+  margin-bottom: 30px;
+  &:hover {
+    border: 1px solid #e3a51e;
+  }
 
-  .product-card {
-    width: 305px;
-    height: 391px;
-    border: 1px solid #eaeaea;
-    border-radius: 5px;
-    transition: all 500ms;
-    position: relative;
+  &:hover .eye {
+    left: 188.5px !important;
+  }
 
-    &:hover {
-      border: 1px solid #e3a51e;
+  &:hover .heart {
+    left: 70px !important;
+  }
+
+  &:hover img {
+    scale: 115%;
+  }
+
+  .product-card-image {
+    padding: 10px 65px 10px 35px;
+    overflow: hidden;
+
+    img {
+      max-width: 245px;
+      object-fit: contain;
+      object-position: center;
+      height: 280px;
+      transition: all 500ms;
     }
+  }
 
-    &:hover .eye {
-      left: 188.5px !important;
-    }
+  .product-card-text {
+    text-align: center;
 
-    &:hover .heart {
-      left: 70px !important;
-    }
-
-    &:hover img {
-      scale: 115%;
-    }
-
-    .product-card-image {
-      padding: 10px 65px 10px 35px;
+    h3 {
+      font-size: 18px;
+      color: #333;
+      line-height: 22px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      transition: all 500ms;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 90%;
       overflow: hidden;
 
-      img {
-        max-width: 245px;
-        object-fit: contain;
-        object-position: center;
-        height: 280px;
-        transition: all 500ms;
+      &:hover {
+        color: #e3a51e;
       }
     }
 
-    .product-card-text {
-      text-align: center;
+    p {
+      margin-top: 10px;
+      font-size: 18px;
+      line-height: 18px;
+      color: #333;
+      font-family: "Montserrat", sans-serif;
 
-      h3 {
-        font-size: 18px;
-        color: #333;
-        line-height: 22px;
+      span {
+        font-size: 16px;
+        line-height: 16px;
+        color: #666;
+        text-decoration: line-through;
         font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-        transition: all 500ms;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 90%;
-        overflow: hidden;
-
-        &:hover {
-          color: #e3a51e;
-        }
-      }
-
-      p {
-        margin-top: 10px;
-        font-size: 18px;
-        line-height: 18px;
-        color: #333;
-        font-family: "Montserrat", sans-serif;
-
-        span {
-          font-size: 16px;
-          line-height: 16px;
-          color: #666;
-          text-decoration: line-through;
-          font-family: "Montserrat", sans-serif;
-        }
       }
     }
+  }
 
-    .product-card-icons {
-      .product-card-icon {
-        border-radius: 50%;
-        border: 1px solid #e3a51e;
-        width: 46px;
-        height: 46px;
-        display: grid;
-        place-items: center;
-        background-color: white;
-        transition: all 500ms;
-        position: absolute;
-        bottom: -23px;
-        left: 128.5px;
+  .product-card-icons {
+    .product-card-icon {
+      border-radius: 50%;
+      border: 1px solid #e3a51e;
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      background-color: white;
+      transition: all 500ms;
+      position: absolute;
+      bottom: -23px;
+      left: 128.5px;
 
-        i {
-          color: #e3a51e;
-          font-size: 20px;
-        }
+      i {
+        color: #e3a51e;
+        font-size: 20px;
+      }
 
-        &:hover i {
-          color: #fff;
-        }
+      &:hover i {
+        color: #fff;
+      }
 
-        &:hover {
-          background-color: #e3a51e;
-        }
+      &:hover {
+        background-color: #e3a51e;
       }
     }
   }
 }
-
 .bag {
   z-index: 5;
 }

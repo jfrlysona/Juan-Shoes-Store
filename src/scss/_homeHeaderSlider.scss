@@ -20,6 +20,8 @@
   display: block;
   background-position: center;
   padding: 120px 0 0 100px;
+}
+.slider {
   h5 {
     color: white;
     font-family: "Montserrat", sans-serif;
@@ -55,13 +57,12 @@
       outline: none;
       font-size: 16px;
       line-height: 28px;
-      &:hover {
-        background: none;
-      }
+      // &:hover {
+      //   background-color: transparent;
+      // }
     }
   }
 }
-
 .slider2 {
   background-image: url("https://htmldemo.net/juan/juan/assets/img/slider/slider-2.jpg");
   background-repeat: no-repeat;
@@ -71,50 +72,54 @@
   background-size: cover;
   background-position: center;
   padding: 120px 0 0 100px;
-
-  h5 {
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 500;
-  }
-
-  h1 {
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: 50px;
-    line-height: 70px;
-    font-weight: 600;
-  }
-
-  p {
-    color: white;
-    line-height: 28px;
-    max-width: 400px;
-    font-weight: 400;
-    margin: 0;
-  }
-  .btn-slider {
-    button {
-      width: 176px;
-      margin-top: 30px;
-      height: 54px;
-      background-color: #fff;
-      border-radius: 50px;
-      border: none;
-      outline: none;
-      font-size: 16px;
-      line-height: 28px;
-      //   &:hover {
-      //     background-color: transparent;
-      //   }
-    }
-  }
 }
-.slick-next {
+
+.arrow-next {
+  position: absolute;
+  top: 46%;
   right: 30px;
+  width: 46px;
+  height: 46px;
+  background: #f5f5f5;
+  line-height: normal;
+  z-index: 1;
+  transition: all 400ms;
+  i {
+    display: block;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
+    color: #333;
+  }
+  &:hover {
+    background: #e3a51e;
+  }
+  &:hover i {
+    color: #fff;
+  }
 }
-.slick-prev {
-  left: 30px ;
+
+.arrow-prev {
+  position: absolute;
+  top: 46%;
+  left: 30px;
+  width: 46px;
+  height: 46px;
+  background: #f5f5f5;
+  z-index: 1;
+  line-height: normal;
+  transition: all 400ms;
+  i {
+    display: block;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
+    color: #333;
+  }
+  &:hover {
+    background: #e3a51e;
+  }
+  &:hover i {
+    color: #fff;
+  }
 }

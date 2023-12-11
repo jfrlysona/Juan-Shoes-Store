@@ -3,7 +3,23 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
+function SampleNextArrow(props) {
+  const { className, onClick } = props;
+  return (
+    <div className="arrow-next" onClick={onClick}>
+      <i className="fa-regular fa-angle-right"></i>
+    </div>
+  );
+}
 
+function SamplePrevArrow(props) {
+  const { className, onClick } = props;
+  return (
+    <div className="arrow-prev" onClick={onClick}>
+      <i className="fa-regular fa-angle-left"></i>
+    </div>
+  );
+}
 function HomeHeaderSlider() {
   const settings = {
     dots: false,
@@ -13,8 +29,8 @@ function HomeHeaderSlider() {
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: true,
-    nextArrow: <i className="fa-solid fa-arrow-right"></i>,
-    prevArrow: <i className="fa-solid fa-arrow-left"></i>,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 5000,
@@ -50,7 +66,7 @@ function HomeHeaderSlider() {
     <section className="header-home">
       <div>
         <Slider {...settings} className="header-home-slider">
-          <div className="slider1">
+          <div className="slider slider1">
             <h5>Top Selling!</h5>
             <h1>New Collection</h1>
             <p>
@@ -61,7 +77,7 @@ function HomeHeaderSlider() {
               <button>SHOP NOW</button>
             </Link>
           </div>
-          <div className="slider2">
+          <div className="slider slider2">
             <h5>Best Selling!</h5>
             <h1>Top Collection</h1>
             <p>
