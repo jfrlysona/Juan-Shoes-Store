@@ -8,6 +8,7 @@ import ServicePolicy from "../../components/ServicePolicy";
 import OurProduct from "../../components/OurProduct";
 import BannerHome from "../../components/BannerHome";
 import OurBlog from "../../components/OurBlog";
+import TopSeller from "../../components/TopSeller";
 
 function HomePage() {
   return (
@@ -22,6 +23,7 @@ function HomePage() {
       <ServicePolicy />
       <OurProduct />
       <BannerHome />
+      <TopSeller />
       <OurBlog />
       <BrandsSlider />
     </>

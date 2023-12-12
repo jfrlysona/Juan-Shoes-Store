@@ -1,0 +1,119 @@
+.top-seller-slider {
+    max-width: 856px;
+    cursor: pointer;
+    .top-seller-card {
+        width: 413px;
+        height: 186px;
+        margin-bottom: 15px;
+        display: flex !important;
+        align-items: center;
+
+        &:hover img {
+            scale: 115%;
+        }
+
+        .top-seller-card-img {
+            background-color: #F6F6F6;
+            overflow: hidden;
+            width: 180px;
+            height: 169px;
+            padding: 10px;
+
+            img {
+                object-fit: contain;
+                object-position: center;
+                transition: all 500ms;
+                mix-blend-mode: multiply;
+            }
+        }
+
+        .top-seller-card-content {
+            width: 233px;
+            height: 169px;
+            padding-left: 15px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .top-seller-card-text {
+                margin: 0;
+                margin-right: 30px;
+
+                .title {
+                    display: block;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 99%;
+                    color: #333;
+                    line-height: 20px;
+                    font-weight: 600;
+                    transition: all 400ms;
+
+                    &:hover {
+                        color: #e3a51e;
+                    }
+                }
+
+                p {
+                    margin-top: 10px;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #333;
+                    font-family: "Montserrat", sans-serif;
+
+                    span {
+                        font-size: 16px;
+                        line-height: 16px;
+                        color: #666;
+                        text-decoration: line-through;
+                        font-family: "Montserrat", sans-serif;
+                    }
+                }
+
+                .stars {
+                    display: flex;
+                    width: max-content;
+                    margin: 0;
+                    gap: 3px;
+                    padding-top: 20px;
+
+                    i {
+                        color: #e3a51e;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .top-seller-card-icons {
+                display: flex;
+                margin: 0;
+                width: max-content;
+                gap: 3px;
+
+                .top-seller-card-icon {
+                    width: 44px;
+                    height: 44px;
+                    background-color: #F6F6F6;
+                    transition: all 500ms;
+                    display: grid;
+                    place-items: center;
+
+                    i {
+                        color: #333;
+                        font-size: 20px;
+                    }
+
+                    &:hover i {
+                        color: #fff;
+                    }
+
+                    &:hover {
+                        background-color: #e3a51e;
+                    }
+                }
+            }
+        }
+    }
+}
