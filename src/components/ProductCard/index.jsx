@@ -1,19 +1,25 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { CartContext } from "../../context/CartProvider";
 import { Tooltip } from "react-tooltip";
 import { WishlistContext } from "../../context/WIshlistProvider";
+import QuickView from "../QuickView";
+import { Link } from "react-router-dom";
 
-function ProductCard({ title, price,oldPrice, image, item }) {
+function ProductCard({ title, price, oldPrice, image, item, id }) {
   const { addCart } = useContext(CartContext);
   const { addWishlist } = useContext(WishlistContext);
+  const [openQuickView, setOpenQuickView] = useState(false);
   return (
     <div className="product-card">
       <div className="product-card-image">
         <img src={image} alt="product image" />
       </div>
       <div className="product-card-text">
-        <h3>{title}</h3>
-        <p>${(price).toFixed(2)} <span>{(oldPrice !== undefined) ? `$${oldPrice.toFixed(2)}` : ''}</span></p>
+        <Link to={`/details/${id}`}>{title}</Link>
+        <p>
+          ${price.toFixed(2)}{" "}
+          <span>{oldPrice !== undefined ? `$${oldPrice.toFixed(2)}` : ""}</span>
+        </p>
       </div>
       <div className="product-card-icons">
         <div
@@ -42,9 +48,16 @@ function ProductCard({ title, price,oldPrice, image, item }) {
           events={["hover"]}
           style={{ padding: "5px", fontSize: "13px" }}
         />
-        <div className="product-card-icon eye" data-tooltip-id="quick-view">
+        <div
+          className="product-card-icon eye"
+          onClick={() => setOpenQuickView(true)}
+          data-tooltip-id="quick-view"
+        >
           <i className="fa-sharp fa-light fa-eye"></i>
         </div>
+        {openQuickView ? (
+          <QuickView closeModal={() => setOpenQuickView(false)} />
+        ) : null}
         <Tooltip
           id="quick-view"
           content="Quick View"

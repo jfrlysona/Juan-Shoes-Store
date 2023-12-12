@@ -1,6 +1,9 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../context/CartProvider";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+AOS.init();
 
 function CartModal({ closeModal }) {
   const { cart, removeItem } = useContext(CartContext);
@@ -13,8 +16,14 @@ function CartModal({ closeModal }) {
     { countItem: 0, priceItem: 0 }
   );
   return (
-    <div className="cart-modal">
-      <div className="modal">
+    <div className="cart-modal" onClick={closeModal}>
+      <div
+        className="modal"
+        data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="5000"
+      >
         <div className="close-modal" onClick={closeModal}>
           <i className="fa-sharp fa-regular fa-xmark"></i>
         </div>
@@ -32,7 +41,7 @@ function CartModal({ closeModal }) {
                     </Link>
                     <p>
                       <span className="modal-count">{x.count}</span>×
-                      <span className="modal-price">${(x.price).toFixed(2)}</span>
+                      <span className="modal-price">${x.price.toFixed(2)}</span>
                     </p>
                   </div>
                   <div className="cart-modal-card-icon">

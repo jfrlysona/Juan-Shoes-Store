@@ -5,6 +5,7 @@ import ShopPage from "./Pages/ShopPage";
 import Wishlist from "./Pages/Wishlist";
 import Cart from "./Pages/Cart";
 import BlogPage from "./Pages/BlogPage";
+import DetailsPage from "./Pages/DetailsPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/details/:id" element={<DetailsPage />} />
         </Routes>
       </BrowserRouter>
     </>

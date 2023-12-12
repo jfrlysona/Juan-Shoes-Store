@@ -10,7 +10,9 @@ function TopSeller() {
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p>
         </div>
         <div className="top-seller-content">
-          <img src="https://htmldemo.net/juan/juan/assets/img/banner/banner-3.jpg" className="top-seller-img" />
+          <div className="top-seller-img">
+            <img src="https://htmldemo.net/juan/juan/assets/img/banner/banner-3.jpg" />
+          </div>
           <TopSellerSlider />
         </div>
       </div>

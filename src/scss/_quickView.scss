@@ -1,0 +1,22 @@
+.quick-view-modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.405);
+    top: 0;
+    left: 0;
+    z-index: 11;
+    display: grid;
+    place-content: center;
+    .quick-view-modal-container{
+        width: 800;
+        height: 445px;
+        background-color: white;
+        border-radius: 10px;
+        .close-qw{
+            i{
+
+            }
+        }
+    }
+}
