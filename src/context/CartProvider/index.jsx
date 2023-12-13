@@ -19,8 +19,9 @@ function CartProvider({ children }) {
   }
   function decreaseCount(item) {
     const index = cart.findIndex((x) => x.id === item.id);
-    if (cart[index].count === 1) {
-      return;
+    if (cart[index].count === 0) {
+      removeItem(item);
+      return prevCart.filter((x) => x.id !== item.id);
     }
     cart[index].count--;
     setCart([...cart]);

@@ -4,6 +4,7 @@ import NavbarHeading from "../../Layout/NavbarHeading";
 import Navbar from "../../Layout/Navbar";
 import Header from "../../Layout/Header";
 import DetailProduct from "../../components/DetailProduct";
+import RelatedProducts from "../../components/RelatedProducts";
 
 function DetailsPage() {
   return (
@@ -22,6 +23,7 @@ function DetailsPage() {
         currentPage="Product Details"
       />
       <DetailProduct/>
+      <RelatedProducts/>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { CartContext } from "../../context/CartProvider";
 
 function DetailProduct() {
-  const { cart, addCart, increaseCount, decreaseCount } =
+  const { cart, addCart, removeItem, increaseCount, decreaseCount } =
     useContext(CartContext);
   const [detailsProduct, setdetailsProduct] = useState([]);
   const { id } = useParams();
@@ -33,7 +33,7 @@ function DetailProduct() {
       <div className="product-details-content">
         <div className="details-text">
           <p className="title-details">{detailsProduct.name}</p>
-          <span className="review">{detailsProduct.reviews}</span>
+          <span className="review">{detailsProduct.reviews} Review(s)</span>
           <p className="price">
             $
             {isNaN(detailsProduct.price)
@@ -48,30 +48,50 @@ function DetailProduct() {
           <p className="description">{detailsProduct.description?.text}</p>
         </div>
         <div className="details-btn-group">
-          {cart.map((x) => {
-            if (x.id === detailsProduct.id) {
-              return (
-                <div className="count-details" key={x.id}>
-                  <span onClick={() => decreaseCount(x)}>-</span>
-                  <span className="">{x.count} </span>
-                  <span onClick={() => increaseCount(x)}>+</span>
-                </div>
-              );
-            }
-            return null;
-          })}
-          <button>
-            <Link to={"/cart"}>ADD TO CART</Link>
-          </button>
+          <div className="add-btn-count">
+            {cart.map((x) => {
+              if (x.id === detailsProduct.id) {
+                return (
+                  <div className="count-details" key={x.id}>
+                    <span onClick={() => decreaseCount(x)}>-</span>
+                    <span className="count">{x.count} </span>
+                    <span onClick={() => increaseCount(x)}>+</span>
+                  </div>
+                );
+              }
+              return null;
+            })}
+            {cart.every((x) => x.id !== detailsProduct.id) && (
+              <div className="count-details">
+                <span onClick={() => addCart(detailsProduct)}>+</span>
+              </div>
+            )}
+            <button
+              className="add-btn-details"
+              onClick={() => addCart(detailsProduct)}
+            >
+              <Link to={"/cart"}>ADD TO CART</Link>
+            </button>
+          </div>
           <p className="stock">
+            <span>Availability:</span>
             <span>{detailsProduct.stockStatus}</span>
           </p>
           <div className="share">
+            <span>Share:</span>
             <div className="medias-details">
-              <div className="details-icon"></div>
-              <div className="details-icon"></div>
-              <div className="details-icon"></div>
-              <div className="details-icon"></div>
+              <div className="details-icon">
+                <i className="fa-brands fa-facebook-f"></i>
+              </div>
+              <div className="details-icon">
+                <i className="fa-brands fa-twitter"></i>
+              </div>
+              <div className="details-icon">
+                <i className="fa-brands fa-pinterest"></i>
+              </div>
+              <div className="details-icon">
+                <i className="fa-brands fa-google-plus-g"></i>
+              </div>
             </div>
           </div>
         </div>

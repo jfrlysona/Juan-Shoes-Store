@@ -15,7 +15,7 @@ function ProductCard({ title, price, oldPrice, image, item, id }) {
         <img src={image} alt="product image" />
       </div>
       <div className="product-card-text">
-        <Link to={`/details/${id}`}>{title}</Link>
+        <Link to={"/details/" + id}>{title}</Link>
         <p>
           ${price.toFixed(2)}{" "}
           <span>{oldPrice !== undefined ? `$${oldPrice.toFixed(2)}` : ""}</span>
@@ -56,7 +56,7 @@ function ProductCard({ title, price, oldPrice, image, item, id }) {
           <i className="fa-sharp fa-light fa-eye"></i>
         </div>
         {openQuickView ? (
-          <QuickView closeModal={() => setOpenQuickView(false)} />
+          <QuickView closeModalView={() => setOpenQuickView(false)} />
         ) : null}
         <Tooltip
           id="quick-view"

@@ -28,7 +28,7 @@ function CartTable() {
                 <td className="product-name">
                   <a href="#">{x.name}</a>
                 </td>
-                <td>${(x.price).toFixed(2)}</td>
+                <td>${isNaN(x.price) ? null : x.price.toFixed(2)}</td>
                 <td>
                   <div className="count-item">
                     <span onClick={() => decreaseCount(x)}>-</span>
@@ -50,15 +50,15 @@ function CartTable() {
           )}
         </tbody>
       </table>
-        <div className="coupon-code">
-          <div className="coupon">
-            <input type="text" placeholder="Enter Your Coupon Code" />
-            <button>APPLY COUPON</button>
-          </div>
-          <Link to="/shop">
-            <button>UPDATE CART</button>
-          </Link>
+      <div className="coupon-code">
+        <div className="coupon">
+          <input type="text" placeholder="Enter Your Coupon Code" />
+          <button>APPLY COUPON</button>
         </div>
+        <Link to="/shop">
+          <button>UPDATE CART</button>
+        </Link>
+      </div>
       {/* <table className="cart-totals">
         <thead>
           <tr>
