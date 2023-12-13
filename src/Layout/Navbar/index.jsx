@@ -10,10 +10,12 @@ function Navbar() {
     <nav>
       <div className="nav">
         <div className="logo">
-          <img
-            src="https://htmldemo.net/juan/juan/assets/img/logo/logo.png"
-            alt=""
-          />
+          <Link to="/">
+            <img
+              src="https://htmldemo.net/juan/juan/assets/img/logo/logo.png"
+              alt="logo"
+            />
+          </Link>
         </div>
         <div className="navigation-pages">
           <ul>

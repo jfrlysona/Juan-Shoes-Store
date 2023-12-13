@@ -8,7 +8,8 @@ import { Link } from "react-router-dom";
 function ProductCard({ title, price, oldPrice, image, item, id }) {
   const { addCart } = useContext(CartContext);
   const { addWishlist } = useContext(WishlistContext);
-  const [openQuickView, setOpenQuickView] = useState(false);
+  const [openQuickView, setOpenQuickView] = useState(null);
+  
   return (
     <div className="product-card">
       <div className="product-card-image">
@@ -50,13 +51,13 @@ function ProductCard({ title, price, oldPrice, image, item, id }) {
         />
         <div
           className="product-card-icon eye"
-          onClick={() => setOpenQuickView(true)}
+          onClick={() => setOpenQuickView(id)}
           data-tooltip-id="quick-view"
         >
           <i className="fa-sharp fa-light fa-eye"></i>
         </div>
         {openQuickView ? (
-          <QuickView closeModalView={() => setOpenQuickView(false)} />
+          <QuickView id={id} closeModalView={() => setOpenQuickView(null)} />
         ) : null}
         <Tooltip
           id="quick-view"

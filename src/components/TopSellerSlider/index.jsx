@@ -1,11 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { Tooltip } from "react-tooltip";
 import { CartContext } from "../../context/CartProvider";
-import { Link } from "react-router-dom";
+import { WishlistContext } from "../../context/WIshlistProvider";
 
 function TopSellerSlider() {
-  const { cart, addCart } = useContext(CartContext);
+  const { addCart } = useContext(CartContext);
+  const {addWishlist}=useContext(WishlistContext);
   const [topSellers, setTopSellers] = useState([]);
   useEffect(() => {
     fetch(
@@ -51,7 +53,7 @@ function TopSellerSlider() {
             </div>
             <div className="top-seller-card-content">
               <div className="top-seller-card-text">
-                <Link className="title">{x.name}</Link>
+                <Link to={"/details/"+ x.id}className="title">{x.name}</Link>
                 <p>
                   ${x.price.toFixed(2)}
                   <span>

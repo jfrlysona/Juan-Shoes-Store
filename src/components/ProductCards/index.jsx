@@ -24,6 +24,7 @@ function ProductCards() {
           id={x.id}
         />
       ))}
+
     </div>
   );
 }
