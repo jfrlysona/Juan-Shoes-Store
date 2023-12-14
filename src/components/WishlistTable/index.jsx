@@ -27,10 +27,10 @@ function WishlistTable() {
                   <img src={x.thumbnail} alt="card item" />
                 </td>
                 <td className="product-name">
-                  <a href="#">{x.name}</a>
+                  <Link to={"/details/"+x.id}>{x.name}</Link>
                 </td>
                 <td>${(x.price).toFixed(2)}</td>
-                <td>{x.stockStatus}</td>
+                <td className={x.stockStatus === "In Stock" ? "green" : "red"}>{x.stockStatus}</td>
                 <td>
                   <Link to="/cart" className="wishlist-add-cart" onClick={()=>addCart(x)}>
                     Add to Cart

@@ -20,7 +20,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-function ProductsSlider() {
+function ProductsSlider({ detailsProduct }) {
   const [homeProducts, setHomeProducts] = useState([]);
   const dataLimit = 8;
   useEffect(() => {
@@ -28,7 +28,7 @@ function ProductsSlider() {
       "https://6573ac96f941bda3f2af125e.mockapi.io/juan-store/api/v1/products"
     )
       .then((res) => res.json())
-      .then((data) => setHomeProducts(data.slice(0, dataLimit)));
+      .then((data) => setHomeProducts(data));
   }, []);
   const settings = {
     dots: false,
@@ -66,17 +66,29 @@ function ProductsSlider() {
       },
     ],
   };
+
+  const relatedTo =
+    detailsProduct && detailsProduct.model
+      ? homeProducts.filter(
+          (product) =>
+            product.model === detailsProduct.model &&
+            product.id !== detailsProduct.id
+        )
+      : homeProducts.slice(0, dataLimit);
+
   return (
     <Slider {...settings} className="products-slider">
-      {homeProducts.map((x) => (
-        <ProductCard key={x.id}
-          title={x.name}
-          price={x.price}
-          oldPrice={x?.oldPrice}
-          image={x.thumbnail}
-          item={x}
-        />
-      ))}
+      {relatedTo &&
+        relatedTo.map((x) => (
+          <ProductCard
+            key={x.id}
+            title={x.name}
+            price={x.price}
+            oldPrice={x?.oldPrice}
+            image={x.thumbnail}
+            item={x}
+          />
+        ))}
     </Slider>
   );
 }

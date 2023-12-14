@@ -1,10 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import NavbarHeading from "../../Layout/NavbarHeading";
-import Navbar from "../../Layout/Navbar";
 import Header from "../../Layout/Header";
+import Navbar from "../../Layout/Navbar";
+import NavbarHeading from "../../Layout/NavbarHeading";
 import DetailProduct from "../../components/DetailProduct";
-import RelatedProducts from "../../components/RelatedProducts";
 
 function DetailsPage() {
   return (
@@ -23,7 +22,6 @@ function DetailsPage() {
         currentPage="Product Details"
       />
       <DetailProduct/>
-      <RelatedProducts/>
     </div>
   );
 }

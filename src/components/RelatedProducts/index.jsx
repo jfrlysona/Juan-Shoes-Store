@@ -1,7 +1,7 @@
 import React from "react";
 import ProductsSlider from "../ProductsSlider";
 
-function RelatedProducts() {
+function RelatedProducts({detailsProduct}) {
   return (
     <section id="relatedProducts">
       <div className="relatedProducts-container">
@@ -9,7 +9,7 @@ function RelatedProducts() {
           <h1>Related Product</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
         </div>
-        <ProductsSlider />
+        <ProductsSlider detailsProduct={detailsProduct}/>
       </div>
     </section>
   );

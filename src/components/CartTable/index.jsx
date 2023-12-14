@@ -26,7 +26,7 @@ function CartTable() {
                   <img src={x.thumbnail} alt="card item" />
                 </td>
                 <td className="product-name">
-                  <a href="#">{x.name}</a>
+                  <Link to={"/details/"+x.id}>{x.name}</Link>
                 </td>
                 <td>${isNaN(x.price) ? null : x.price.toFixed(2)}</td>
                 <td>

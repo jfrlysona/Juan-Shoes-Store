@@ -9,11 +9,18 @@ function ProductCard({ title, price, oldPrice, image, item, id }) {
   const { addCart } = useContext(CartContext);
   const { addWishlist } = useContext(WishlistContext);
   const [openQuickView, setOpenQuickView] = useState(null);
-  
+  const openQuickViewModal = () => {
+    document.body.classList.add("overflow-hidden");
+  };
+  const closeQuickViewModal = () => {
+    document.body.classList.remove("overflow-hidden");
+  };
   return (
     <div className="product-card">
       <div className="product-card-image">
-        <img src={image} alt="product image" />
+        <Link to={"/details/" + id}>
+          <img src={image} alt="product image" />
+        </Link>
       </div>
       <div className="product-card-text">
         <Link to={"/details/" + id}>{title}</Link>
@@ -51,13 +58,22 @@ function ProductCard({ title, price, oldPrice, image, item, id }) {
         />
         <div
           className="product-card-icon eye"
-          onClick={() => setOpenQuickView(id)}
+          onClick={() => {
+            setOpenQuickView(id);
+            openQuickViewModal();
+          }}
           data-tooltip-id="quick-view"
         >
           <i className="fa-sharp fa-light fa-eye"></i>
         </div>
         {openQuickView ? (
-          <QuickView id={id} closeModalView={() => setOpenQuickView(null)} />
+          <QuickView
+            id={id}
+            closeModalView={() => {
+              setOpenQuickView(null);
+              closeQuickViewModal();
+            }}
+          />
         ) : null}
         <Tooltip
           id="quick-view"

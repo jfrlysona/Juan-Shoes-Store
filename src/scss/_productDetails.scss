@@ -5,8 +5,10 @@
   justify-content: left;
   gap: 25px;
   max-height: 100%;
+
   .product-details-images {
     margin: 0;
+
     .thumbnail-details {
       border: 1px solid #ededed;
       margin: 0;
@@ -16,13 +18,42 @@
       display: grid;
       place-items: center;
       padding: 40px 10px;
+      position: relative;
+      overflow: hidden;
+      cursor: zoom-in;
+      transition: transform 0.3s ease-in-out;
+      user-select: none;
+      &:hover {
+        cursor: zoom-out;
+      }
+
+      &:hover img {
+        opacity: 0;
+      }
+
+      &.zoomed {
+        transform: scale(1);
+      }
+
       img {
         height: auto;
         width: 90%;
         object-fit: contain;
         object-position: center;
+        display: block;
       }
-      overflow: hidden;
+
+      .zoomed-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: 180% 180%;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 1;
+      }
     }
 
     .images-option {
@@ -30,6 +61,7 @@
       gap: 10px;
       margin-top: 20px;
       max-width: 526px;
+
       .option-img {
         border: 1px solid #ededed;
         display: grid;
@@ -39,6 +71,8 @@
         max-height: 128px;
         max-width: 114px;
         padding: 15px 10px;
+        cursor: pointer;
+
         img {
           height: auto;
           width: 90%;
@@ -57,6 +91,7 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+
       .title-details {
         font-family: "Montserrat", sans-serif;
         font-size: 24px;
@@ -79,6 +114,7 @@
         color: #333;
         font-weight: 500;
         margin: 0;
+
         span {
           font-family: "Montserrat", sans-serif;
           font-size: 18px;
@@ -103,10 +139,12 @@
       flex-direction: column;
       gap: 20px;
       padding-top: 20px;
+
       .add-btn-count {
         display: flex;
         gap: 15px;
         margin: 0;
+
         .count-details {
           width: 90px;
           height: 46px;
@@ -155,13 +193,18 @@
 
       .stock {
         margin: 0;
+
         span {
           font-family: "Montserrat", sans-serif;
           color: #333;
           font-size: 14px;
           font-weight: 600;
         }
-        span {
+
+        .stock-status {
+          font-weight: 400;
+          margin-left: 10px;
+          font-family: 'Open Sans', sans-serif;
         }
       }
 

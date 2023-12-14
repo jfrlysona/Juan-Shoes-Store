@@ -8,6 +8,25 @@ function QuickView({ id, closeModalView }) {
   const { cart, addCart, removeItem, increaseCount, decreaseCount } =
     useContext(CartContext);
   const [viewProduct, setViewProduct] = useState([]);
+  const [selectedImage, setSelectedImage] = useState("");
+  const [zoomed, setZoomed] = useState(false);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const handleMouseMove = (e) => {
+    const boundingBox = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - boundingBox.left;
+    const y = e.clientY - boundingBox.top;
+
+    setPosition({ x, y });
+  };
+
+  const handleMouseEnter = () => {
+    setZoomed(true);
+  };
+
+  const handleMouseLeave = () => {
+    setZoomed(false);
+  };
+
   useEffect(() => {
     fetch(
       "https://6573ac96f941bda3f2af125e.mockapi.io/juan-store/api/v1/products/" +
@@ -16,6 +35,17 @@ function QuickView({ id, closeModalView }) {
       .then((res) => res.json())
       .then((data) => setViewProduct(data));
   }, []);
+  useEffect(() => {
+    if (viewProduct.images && viewProduct.images.length > 0) {
+      setSelectedImage(viewProduct.images[0]);
+    } else {
+      setSelectedImage(viewProduct.thumbnail);
+    }
+  }, [viewProduct]);
+
+  const handleImageOptionClick = (imageUrl) => {
+    setSelectedImage(imageUrl);
+  };
   return (
     <div className="quick-view-modal">
       <div
@@ -32,12 +62,29 @@ function QuickView({ id, closeModalView }) {
         </div>
         <div className="product-details-container">
           <div className="product-details-images">
-            <div className="thumbnail-details">
-              <img src={viewProduct.thumbnail} alt="thumbnail" />
+            <div
+              className={`thumbnail-details ${zoomed ? "zoomed" : ""}`}
+              onMouseMove={handleMouseMove}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img src={selectedImage} alt="thumbnail" />
+              {zoomed && (
+                <div
+                  className="zoomed-image"
+                  style={{
+                    backgroundImage: `url(${selectedImage})`,
+                    backgroundPosition: `-${position.x * 1}px -${position.y * 1}px`,}}
+                ></div>
+              )}
             </div>
             <div className="images-option">
               {viewProduct.images?.map((imageUrl, index) => (
-                <div key={index} className="option-img">
+                <div
+                  key={index}
+                  className="option-img"
+                  onClick={() => handleImageOptionClick(imageUrl)}
+                >
                   <img src={imageUrl} alt={`Product Image ${index + 1}`} />
                 </div>
               ))}

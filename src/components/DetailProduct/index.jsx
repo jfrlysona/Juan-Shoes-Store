@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Details from "../Details";
+import RelatedProducts from "../RelatedProducts";
 
 function DetailProduct() {
   const [detailsProduct, setdetailsProduct] = useState([]);
@@ -15,9 +16,14 @@ function DetailProduct() {
   }, []);
 
   return (
-    <section style={{paddingTop:'80px'}}>
-      <Details detailsProduct={detailsProduct} />
-    </section>
+    <>
+      <section style={{ paddingTop: "80px" }}>
+        <Details detailsProduct={detailsProduct} />
+      </section>
+      <section>
+        <RelatedProducts detailsProduct={detailsProduct}/>
+      </section>
+    </>
   );
 }
 
