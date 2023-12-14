@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Details from "../Details";
 import RelatedProducts from "../RelatedProducts";
+import DetailInformation from "../DetailInformation";
 
 function DetailProduct() {
   const [detailsProduct, setdetailsProduct] = useState([]);
@@ -19,6 +20,9 @@ function DetailProduct() {
     <>
       <section style={{ paddingTop: "80px" }}>
         <Details detailsProduct={detailsProduct} />
+      </section>
+      <section>
+        <DetailInformation/>
       </section>
       <section>
         <RelatedProducts detailsProduct={detailsProduct}/>
