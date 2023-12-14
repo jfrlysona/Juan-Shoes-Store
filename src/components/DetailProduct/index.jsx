@@ -22,7 +22,7 @@ function DetailProduct() {
         <Details detailsProduct={detailsProduct} />
       </section>
       <section>
-        <DetailInformation/>
+        <DetailInformation detailsProduct={detailsProduct}/>
       </section>
       <section>
         <RelatedProducts detailsProduct={detailsProduct}/>
