@@ -21,9 +21,9 @@ function DetailProduct() {
       <section style={{ paddingTop: "80px" }}>
         <Details detailsProduct={detailsProduct} />
       </section>
-      <section>
+      {/* <section>
         <DetailInformation detailsProduct={detailsProduct}/>
-      </section>
+      </section> */}
       <section>
         <RelatedProducts detailsProduct={detailsProduct}/>
       </section>

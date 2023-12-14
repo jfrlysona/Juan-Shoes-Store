@@ -87,6 +87,7 @@ function ProductsSlider({ detailsProduct }) {
             oldPrice={x?.oldPrice}
             image={x.thumbnail}
             item={x}
+            id={x.id}
           />
         ))}
     </Slider>
