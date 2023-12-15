@@ -101,8 +101,11 @@ function Details({ detailsProduct }) {
               return null;
             })}
             {cart.every((x) => x.id !== detailsProduct.id) && (
-              <div className="count-details">
-                <span onClick={() => addCart(detailsProduct)}>+</span>
+              <div
+                className="count-details"
+                onClick={() => addCart(detailsProduct)}
+              >
+                <span>+</span>
               </div>
             )}
             <button
@@ -114,7 +117,15 @@ function Details({ detailsProduct }) {
           </div>
           <p className="stock">
             <span>Availability:</span>
-            <span className={`stock-status ${detailsProduct.stockStatus === "In Stock" ? "greenDetails" : "red"}`}>{detailsProduct.stockStatus}</span>
+            <span
+              className={`stock-status ${
+                detailsProduct.stockStatus === "In Stock"
+                  ? "greenDetails"
+                  : "red"
+              }`}
+            >
+              {detailsProduct.stockStatus}
+            </span>
           </p>
           <div className="share">
             <span>Share:</span>

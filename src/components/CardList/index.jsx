@@ -1,11 +1,11 @@
 import React, { useContext, useState } from "react";
-import { CartContext } from "../../context/CartProvider";
-import { Tooltip } from "react-tooltip";
-import { WishlistContext } from "../../context/WIshlistProvider";
-import QuickView from "../QuickView";
 import { Link } from "react-router-dom";
+import { Tooltip } from "react-tooltip";
+import QuickView from "../QuickView";
+import { WishlistContext } from "../../context/WIshlistProvider";
+import { CartContext } from "../../context/CartProvider";
 
-function ProductCard({ title, price, oldPrice, image, item, id }) {
+function CardList({ title, price, oldPrice, image, item, id, desc }) {
   const { addCart } = useContext(CartContext);
   const { addWishlist } = useContext(WishlistContext);
   const [openQuickView, setOpenQuickView] = useState(null);
@@ -16,22 +16,26 @@ function ProductCard({ title, price, oldPrice, image, item, id }) {
     document.body.classList.remove("overflow-hidden");
   };
   return (
-    <div className="product-card">
-      <div className="product-card-image">
-        <Link to={"/details/" + id}>
-          <img src={image} alt="product image" />
+    <div className="card-list">
+      <div className="card-list-img">
+        <Link to={""}>
+          <img src={image} alt="" />
         </Link>
       </div>
-      <div className="product-card-text">
-        <Link to={"/details/" + id}>{title}</Link>
-        <p>
-          ${price.toFixed(2)}
-          <span>{oldPrice !== undefined ? `$${oldPrice.toFixed(2)}` : ""}</span>
-        </p>
-      </div>
-      <div className="product-card-icons">
+      <div className="card-list-content">
+        <div className="card-list-text">
+          <Link>{title}</Link>
+          <p className="card-list-price">
+            ${price.toFixed(2)}{" "}
+            <span>
+              {oldPrice !== undefined ? `$${oldPrice.toFixed(2)}` : ""}
+            </span>
+          </p>
+          <p className="card-list-desc">{desc}</p>
+        </div>
+        <div className="card-list-icons">
         <div
-          className="product-card-icon heart"
+          className="card-list-icon heart"
           onClick={() => addWishlist(item)}
           data-tooltip-id="wishlist"
         >
@@ -44,7 +48,7 @@ function ProductCard({ title, price, oldPrice, image, item, id }) {
           style={{ padding: "5px", fontSize: "13px" }}
         />
         <div
-          className="product-card-icon bag"
+          className="card-list-icon bag"
           onClick={() => addCart(item)}
           data-tooltip-id="add-to-cart"
         >
@@ -57,7 +61,7 @@ function ProductCard({ title, price, oldPrice, image, item, id }) {
           style={{ padding: "5px", fontSize: "13px" }}
         />
         <div
-          className="product-card-icon eye"
+          className="card-list-icon eye"
           onClick={() => {
             setOpenQuickView(id);
             openQuickViewModal();
@@ -82,8 +86,9 @@ function ProductCard({ title, price, oldPrice, image, item, id }) {
           style={{ padding: "5px", fontSize: "13px" }}
         />
       </div>
+      </div>
     </div>
   );
 }
 
-export default ProductCard;
+export default CardList;

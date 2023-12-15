@@ -57,7 +57,9 @@ function TopSellerSlider() {
       {topSellers.map((x) => (
         <div className="top-seller-card">
           <div className="top-seller-card-img">
-            <img src={x.thumbnail} alt="" />
+            <Link to={"/details/" + x.id}>
+            <img src={x.thumbnail} alt="card image" />
+            </Link>
           </div>
           <div className="top-seller-card-content">
             <div className="top-seller-card-text">
