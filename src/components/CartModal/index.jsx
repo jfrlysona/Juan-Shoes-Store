@@ -15,9 +15,11 @@ function CartModal({ closeModal }) {
     },
     { countItem: 0, priceItem: 0 }
   );
-  const handleLinkClick = () => {
-    window.location.reload();
-  };
+  function handleLinkClick() {
+    setTimeout(() => {
+      window.location.reload();
+    }, 200);
+  }
   return (
     <div className="cart-modal">
       <div
@@ -27,13 +29,7 @@ function CartModal({ closeModal }) {
         data-aos-offset="500"
         data-aos-duration="5000"
       >
-        <div
-          className="close-modal"
-          onClick={() => {
-            closeModal();
-            handleLinkClick();
-          }}
-        >
+        <div className="close-modal" onClick={() => closeModal()}>
           <i className="fa-sharp fa-regular fa-xmark"></i>
         </div>
         <div className="cart-modal-card-content">
@@ -41,11 +37,19 @@ function CartModal({ closeModal }) {
             cart.map((x) => (
               <div className="cart-modal-card" key={x.id}>
                 <div className="cart-modal-card-image">
-                  <img src={x.thumbnail} alt="" />
+                  <Link
+                    to={"/details/" + x.id}
+                    onClick={() => handleLinkClick()}
+                  >
+                    <img src={x.thumbnail} alt="" />{" "}
+                  </Link>
                 </div>
                 <div className="cart-modal-card-textcontent">
                   <div className="cart-modal-card-text">
-                    <Link to={"/details/" + x.id}>
+                    <Link
+                      to={"/details/" + x.id}
+                      onClick={() => handleLinkClick()}
+                    >
                       <h4>{x.name}</h4>
                     </Link>
                     <p>
