@@ -4,6 +4,7 @@ import Navbar from "../../Layout/Navbar";
 import CartTable from "../../components/CartTable";
 import Header from "../../Layout/Header";
 import { Helmet } from "react-helmet-async";
+import Footer from "../../Layout/Footer";
 
 function Cart() {
   return (
@@ -22,6 +23,7 @@ function Cart() {
         currentPage="Cart"
       />
       <CartTable />
+      <Footer />
     </>
   );
 }

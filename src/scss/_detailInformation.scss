@@ -1,0 +1,19 @@
+.tab-container {
+    max-width: 1320px;
+    padding: 0 12px;
+
+    .tab-head {
+        .tabs {
+            background-color: black;
+
+            button {
+                background-color: gray;
+                color: white;
+            }
+        }
+    }
+
+    .tab-body {
+        background-color: green;
+    }
+}

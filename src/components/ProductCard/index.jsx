@@ -15,15 +15,20 @@ function ProductCard({ title, price, oldPrice, image, item, id }) {
   const closeQuickViewModal = () => {
     document.body.classList.remove("overflow-hidden");
   };
+  function handleLinkClick() {
+    setTimeout(() => {
+      window.location.reload();
+    }, 200);
+  }
   return (
     <div className="product-card">
       <div className="product-card-image">
-        <Link to={"/details/" + id}>
+        <Link to={"/details/" + id} onClick={()=>handleLinkClick()}>
           <img src={image} alt="product image" />
         </Link>
       </div>
       <div className="product-card-text">
-        <Link to={"/details/" + id}>{title}</Link>
+        <Link to={"/details/" + id}  onClick={()=>handleLinkClick()}>{title}</Link>
         <p>
           ${price.toFixed(2)}
           <span>{oldPrice !== undefined ? `$${oldPrice.toFixed(2)}` : ""}</span>

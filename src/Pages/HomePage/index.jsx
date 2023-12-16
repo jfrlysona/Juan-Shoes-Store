@@ -9,6 +9,7 @@ import OurProduct from "../../components/OurProduct";
 import BannerHome from "../../components/BannerHome";
 import OurBlog from "../../components/OurBlog";
 import TopSeller from "../../components/TopSeller";
+import Footer from "../../Layout/Footer";
 
 function HomePage() {
   return (
@@ -26,6 +27,7 @@ function HomePage() {
       <TopSeller />
       <OurBlog />
       <BrandsSlider />
+      <Footer />
     </>
   );
 }

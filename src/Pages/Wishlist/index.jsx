@@ -4,6 +4,7 @@ import NavbarHeading from "../../Layout/NavbarHeading";
 import WishlistTable from "../../components/WishlistTable";
 import Header from "../../Layout/Header";
 import { Helmet } from "react-helmet-async";
+import Footer from "../../Layout/Footer";
 
 function Wishlist() {
   return (
@@ -22,6 +23,7 @@ function Wishlist() {
         currentPage="Wishlist"
       />
       <WishlistTable />
+      <Footer />
     </>
   );
 }

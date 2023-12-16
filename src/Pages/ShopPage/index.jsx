@@ -4,6 +4,7 @@ import NavbarHeading from "../../Layout/NavbarHeading";
 import ProductCards from "../../components/ProductCards";
 import Header from "../../Layout/Header";
 import { Helmet } from "react-helmet-async";
+import Footer from "../../Layout/Footer";
 function ShopPage() {
   return (
     <>
@@ -21,6 +22,7 @@ function ShopPage() {
         currentPage="Shop"
       />
       <ProductCards />
+      <Footer />
     </>
   );
 }

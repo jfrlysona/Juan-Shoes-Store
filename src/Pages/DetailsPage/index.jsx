@@ -4,6 +4,7 @@ import Header from "../../Layout/Header";
 import Navbar from "../../Layout/Navbar";
 import NavbarHeading from "../../Layout/NavbarHeading";
 import DetailProduct from "../../components/DetailProduct";
+import Footer from "../../Layout/Footer";
 
 function DetailsPage() {
   return (
@@ -21,7 +22,8 @@ function DetailsPage() {
         prevPage="Shop"
         currentPage="Product Details"
       />
-      <DetailProduct/>
+      <DetailProduct />
+      <Footer />
     </div>
   );
 }
