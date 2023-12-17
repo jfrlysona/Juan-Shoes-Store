@@ -1,0 +1,86 @@
+.filter {
+    max-width: 330px;
+    padding: 0 12px;
+    margin: 0;
+
+    .filter-container {
+        .filter-categories {
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                color: #333;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 40px;
+            }
+
+            ul {
+                li {
+                    color: #333;
+                    line-height: 35px;
+                    transition: all 400ms;
+
+                    &:hover {
+                        color: #e3a51e;
+                    }
+                }
+            }
+        }
+
+        .filter-by-price {
+            margin: 0;
+
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                color: #333;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 40px;
+            }
+
+            button {
+                width: 75px;
+                height: 35px;
+                border-radius: 3px;
+                border: none;
+                color: #333;
+                background-color: #ebebeb;
+                font-weight: 600;
+                font-size: 14px;
+                transition: all 400ms;
+
+                &:hover {
+                    background-color: #e3a51e;
+                    color: #fff;
+                }
+            }
+        }
+
+        .filter-model {
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+                color: #333;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 40px;
+            }
+
+            ul {
+                li {
+                    color: #333;
+                    line-height: 35px;
+                    transition: all 400ms;
+
+                    &:hover {
+                        color: #e3a51e;
+                    }
+                }
+            }
+        }
+
+        img {
+            width: 306px;
+            height: 216px;
+            margin-top: 30px;
+        }
+    }
+}

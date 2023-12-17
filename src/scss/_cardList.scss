@@ -4,6 +4,8 @@
     border: 1px solid #e5e5e5;
     padding: 15px;
     display: flex;
+    width: max-content;
+    width: 100%;
 
     .card-list-img {
         max-width: 280px;
@@ -12,6 +14,7 @@
         border: 1px solid #e5e5e5;
         overflow: hidden;
         margin: 0;
+        width: 100%;
 
         a {
             img {
@@ -26,14 +29,25 @@
         max-width: 654px;
         padding: 0 0 0 30px;
         margin: 0;
-
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         .card-list-text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            gap: 15px;
+
             a {
                 color: #333333;
                 font-weight: 500;
                 font-family: "Montserrat", sans-serif;
                 font-size: 22px;
                 transition: all 400ms;
+                margin: 0;
+
 
                 &:hover {
                     color: #e3a51e;
@@ -41,10 +55,26 @@
             }
 
             .card-list-price {
-                span {}
+                font-family: 'Montserrat', sans-serif;
+                color: #333;
+                font-size: 18px;
+                margin: 0;
+
+                span {
+                    font-size: 16px;
+                    color: #666;
+                    text-decoration: line-through;
+                    font-family: 'Montserrat', sans-serif;
+                }
             }
 
-            .card-list-desc {}
+            .card-list-desc {
+                line-height: 30px;
+                color: #666;
+                margin: 0;
+                max-height: 115px;
+                overflow: hidden;
+            }
         }
 
         .card-list-icons {
@@ -52,7 +82,6 @@
             margin: 0;
             width: max-content;
             gap: 3px;
-
             .card-list-icon {
                 width: 44px;
                 height: 44px;
@@ -76,4 +105,10 @@
             }
         }
     }
+}
+.card-lists{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }

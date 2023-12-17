@@ -1,0 +1,119 @@
+.contact {
+    .contact-container {
+        max-width: 1320px;
+        padding: 80px 12px;
+        display: flex;
+
+        .contact-form {
+            h2 {
+                color: #333333;
+                font-size: 24px;
+                line-height: 1;
+                font-weight: 600;
+                margin-top: -4px;
+                padding-bottom: 30px;
+                font-family: "Montserrat", sans-serif;
+            }
+
+            form {
+                margin: 0;
+                max-width: 636px;
+
+                .contact-inputs {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 24px;
+                    row-gap: 30px;
+                    input {
+                        background-color: #f3f6f5;
+                        border: none;
+                        padding: 10px;
+                        width: 306px;
+                        height: 49px;
+                        outline: none;
+                        color: #000;
+                        
+                        &::placeholder {
+                            font-style: italic;
+                        }
+                    }
+                    margin-bottom: 30px;
+                }
+
+                textarea {
+                    padding: 10px;
+                    width: 636px;
+                    height: 150px;
+                    background-color: #f3f6f5;
+                    border: none;
+                    outline: none;
+                    color: #000;
+
+                    &::placeholder {}
+                }
+
+                button {
+                    width: 168px;
+                    height: 45px;
+                    background-color: #333;
+                    border: none;
+                    margin: 0;
+                    transition: all 500ms;
+                    color: #e3a51e;
+                    font-size: 16px;
+                    margin-top: 38px;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: #666;
+                    }
+                }
+            }
+        }
+
+        .contact-text {
+            padding: 0 0 0 24px;
+            h2 {
+                color: #333333;
+                font-size: 24px;
+                line-height: 1;
+                font-weight: 600;
+                margin-top: -4px;
+                padding-bottom: 30px;
+                font-family: "Montserrat", sans-serif;
+            }
+
+            .contact-text-content {
+                p {}
+
+                .contact-text-icons {
+                    .contact-text-icon {
+                        i {}
+
+                        p {}
+                    }
+                }
+
+                .contact-hours {
+                    h3 {
+                        font-size: 16px;
+                        font-weight: 600;
+                        padding-bottom: 5px;
+                        color: #333333;
+                        margin-bottom: 0;
+                        font-family: "Montserrat", sans-serif;
+                    }
+
+                    p {
+                        span {
+                            color: #333333;
+                            padding-right: 10px;
+                        }
+
+                        color: #666666;
+                    }
+                }
+            }
+        }
+    }
+}
