@@ -1,19 +1,86 @@
 .tab-container {
-    max-width: 1320px;
-    padding: 0 12px;
+  max-width: 1320px;
+  padding: 0 12px;
+  margin-top: 80px;
+  .tab-head {
+    .tabs {
+      button {
+        color: #fff;
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        border: 1px solid #ededed;
+        border-bottom: none;
+        background-color: #979898;
+        min-height: 0 !important;
+        height: 35px !important;
+        &:hover {
+          color: #666 !important;
+          border-color: #ededed !important;
+          background-color: transparent !important;
+        }
+      }
+      .Mui-selected {
+        color: #666 !important;
+        border-color: #ededed !important;
+        background-color: transparent !important;
+      }
+    }
+  }
 
-    .tab-head {
-        .tabs {
-            background-color: black;
-
-            button {
-                background-color: gray;
-                color: white;
-            }
+  .tab-body {
+    border: 1px solid #ededed;
+    max-height: 500px;
+    p {
+      line-height: 28px;
+    }
+    .info {
+      display: flex;
+      margin: 0;
+      gap: 30px;
+      padding-top: 20px;
+      img {
+        margin: 0;
+        width: 300px;
+      }
+      ul {
+        margin: 0;
+        span {
+          font-family: "Montserrat", sans-serif;
+          font-size: 20px;
+          line-height: 24px;
+          color: #e3a51e;
+          font-weight: 500;
+        }
+        li {
+          line-height: 28px;
+          list-style: disc;
+        }
+      }
+    }
+    table{
+        border: 1px solid #ededed;
+        border-collapse: collapse;
+        width: 100%;
+        td{
+        border: 1px solid #ededed;
+        padding: 0 0 0 10px;
+        color: #212529;
+        }
+        tr{
+            height: 45px;
         }
     }
+  }
+}
 
-    .tab-body {
-        background-color: green;
-    }
+.css-1aquho2-MuiTabs-indicator {
+  height: 0px !important;
+}
+.css-1ujnqem-MuiTabs-root {
+  min-height: 35px !important;
+}
+.css-1gsv261 {
+  border-bottom: none !important;
 }

@@ -67,13 +67,16 @@ export default function DetailInformation({ detailsProduct }) {
         <div className="info">
           <img src={detailsProduct.thumbnail} alt="product image" />
           <ul>
-            {detailsProduct.description?.list.map((x, i) => (
+            {detailsProduct.description?.list ? (
+              <span>Product Information :</span>
+            ) : null}
+            {detailsProduct.description?.list?.map((x, i) => (
               <li key={i}>{x}</li>
             ))}
           </ul>
         </div>
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>
+      <CustomTabPanel value={value} index={1} className="tab-body">
         <table>
           <tbody>
             <tr>
@@ -87,7 +90,7 @@ export default function DetailInformation({ detailsProduct }) {
           </tbody>
         </table>
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={2}>
+      <CustomTabPanel value={value} index={2} className="tab-body">
         Item Three
       </CustomTabPanel>
     </Box>
