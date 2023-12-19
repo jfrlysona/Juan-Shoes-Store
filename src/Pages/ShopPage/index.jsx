@@ -24,10 +24,8 @@ function ShopPage() {
         prevPage="Home"
         currentPage="Shop"
       />
-      <section style={{display:"grid",placeContent:"center",gridTemplateColumns:"1fr 1fr",margin:"80px auto",maxWidth:"1320px"}}>
-      <FilterShop />
+      
       <ProductCards setCurrentPage={setCurrentPage} currentPage={currentPage} />
-      </section>
       <Footer />
     </>
   );

@@ -3,6 +3,9 @@
   width: 100%;
   max-width: 966px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   .cards-h-btns {
     padding-top: 5px;
     margin: 0;
@@ -25,16 +28,28 @@
       }
     }
   }
+.cards-sort{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 0;
   .sort {
     margin: 0;
     .sortBox {
+
+      // height: 40px !important;
+      .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select {
+        padding: 10px 32px 10px 14px;
+      }
+
       * {
         margin: 0;
       }
     }
   }
+  .show-res{margin: 0;}
 }
-
+}
 .btn-selected {
   background-color: #e3a51e !important;
 }
