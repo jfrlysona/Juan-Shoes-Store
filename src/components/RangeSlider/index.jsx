@@ -17,7 +17,7 @@ export default function RangeSlider({ priceRange, setPriceRange }) {
         getAriaLabel={() => "Price range"}
         value={priceRange}
         onChange={handleChange}
-        valueLabelDisplay="on"
+        valueLabelDisplay="auto"
         getAriaValueText={valuetext}
       />
     </Box>

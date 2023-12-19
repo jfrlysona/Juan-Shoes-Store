@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import CartModal from "../../components/CartModal";
 import { CartContext } from "../../context/CartProvider";
@@ -6,8 +6,23 @@ import { CartContext } from "../../context/CartProvider";
 function Navbar() {
   const { cart } = useContext(CartContext);
   const [openCartModal, setOpenCartModal] = useState(false);
+  const [stickyNav, setStickyNav] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", stickNavbar);
+
+    return () => {
+      window.removeEventListener("scroll", stickNavbar);
+    };
+  }, []);
+
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      windowHeight > 480 ? setStickyNav(true) : setStickyNav(false);
+    }
+  };
   return (
-    <nav>
+    <nav className={`${stickyNav ? "fixed" : ""} `}>
       <div className="nav">
         <div className="logo">
           <Link to="/">
@@ -43,8 +58,9 @@ function Navbar() {
         </div>
         <div className="nav-icons">
           <i className="fa-sharp fa-regular fa-magnifying-glass"></i>
+          <i className="fa-sharp fa-light fa-gear-complex"></i>
           <Link to="/wishlist">
-            <i className="fa-sharp fa-light fa-gear-complex"></i>
+            <i class="fa-sharp fa-light fa-heart"></i>
           </Link>
           <i
             className="fa-sharp fa-light fa-bag-shopping"

@@ -90,7 +90,7 @@ function ProductCards({ setCurrentPage, currentPage }) {
         setFilteredProducts={setFilteredProducts}
         filteredProducts={filteredProducts}
       />
-      <div id="all-cards">
+      <div id="all-cards" style={{width:"966px"}}>
         <div className="cards-heading">
           <div className="cards-h-btns">
             <button
