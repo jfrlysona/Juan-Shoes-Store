@@ -10,7 +10,7 @@ function BlogDetailsPage() {
   return (
     <>
       <Helmet>
-        <title>Juan - Shoes Store | Blog</title>
+        <title>Juan - Shoes Store | Blog Details</title>
         {/* <link rel="canonical" href="https://www.tacobell.com/" /> */}
       </Helmet>
       <NavbarHeading />
@@ -18,7 +18,7 @@ function BlogDetailsPage() {
       <Header
         title="blog details"
         prevLink="/blog"
-        currentLink="/blog-details/:id"
+        currentLink="/blog-details/:blogId"
         prevPage="Blog"
         currentPage="Blog Details"
       />

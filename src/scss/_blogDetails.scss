@@ -1,0 +1,32 @@
+.blog-details {
+  .blog-details-container {
+    max-width: 966px;
+    .blog-details-image {
+      max-width: 966px;
+      max-height: 625px;
+      overflow: hidden;
+      img {
+        width: 966px;
+        height: 625px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    h1 {
+    }
+    .blog-details-info {
+      p {
+        span {
+        }
+      }
+    }
+    .blog-details-text {
+      p {
+        .blog-details-blockquote {
+          p {
+          }
+        }
+      }
+    }
+  }
+}

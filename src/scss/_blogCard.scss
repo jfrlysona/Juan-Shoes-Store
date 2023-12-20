@@ -4,12 +4,12 @@
   .blogcard-img {
     max-width: 471px;
     max-height: 305px;
-
+    overflow: hidden;
     img {
       object-fit: cover;
       object-position: center;
-      width: 100%;
-      height: 100%;
+      width: 471px;
+      height: 305px;
     }
   }
 
