@@ -27,7 +27,7 @@ function FilterShop({
 
     setFilteredProducts(updatedProducts);
   }, [selectedCategory, selectedModel, allProducts, setFilteredProducts]);
-
+  
   function handleClick(category) {
     setSelectedCategory(category);
   }
@@ -35,14 +35,28 @@ function FilterShop({
   function handleModelClick(model) {
     setSelectedModel(model);
   }
+  function handleFilter() {
+    let updatedProducts = [...allProducts];
 
-  function handleFilterByPrice() {
-    const filteredProducts = allProducts.filter(
+    if (selectedCategory !== "All") {
+      updatedProducts = updatedProducts.filter(
+        (x) => x.category === selectedCategory
+      );
+    }
+
+    if (selectedModel !== "All") {
+      updatedProducts = updatedProducts.filter(
+        (x) => x.model === selectedModel
+      );
+    }
+
+    updatedProducts = updatedProducts.filter(
       (x) =>
         parseFloat(x.price) >= priceRange[0] &&
         parseFloat(x.price) <= priceRange[1]
     );
-    setFilteredProducts(filteredProducts);
+
+    setFilteredProducts(updatedProducts);
   }
 
   return (
@@ -96,7 +110,7 @@ function FilterShop({
             value={priceRange}
             onChange={(newValue) => setPriceRange(newValue)}
           />
-          <button onClick={handleFilterByPrice}>FILTER</button>
+          <button onClick={handleFilter}>FILTER</button>
         </div>
         <div className="filter-model">
           <h3>Model</h3>

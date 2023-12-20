@@ -27,7 +27,15 @@
         }
 
         .filter-by-price {
-            margin: 0;
+            * {
+                margin: 0;
+                line-height: 28px;
+            }
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
 
             h3 {
                 font-family: 'Montserrat', sans-serif;
@@ -56,6 +64,8 @@
         }
 
         .filter-model {
+            margin-top: 15px;
+
             h3 {
                 font-family: 'Montserrat', sans-serif;
                 color: #333;
@@ -84,22 +94,28 @@
         }
     }
 }
+
 .css-187mznn-MuiSlider-root {
     height: 10px !important;
-    *{
+
+    * {
 
         color: #e3a51e !important;
     }
+
     .css-nnid7-MuiSlider-valueLabel {
         background-color: #e3a51e !important;
-        *{
+
+        * {
             color: #ffffff !important;
 
         }
     }
+
     .css-14pt78w-MuiSlider-rail {
         background-color: #eeeeee;
     }
+
     .css-eg0mwd-MuiSlider-thumb {
         background-color: white;
     }

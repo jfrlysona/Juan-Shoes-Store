@@ -2,11 +2,15 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import CartModal from "../../components/CartModal";
 import { CartContext } from "../../context/CartProvider";
+import { Menu, MenuItem } from "@mui/material";
 
 function Navbar() {
   const { cart } = useContext(CartContext);
   const [openCartModal, setOpenCartModal] = useState(false);
   const [stickyNav, setStickyNav] = useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+
   useEffect(() => {
     window.addEventListener("scroll", stickNavbar);
 
@@ -20,6 +24,13 @@ function Navbar() {
       let windowHeight = window.scrollY;
       windowHeight > 480 ? setStickyNav(true) : setStickyNav(false);
     }
+  };
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
   };
   return (
     <nav className={`${stickyNav ? "fixed" : ""} `}>
@@ -58,7 +69,27 @@ function Navbar() {
         </div>
         <div className="nav-icons">
           <i className="fa-sharp fa-regular fa-magnifying-glass"></i>
-          <i className="fa-sharp fa-light fa-gear-complex"></i>
+          <i
+            className="fa-sharp fa-light fa-gear-complex"
+            id="basic-button"
+            aria-controls={open ? "basic-menu" : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? "true" : undefined}
+            onClick={handleClick}
+          ></i>
+          <Menu
+            id="basic-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+            MenuListProps={{
+              "aria-labelledby": "basic-button",
+            }}
+          >
+            <MenuItem onClick={handleClose}>Profile</MenuItem>
+            <MenuItem onClick={handleClose}>My account</MenuItem>
+            <MenuItem onClick={handleClose}>Logout</MenuItem>
+          </Menu>
           <Link to="/wishlist">
             <i class="fa-sharp fa-light fa-heart"></i>
           </Link>
