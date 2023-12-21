@@ -21,18 +21,26 @@ function BlogDetails() {
         <h1>{detailsBlog.title}</h1>
         <div className="blog-details-info">
           <p>
-            <span>By: {detailsBlog.author}</span>
+            <span>By: </span>
+            {detailsBlog.author}
           </p>
           <p>
-              {detailsBlog.createdAt && detailsBlog.createdAt.length > 0 && (
-                <span>On: {detailsBlog.createdAt[0]}</span>
-              )}
+            <span>On: </span>
+            {detailsBlog.createdAt &&
+              detailsBlog.createdAt.length > 0 &&
+              detailsBlog.createdAt[0]}
           </p>
         </div>
         <div className="blog-details-text">
           <p>{detailsBlog.description}</p>
           <div className="blog-details-blockquote">
             <p>{detailsBlog.blockquote}</p>
+          </div>
+          <div className="additional">
+            {detailsBlog?.additionalContent &&
+              detailsBlog.additionalContent.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
           </div>
         </div>
       </div>
