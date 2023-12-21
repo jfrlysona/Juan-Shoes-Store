@@ -1,0 +1,107 @@
+#signUp {
+  padding: 80px 0;
+  .signUp-container {
+    max-width: 636px;
+    min-height: 410px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 6px 0px;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    * {
+      margin: 0;
+    }
+    h2 {
+      font-family: "Montserrat", sans-serif;
+      color: #333333;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .signUp-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .signUp-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        input {
+          padding: 0 10px;
+          height: 50px;
+          width: 100%;
+          color: #666666;
+          border: 1px solid #ccc;
+          padding: 12px 10px;
+          font-size: 14px;
+          background: #f7f7f7;
+          outline: none;
+          &::placeholder {
+            font-style: italic;
+            font-size: 13px;
+            color: #8a8a8a;
+          }
+          &:focus {
+            background-color: transparent;
+            border-radius: 0;
+            border: 1px solid #e3a51e;
+          }
+        }
+        .password {
+          display: flex;
+          gap: 25px;
+        }
+      }
+
+      .checkbox {
+        * {
+          margin: 0;
+        }
+        span {
+          font-size: 14px;
+          color: #333333;
+          padding: 0px;
+        }
+      }
+      a {
+        font-size: 12px;
+        color: #e3a51e;
+      }
+
+      button {
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+        color: #e3a51e;
+        outline: none;
+        transition: 0.4s;
+        display: inline-block;
+        padding: 14px 25px;
+        background-color: #333333;
+        width: max-content;
+        &:hover {
+          background-color: transparent;
+          color: #666666;
+        }
+      }
+    }
+  }
+  .haveAcc {
+    text-align: center;
+    margin-top: 30px;
+    a {
+      color: #e3a51e;
+      font-family: "Montserrat", sans-serif;
+      font-family: 15px;
+      font-weight: 500;
+    }
+  }
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+  color: #1976d2 !important;
+  * {
+    color: #e3a51e;
+  }
+}

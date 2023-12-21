@@ -27,12 +27,15 @@ function Contact() {
             </p>
             <div className="contact-text-icons">
               <div className="contact-text-icon">
+                <i className="fa-sharp fa-solid fa-fax"></i>
                 <p> Address : No 40 Baria Sreet 133/2 NewYork City</p>
               </div>
               <div className="contact-text-icon">
+                <i className="fa-sharp fa-solid fa-phone"></i>
                 <p> info@yourdomain.com</p>
               </div>
               <div className="contact-text-icon">
+                <i className="fa-sharp fa-light fa-envelope"></i>
                 <p>+88013245657</p>
               </div>
             </div>

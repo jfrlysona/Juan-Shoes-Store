@@ -10,6 +10,7 @@
 @use "./scss/productCards";
 @use "./scss/cartTable";
 @use "./scss/cartModal";
+@use "./scss/cartTotals";
 @use "./scss/wishlistTable";
 @use "./scss/ourProduct";
 @use "./scss/ourBlog";
@@ -28,3 +29,5 @@
 @use "./scss/filterShop";
 @use "./scss/cardsHeading";
 @use "./scss/blogDetails";
+@use "./scss/login";
+@use "./scss/signUp";

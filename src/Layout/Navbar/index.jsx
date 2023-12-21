@@ -86,9 +86,8 @@ function Navbar() {
               "aria-labelledby": "basic-button",
             }}
           >
-            <MenuItem onClick={handleClose}>Profile</MenuItem>
-            <MenuItem onClick={handleClose}>My account</MenuItem>
-            <MenuItem onClick={handleClose}>Logout</MenuItem>
+            <MenuItem onClick={handleClose}><Link style={{margin:"0"}}>My account</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link to="/login" style={{margin:"0"}}>Login</Link></MenuItem>
           </Menu>
           <Link to="/wishlist">
             <i class="fa-sharp fa-light fa-heart"></i>
