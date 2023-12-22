@@ -10,13 +10,7 @@ function TopSellerSlider() {
   const { addCart } = useContext(CartContext);
   const { addWishlist } = useContext(WishlistContext);
   const [topSellers, setTopSellers] = useState([]);
-  const [openQuickView, setOpenQuickView] = useState(false);
-  const openQuickViewModal = () => {
-    document.body.classList.add("overflow-hidden");
-  };
-  const closeQuickViewModal = () => {
-    document.body.classList.remove("overflow-hidden");
-  };
+
   useEffect(() => {
     fetch(
       "https://6573ac96f941bda3f2af125e.mockapi.io/juan-store/api/v1/products"
@@ -58,7 +52,7 @@ function TopSellerSlider() {
         <div className="top-seller-card">
           <div className="top-seller-card-img">
             <Link to={"/details/" + x.id}>
-            <img src={x.thumbnail} alt="card image" />
+              <img src={x.thumbnail} alt="card image" />
             </Link>
           </div>
           <div className="top-seller-card-content">
@@ -112,22 +106,11 @@ function TopSellerSlider() {
               <div
                 className="top-seller-card-icon eye"
                 data-tooltip-id="quick-view"
-                onClick={() => {
-                  setOpenQuickView(true);
-                  openQuickViewModal();
-                }}
               >
-                <i className="fa-sharp fa-light fa-eye"></i>
+                <Link to={"/details/" + x.id}>
+                  <i className="fa-sharp fa-light fa-eye"></i>
+                </Link>
               </div>
-              {openQuickView ? (
-                <QuickView
-                  id={x.id}
-                  closeModalView={() => {
-                    setOpenQuickView(false);
-                    closeQuickViewModal();
-                  }}
-                />
-              ) : null}
               <Tooltip
                 id="quick-view"
                 content="Quick View"

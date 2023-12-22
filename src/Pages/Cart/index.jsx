@@ -17,9 +17,9 @@ function Cart() {
       <Navbar />
       <Header
         title="cart"
-        prevLink="/"
+        prevLink="/shop"
         currentLink="/cart"
-        prevPage="Home"
+        prevPage="Shop"
         currentPage="Cart"
       />
       <CartTable />

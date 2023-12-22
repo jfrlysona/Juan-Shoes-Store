@@ -83,7 +83,7 @@ function CartModal({ closeModal }) {
               <i className="fa-sharp fa-solid fa-cart-shopping"></i> VIEW CART
             </button>
           </Link>
-          <Link to="" className="modal-link">
+          <Link to="/checkout" className="modal-link">
             <button>
               <i className="fa-sharp fa-solid fa-share"></i> CHECKOUT
             </button>

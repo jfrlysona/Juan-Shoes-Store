@@ -161,6 +161,7 @@ function ProductCards({ setCurrentPage, currentPage }) {
                 image={x.thumbnail}
                 item={x}
                 id={x.id}
+                inSlider={false}
               />
             ))}
         </div>

@@ -5,7 +5,7 @@ import { WishlistContext } from "../../context/WIshlistProvider";
 import QuickView from "../QuickView";
 import { Link } from "react-router-dom";
 
-function ProductCard({ title, price, oldPrice, image, item, id }) {
+function ProductCard({ title, price, oldPrice, image, item, id, inSlider }) {
   const { addCart } = useContext(CartContext);
   const { addWishlist } = useContext(WishlistContext);
   const [openQuickView, setOpenQuickView] = useState(null);
@@ -23,12 +23,14 @@ function ProductCard({ title, price, oldPrice, image, item, id }) {
   return (
     <div className="product-card">
       <div className="product-card-image">
-        <Link to={"/details/" + id} onClick={()=>handleLinkClick()}>
+        <Link to={"/details/" + id} onClick={() => handleLinkClick()}>
           <img src={image} alt="product image" />
         </Link>
       </div>
       <div className="product-card-text">
-        <Link to={"/details/" + id}  onClick={()=>handleLinkClick()}>{title}</Link>
+        <Link to={"/details/" + id} onClick={() => handleLinkClick()}>
+          {title}
+        </Link>
         <p>
           ${price.toFixed(2)}
           <span>{oldPrice !== undefined ? `$${oldPrice.toFixed(2)}` : ""}</span>
@@ -61,16 +63,24 @@ function ProductCard({ title, price, oldPrice, image, item, id }) {
           events={["hover"]}
           style={{ padding: "5px", fontSize: "13px" }}
         />
-        <div
-          className="product-card-icon eye"
-          onClick={() => {
-            setOpenQuickView(id);
-            openQuickViewModal();
-          }}
-          data-tooltip-id="quick-view"
-        >
-          <i className="fa-sharp fa-light fa-eye"></i>
-        </div>
+        {inSlider ? (
+          <div className="product-card-icon eye" data-tooltip-id="quick-view">
+            <Link to={"/details/" + id} onClick={() => handleLinkClick()}>
+              <i className="fa-sharp fa-light fa-eye"></i>
+            </Link>
+          </div>
+        ) : (
+          <div
+            className="product-card-icon eye"
+            onClick={() => {
+              setOpenQuickView(id);
+              openQuickViewModal();
+            }}
+            data-tooltip-id="quick-view"
+          >
+            <i className="fa-sharp fa-light fa-eye"></i>
+          </div>
+        )}
         {openQuickView ? (
           <QuickView
             id={id}

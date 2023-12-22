@@ -6,6 +6,7 @@ import CartTotals from "../CartTotals";
 function CartTable() {
   const { cart, increaseCount, decreaseCount, removeItem } =
     useContext(CartContext);
+  const total = cart.reduce((acc, item) => acc + item.price * item.count, 0);
   return (
     <section id="cart">
       <div className="cart-table">
@@ -62,7 +63,9 @@ function CartTable() {
           </Link>
         </div>
       </div>
-        <CartTotals />
+      <div className="totals">
+        <CartTotals price={total} />
+      </div>
     </section>
   );
 }

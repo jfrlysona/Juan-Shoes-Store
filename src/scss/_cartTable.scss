@@ -1,7 +1,5 @@
 #cart {
   padding: 80px 0;
-  display: flex;
-  flex-direction: column;
   .cart-table {
     max-width: 1320px;
     width: 100%;
@@ -87,7 +85,7 @@
     border-top: none;
     padding: 15px 20px;
     width: 100%;
-    max-width:1320px;
+    max-width: 1320px;
     display: flex;
     justify-content: space-between;
     .coupon {
@@ -129,18 +127,23 @@
         }
       }
     }
-    button {
-      width: 155px;
-      height: 46px;
-      border: none;
-      background-color: #333;
-      color: #e3a51e;
-      font-size: 16px;
-      transition: all 600ms;
+    a {
+      display: block;
+      width: max-content;
       margin: 0;
-      &:hover {
-        color: #666;
-        background-color: transparent;
+      button {
+        width: 155px;
+        height: 46px;
+        border: none;
+        background-color: #333;
+        color: #e3a51e;
+        font-size: 16px;
+        transition: all 600ms;
+        margin: 0;
+        &:hover {
+          color: #666;
+          background-color: transparent;
+        }
       }
     }
   }

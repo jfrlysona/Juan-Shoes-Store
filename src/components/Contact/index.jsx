@@ -1,12 +1,51 @@
 import React from "react";
-
+import { Formik, Form, Field, ErrorMessage } from "formik";
 function Contact() {
   return (
     <div className="contact">
       <div className="contact-container">
         <div className="contact-form">
           <h2>Tell Us Your Project</h2>
-          <form>
+          <Formik
+       initialValues={{ email: '', password: '' }}
+       validate={values => {
+         const errors = {};
+         if (!values.email) {
+           errors.email = 'Required';
+         } else if (
+           !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+         ) {
+           errors.email = 'Invalid email address';
+         }
+         return errors;
+       }}
+       onSubmit={(values, { setSubmitting }) => {
+         setTimeout(() => {
+           alert(JSON.stringify(values, null, 2));
+           setSubmitting(false);
+         }, 400);
+       }}
+     >
+       {({ isSubmitting }) => (
+         <Form>
+          <div className="contact-inputs">
+           <Field type="text" name="name" placeholder="Name *" />
+           <ErrorMessage name="name" component="div" />
+           <Field type="tel" name="phone" placeholder="Phone *" />
+           <ErrorMessage name="phone" component="div" />
+           <Field type="email" name="email"  placeholder="Email *" />
+           <ErrorMessage name="email" component="div" />
+           <Field type="subject" name="subject" placeholder="Subject *"/>
+           <ErrorMessage name="subject" component="div" />
+          </div>
+          <textarea placeholder="Message *"></textarea>
+           <button type="submit" disabled={isSubmitting}>
+           SEND MESSAGE
+           </button>
+         </Form>
+       )}
+     </Formik>
+          {/* <form>
             <div className="contact-inputs">
               <input type="text" placeholder="Name *" />
               <input type="text" placeholder="Phone *" />
@@ -15,7 +54,7 @@ function Contact() {
             </div>
             <textarea placeholder="Message *"></textarea>
             <button>SEND MESSAGE</button>
-          </form>
+          </form> */}
         </div>
         <div className="contact-text">
           <h2>Contact Us</h2>

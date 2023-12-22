@@ -88,6 +88,7 @@ function ProductsSlider({ detailsProduct }) {
             image={x.thumbnail}
             item={x}
             id={x.id}
+            inSlider={true}
           />
         ))}
     </Slider>

@@ -7,7 +7,7 @@
     padding: 25px 30px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     * {
       margin: 0;
     }
@@ -18,15 +18,8 @@
       font-weight: 500;
     }
     .signUp-content {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
       .signUp-inputs {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
         input {
-          padding: 0 10px;
           height: 50px;
           width: 100%;
           color: #666666;
@@ -35,6 +28,7 @@
           font-size: 14px;
           background: #f7f7f7;
           outline: none;
+          margin: 10px 0;
           &::placeholder {
             font-style: italic;
             font-size: 13px;
@@ -49,10 +43,19 @@
         .password {
           display: flex;
           gap: 25px;
+          .pas1 {
+            width: 100%;
+            flex-grow: 1;
+          }
+          .pas2 {
+            width: 100%;
+            flex-grow: 1;
+          }
         }
       }
 
       .checkbox {
+        padding: 10px 0 20px;
         * {
           margin: 0;
         }
@@ -93,7 +96,7 @@
     a {
       color: #e3a51e;
       font-family: "Montserrat", sans-serif;
-      font-family: 15px;
+      font-size: 15px;
       font-weight: 500;
     }
   }
@@ -103,5 +106,21 @@
   color: #1976d2 !important;
   * {
     color: #e3a51e;
+  }
+}
+form {
+  .signUp-inputs {
+    color: rgb(255, 64, 64);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .password {
+    div {
+      color: rgb(255, 64, 64);
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+    }
   }
 }
