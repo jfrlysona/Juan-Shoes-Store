@@ -75,22 +75,14 @@ function ProductCards({ setCurrentPage, currentPage }) {
   };
 
   return (
-    <section
-      style={{
-        display: "grid",
-        placeContent: "center",
-        gridTemplateColumns: "1fr 1fr",
-        margin: "80px auto",
-        maxWidth: "1320px",
-      }}
-    >
+    <section id="shop-page">
       <FilterShop
         allProducts={allProducts}
         setAllProducts={setAllProducts}
         setFilteredProducts={setFilteredProducts}
         filteredProducts={filteredProducts}
       />
-      <div id="all-cards" style={{width:"966px"}}>
+      <div id="all-cards" style={{ width: "966px" }}>
         <div className="cards-heading">
           <div className="cards-h-btns">
             <button

@@ -5,18 +5,23 @@
     display: flex;
     justify-content: center;
     position: relative;
+
     .banner-home {
       height: 278px;
       overflow: hidden;
+
       &:hover img {
         scale: 110%;
       }
+
       &:hover .banner-text1 {
         background-color: rgba(0, 0, 0, 0.404);
       }
+
       &:hover .banner-text2 {
         background-color: rgba(0, 0, 0, 0.404);
       }
+
       .banner-img {
         img {
           max-width: 649px;
@@ -24,6 +29,7 @@
           transition: all 400ms;
         }
       }
+
       .banner-content {
         .banner-text1 {
           max-width: 649px;
@@ -35,6 +41,7 @@
           padding: 69px 62px;
           margin-left: 12px;
           transition: all 400ms;
+
           span {
             font-family: "Montserrat", sans-serif;
             font-size: 18px;
@@ -42,6 +49,7 @@
             line-height: 52px;
             font-weight: 500;
           }
+
           h2 {
             font-family: "Montserrat", sans-serif;
             font-size: 30px;
@@ -50,6 +58,7 @@
             font-weight: 600;
           }
         }
+
         .banner-text2 {
           max-width: 649px;
           min-height: 278px;
@@ -59,6 +68,7 @@
           padding: 69px 62px;
           width: 100%;
           transition: all 400ms;
+
           span {
             font-family: "Montserrat", sans-serif;
             font-size: 18px;
@@ -66,6 +76,7 @@
             line-height: 52px;
             font-weight: 500;
           }
+
           h2 {
             font-family: "Montserrat", sans-serif;
             font-size: 30px;
@@ -74,6 +85,28 @@
             font-weight: 600;
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px) and (min-width:320px) {
+  .banner-home-container {
+    flex-wrap: wrap;
+    gap: 40px;
+    overflow: hidden;
+
+    .banner-content {
+      overflow: hidden;
+
+      .banner-text1 {
+        bottom: 53% !important;
+        left: 0% !important;
+      }
+
+      .banner-text2 {
+        top: 53% !important;
+        left: 2% !important;
       }
     }
   }

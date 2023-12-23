@@ -254,3 +254,22 @@
     }
   }
 }
+@media screen and (max-width:990px) and (min-width:320px) {
+ .product-details-container{
+  flex-wrap: wrap;
+  .product-details-images{
+    margin: 0 auto;
+  }
+  .product-details-content{
+    margin: 0 auto;
+  }
+ }
+}
+
+// @media screen and (max-width:990px) and (min-width:768px) {
+
+// }
+
+// @media screen and (max-width:768px) and (min-width:320px) {
+
+// }

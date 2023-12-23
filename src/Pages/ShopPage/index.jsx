@@ -5,8 +5,6 @@ import Header from "../../Layout/Header";
 import Navbar from "../../Layout/Navbar";
 import NavbarHeading from "../../Layout/NavbarHeading";
 import ProductCards from "../../components/ProductCards";
-import RangeSlider from "../../components/RangeSlider";
-import FilterShop from "../../components/FilterShop";
 function ShopPage() {
   const [currentPage, setCurrentPage] = useState(1);
   return (

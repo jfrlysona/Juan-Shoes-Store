@@ -1,14 +1,16 @@
-.pagination{
+.pagination {
     max-width: 966px;
     height: 79px;
     border: 1px solid #e5e5e5;
     display: grid;
     margin: 45px auto 0 !important;
-    ul{
+
+    ul {
         // max-width: 380px;
         margin: 0 auto !important;
-        li{
-            button{
+
+        li {
+            button {
                 width: 40px;
                 height: 40px;
                 border: 1px solid #e5e5e5;
@@ -16,21 +18,26 @@
                 font-size: 16px;
                 border-radius: 4px;
                 transition: all 200ms;
-                &:hover{
+
+                &:hover {
                     color: #fff !important;
                     border-color: #e3a51e !important;
                     background-color: #e3a51e !important;
                 }
-                &:hover .MuiSvgIcon-root{
-                   fill: #fff !important;
+
+                &:hover .MuiSvgIcon-root {
+                    fill: #fff !important;
 
                 }
             }
         }
     }
 }
-.Mui-selected{
+
+.Mui-selected {
     color: #fff !important;
     border-color: #e3a51e !important;
     background-color: #e3a51e !important;
 }
+
+// @media screen and (max-width:990px) and (min-width:320px) {}
