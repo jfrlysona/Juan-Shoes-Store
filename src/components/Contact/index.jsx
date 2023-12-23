@@ -7,54 +7,79 @@ function Contact() {
         <div className="contact-form">
           <h2>Tell Us Your Project</h2>
           <Formik
-       initialValues={{ email: '', password: '' }}
-       validate={values => {
-         const errors = {};
-         if (!values.email) {
-           errors.email = 'Required';
-         } else if (
-           !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-         ) {
-           errors.email = 'Invalid email address';
-         }
-         return errors;
-       }}
-       onSubmit={(values, { setSubmitting }) => {
-         setTimeout(() => {
-           alert(JSON.stringify(values, null, 2));
-           setSubmitting(false);
-         }, 400);
-       }}
-     >
-       {({ isSubmitting }) => (
-         <Form>
-          <div className="contact-inputs">
-           <Field type="text" name="name" placeholder="Name *" />
-           <ErrorMessage name="name" component="div" />
-           <Field type="tel" name="phone" placeholder="Phone *" />
-           <ErrorMessage name="phone" component="div" />
-           <Field type="email" name="email"  placeholder="Email *" />
-           <ErrorMessage name="email" component="div" />
-           <Field type="subject" name="subject" placeholder="Subject *"/>
-           <ErrorMessage name="subject" component="div" />
-          </div>
-          <textarea placeholder="Message *"></textarea>
-           <button type="submit" disabled={isSubmitting}>
-           SEND MESSAGE
-           </button>
-         </Form>
-       )}
-     </Formik>
-          {/* <form>
-            <div className="contact-inputs">
-              <input type="text" placeholder="Name *" />
-              <input type="text" placeholder="Phone *" />
-              <input type="text" placeholder="Email *" />
-              <input type="text" placeholder="Subject *" />
-            </div>
-            <textarea placeholder="Message *"></textarea>
-            <button>SEND MESSAGE</button>
-          </form> */}
+            initialValues={{
+              email: "",
+              name: "",
+              phone: "",
+              subject: "",
+              message: "",
+            }}
+            validate={(values) => {
+              const errors = {};
+              if (!values.email) {
+                errors.email = "Required";
+              } else if (
+                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+              ) {
+                errors.email = "Invalid email address";
+              }
+              if (!values.name) {
+                errors.name = "Required";
+              }
+              if (!values.subject) {
+                errors.subject = "Required";
+              }
+              if (!values.message) {
+                errors.message = "Required";
+              }
+              if (!values.phone) {
+                errors.phone = "Required";
+              } else if (!/^[\d()+-]*$/.test(values.phone)) {
+                errors.phone = "Use only digits and allowed characters";
+              }
+              return errors;
+            }}
+            onSubmit={(values, { setSubmitting }) => {
+              setTimeout(() => {
+                console.log(JSON.stringify(values, null, 2));
+                setSubmitting(false);
+              }, 400);
+            }}
+          >
+            {({ isSubmitting }) => (
+              <Form>
+                <div className="contact-inputs">
+                  <div>
+                    <Field type="text" name="name" placeholder="Name *" />
+                    <ErrorMessage name="name" component="span" />
+                  </div>
+                  <div>
+                    <Field type="tel" name="phone" placeholder="Phone *" />
+                    <ErrorMessage name="phone" component="span" />
+                  </div>
+                  <div>
+                    <Field type="email" name="email" placeholder="Email *" />
+                    <ErrorMessage name="email" component="span" />
+                  </div>
+                  <div>
+                    <Field
+                      type="subject"
+                      name="subject"
+                      placeholder="Subject *"
+                    />
+                    <ErrorMessage name="subject" component="span" />
+                  </div>
+                </div>
+                <div className="textarea">
+                  <Field as="textarea" name="message" placeholder="Message *" />
+                  <ErrorMessage name="message" component="span" />
+                </div>
+                <button type="submit" disabled={isSubmitting}>
+                  SEND MESSAGE
+                </button>
+              </Form>
+            )}
+          </Formik>
         </div>
         <div className="contact-text">
           <h2>Contact Us</h2>
