@@ -1,0 +1,46 @@
+.nav-menu-modal {
+    background-color: rgba(0, 0, 0, 0.405);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: left;
+
+    .nav-menu-container {
+        height: 100%;
+        width: 310px;
+        background-color: white;
+        margin: 0;
+        position: relative;
+        padding: 50px 20px;
+
+        .close-menu {
+            position: absolute;
+            right: -45px;
+            top: 0;
+            width: 45px;
+            height: 45px;
+            background-color: #e3a51e;
+
+            i {
+                font-size: 22px;
+                line-height: 45px;
+                color: white;
+                display: block;
+                text-align: center;
+                transition: 600ms;
+                user-select: none;
+            }
+
+            &:hover i {
+                transition: 600ms;
+                transform: rotate(180deg);
+            }
+
+        }
+
+    }
+}

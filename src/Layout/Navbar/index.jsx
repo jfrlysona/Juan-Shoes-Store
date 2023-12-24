@@ -3,10 +3,12 @@ import { Link, NavLink } from "react-router-dom";
 import CartModal from "../../components/CartModal";
 import { CartContext } from "../../context/CartProvider";
 import { Menu, MenuItem } from "@mui/material";
+import NavMenu from "../../components/NavMenu";
 
 function Navbar() {
   const { cart } = useContext(CartContext);
   const [openCartModal, setOpenCartModal] = useState(false);
+  const [openNavMenu, setOpenNavMenu] = useState(false);
   const [stickyNav, setStickyNav] = useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -86,8 +88,14 @@ function Navbar() {
               "aria-labelledby": "basic-button",
             }}
           >
-            <MenuItem onClick={handleClose}><Link style={{margin:"0"}}>My account</Link></MenuItem>
-            <MenuItem onClick={handleClose}><Link to="/login" style={{margin:"0"}}>Login</Link></MenuItem>
+            <MenuItem onClick={handleClose}>
+              <Link style={{ margin: "0" }}>My account</Link>
+            </MenuItem>
+            <MenuItem onClick={handleClose}>
+              <Link to="/login" style={{ margin: "0" }}>
+                Login
+              </Link>
+            </MenuItem>
           </Menu>
           <Link to="/wishlist">
             <i class="fa-sharp fa-light fa-heart"></i>
@@ -99,8 +107,15 @@ function Navbar() {
           >
             <sup>{cart.length ? cart.length : ""}</sup>
           </i>
+          <div className="nav-menu">
+            <i
+              className="fa-sharp fa-regular fa-bars"
+              onClick={() => setOpenNavMenu(true)}
+            ></i>
+          </div>
         </div>
       </div>
+      {openNavMenu ? <NavMenu closeMenu={() => setOpenNavMenu(false)} /> : null}
       {openCartModal ? (
         <CartModal closeModal={() => setOpenCartModal(false)} />
       ) : null}
