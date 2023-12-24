@@ -1,0 +1,49 @@
+.blog-comments{
+    .blog-comments-container{
+        h2{
+
+        }
+        .comments-content{
+            .comment-container{
+                .blog-comment-head{
+                    .blog-comment-img{
+                        img{
+
+                        }
+                    }
+                    .blog-comment-author{
+                        .blog-author-name{
+                            span{}
+                            p{}
+                        }
+                    }
+                    button{
+
+                    }
+                }
+            }
+        }
+    }
+    .blog-comments-reply{
+        .blog-comments-reply-container{
+            h2{}
+            p{}
+            .blog-comments-inputs{
+                .comment-textarea{
+                    p{}
+                    textarea{}
+                }
+                .comment-input{
+                    .comment-input-item{
+                        p{}
+                        input{}
+                    }
+                    .comment-email{
+                        // margin left
+                    }
+                }
+                button{}
+            }
+        }
+    }
+}

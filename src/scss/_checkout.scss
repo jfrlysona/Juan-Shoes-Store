@@ -1,0 +1,198 @@
+#checkout {
+    margin: 80px auto;
+    max-width: 1320px;
+    padding: 0 12px;
+
+    .checkout-accordion {
+        width: 100%;
+        .accordion-login {
+            margin-bottom: 30px;
+            .accordion-heading {
+                height: 55px;
+                background-color: #f7f7f7;
+                border-top: 3px solid #e3a51e;
+                padding: 15px 20px;
+                font-size: 18px;
+                color: #333;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+
+                span {
+                    margin-left: 10px;
+                    color: #e3a51e;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                    font-size: 18px;
+                    transition: all 400ms;
+
+                    &:hover {
+                        color: #333;
+                    }
+                }
+            }
+
+            .accordion-body {
+                border: 1px solid #ccc;
+                font-size: 14px;
+                padding: 20px;
+
+                .login-content {
+                    width: 100%;
+                    min-height: 300px;
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 6px 0px;
+                    padding: 25px 30px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .login-inputs {
+                        input {
+                            width: 100%;
+                            height: 50px;
+                            color: #666666;
+                            border: 1px solid #ccc;
+                            padding: 12px 10px;
+                            font-size: 14px;
+                            background: #f7f7f7;
+                            outline: none;
+                            margin: 10px 0;
+
+                            &::placeholder {
+                                font-style: italic;
+                                font-size: 13px;
+                                color: #8a8a8a;
+                            }
+
+                            &:focus {
+                                background-color: transparent;
+                                border-radius: 0;
+                                border: 1px solid #e3a51e;
+                            }
+                        }
+                    }
+
+                    .login-text {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 10px 0 20px;
+
+                        * {
+                            margin: 0;
+                        }
+
+                        .checkbox {
+                            span {
+                                font-size: 14px;
+                                color: #333333;
+                                padding: 0px;
+                            }
+                        }
+
+                        a {
+                            font-size: 12px;
+                            color: #e3a51e;
+                        }
+                    }
+
+                    button {
+                        border: none;
+                        cursor: pointer;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 1;
+                        color: #e3a51e;
+                        outline: none;
+                        transition: 0.4s;
+                        display: inline-block;
+                        padding: 14px 25px;
+                        background-color: #333333;
+
+                        &:hover {
+                            background-color: transparent;
+                            color: #666666;
+                        }
+                    }
+                }
+            }
+        }
+
+        .accordion-coupon {
+            .accordion-heading {
+                height: 55px;
+                background-color: #f7f7f7;
+                border-top: 3px solid #e3a51e;
+                padding: 15px 20px;
+                font-size: 18px;
+                color: #333;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+
+                span {
+                    margin-left: 10px;
+                    color: #e3a51e;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 500;
+                    font-size: 18px;
+                    transition: all 400ms;
+
+                    &:hover {
+                        color: #333;
+                    }
+                }
+            }
+
+            .accordion-body {
+                border: 1px solid #ccc;
+                font-size: 14px;
+                padding: 20px;
+
+                .coupon {
+                    max-width: 674px;
+                    width: 100%;
+                    height: 49px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0;
+
+                    input {
+                        max-width: 503px;
+                        width: 100%;
+                        height: 46px;
+                        border: 1px solid #ccc;
+                        outline: none;
+                        font-size: 14px;
+                        color: #000;
+                        padding: 10px 12px;
+                        margin: 0;
+
+                        &:focus {
+                            border-color: #e3a51e;
+                        }
+
+                        &::placeholder {
+                            font-style: italic;
+                            font-size: 13px;
+                        }
+                    }
+
+                    button {
+                        margin: 0;
+                        width: 171px;
+                        height: 46px;
+                        border: none;
+                        background-color: #333;
+                        color: #e3a51e;
+                        font-size: 16px;
+                        transition: all 600ms;
+
+                        &:hover {
+                            color: #666;
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

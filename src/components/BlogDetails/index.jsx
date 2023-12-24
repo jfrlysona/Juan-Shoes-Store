@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import BlogDetailsComments from "../BLogDetailsComments";
 
 function BlogDetails() {
   const [detailsBlog, setdetailsBlog] = useState([]);
@@ -44,6 +45,7 @@ function BlogDetails() {
           </div>
         </div>
       </div>
+      <BlogDetailsComments />
     </div>
   );
 }
