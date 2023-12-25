@@ -30,6 +30,7 @@ function App() {
           <Route path="/register" element={<RegisterPage />} />
         </Routes>
       </BrowserRouter>
+      {/* <Route path="/my-account">My Account</Route> */}
     </>
   );
 }
