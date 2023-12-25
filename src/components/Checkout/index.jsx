@@ -27,7 +27,7 @@ function Checkout() {
               data-aos="fade-down"
               data-aos-anchor="#example-anchor"
               data-aos-offset="500"
-              data-aos-duration="5000"
+              data-aos-duration="300"
             >
               <div className="login-content">
                 <Formik
@@ -117,7 +117,7 @@ function Checkout() {
               data-aos="fade-down"
               data-aos-anchor="#example-anchor"
               data-aos-offset="500"
-              data-aos-duration="5000"
+              data-aos-duration="300"
             >
               <div className="coupon">
                 <input type="text" placeholder="Enter Your Coupon Code" />

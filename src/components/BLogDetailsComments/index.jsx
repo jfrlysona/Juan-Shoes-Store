@@ -30,7 +30,7 @@ function BlogDetailsComments() {
               </p>
             </div>
           </div>
-          <div className="comment-container">
+          <div className="comment-container" style={{marginLeft:"40px"}}>
             <div className="blog-comment-head">
               <div className="blog-comment-img">
                 <img
@@ -87,7 +87,7 @@ function BlogDetailsComments() {
             <div className="blog-comments-inputs">
                 <div className="comment-textarea">
                     <p>Comment</p>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Write a comment"></textarea>
                 </div>
                 <div className="comment-input">
                     <div className="comment-input-item comment-name">

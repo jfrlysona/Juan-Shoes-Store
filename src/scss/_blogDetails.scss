@@ -1,4 +1,6 @@
 .blog-details {
+  padding: 80px 0;
+
   .blog-details-container {
     max-width: 966px;
 
@@ -70,5 +72,34 @@
       }
 
     }
+  }
+}
+
+@media screen and (max-width:990px) and (min-width:555px) {
+  .blog-details {
+    padding: 80px 50px;
+
+    .blog-details-container {
+       .blog-details-image {
+        img {
+          width: 100%;
+          height: 451px;
+        }
+      }
+    }
+  }
+}
+
+ @media screen and (max-width:555px) and (min-width:320px) {
+  .blog-details {
+    padding: 80px 12px;
+    .blog-details-container {
+      .blog-details-image {
+       img {
+         width: 100%;
+         height: 237px;
+       }
+     }
+   }
   }
 }

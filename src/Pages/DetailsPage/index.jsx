@@ -16,7 +16,7 @@ function DetailsPage() {
       <NavbarHeading />
       <Navbar />
       <Header
-        title="cart"
+        title="Product Details"
         prevLink="/shop"
         currentLink="/details/:id"
         prevPage="Shop"

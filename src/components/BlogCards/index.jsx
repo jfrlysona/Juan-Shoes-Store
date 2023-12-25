@@ -25,7 +25,7 @@ function BlogCards() {
 
   let totalPages = Math.ceil(blogs.length / blogsPerPage);
   return (
-    <div>
+    <section id="blogs">
       <div className="blog-cards">
         {paginatedBlogs.map((x) => (
           <BlogCard
@@ -43,7 +43,7 @@ function BlogCards() {
         setCurrentPage={setCurrentPage}
         totalPages={totalPages}
       />
-    </div>
+    </section>
   );
 }
 

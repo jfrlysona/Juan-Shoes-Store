@@ -4,11 +4,13 @@ import CartModal from "../../components/CartModal";
 import { CartContext } from "../../context/CartProvider";
 import { Menu, MenuItem } from "@mui/material";
 import NavMenu from "../../components/NavMenu";
+import Search from "../../components/Search";
 
 function Navbar() {
   const { cart } = useContext(CartContext);
   const [openCartModal, setOpenCartModal] = useState(false);
   const [openNavMenu, setOpenNavMenu] = useState(false);
+  const [openSearch, setOpenSearch] = useState(false);
   const [stickyNav, setStickyNav] = useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -70,7 +72,10 @@ function Navbar() {
           </ul>
         </div>
         <div className="nav-icons">
-          <i className="fa-sharp fa-regular fa-magnifying-glass"></i>
+          <i
+            className="fa-sharp fa-regular fa-magnifying-glass"
+            onClick={() => setOpenSearch(true)}
+          ></i>
           <i
             className="fa-sharp fa-light fa-gear-complex"
             id="basic-button"
@@ -115,6 +120,7 @@ function Navbar() {
           </div>
         </div>
       </div>
+      {openSearch ? <Search closeSearch={()=>setOpenSearch(false)}/> : null}
       {openNavMenu ? <NavMenu closeMenu={() => setOpenNavMenu(false)} /> : null}
       {openCartModal ? (
         <CartModal closeModal={() => setOpenCartModal(false)} />
