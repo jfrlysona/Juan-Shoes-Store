@@ -11,6 +11,7 @@ import BlogDetailsPage from "./Pages/BlogDetailsPage";
 import LoginPage from "./Pages/LoginPage";
 import RegisterPage from "./Pages/RegisterPage";
 import CheckoutPage from "./Pages/CheckoutPage";
+import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/details/:id" element={<DetailsPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
       {/* <Route path="/my-account">My Account</Route> */}
