@@ -137,6 +137,7 @@ footer {
     }
 
     span {
+        display: block;
         position: absolute;
         right: 30px;
         bottom: 60px;
@@ -154,4 +155,7 @@ footer {
             color: white;
         }
     }
+}
+.remove{
+    display:none !important;
 }

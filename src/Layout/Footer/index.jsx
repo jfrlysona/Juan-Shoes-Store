@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 function Footer() {
+  const [scrollToUp, setScrollToUp] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", scrollUp);
+
+    return () => {
+      window.removeEventListener("scroll", scrollUp);
+    };
+  }, []);
+
+  const scrollUp = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      windowHeight < 750 ? setScrollToUp(true) : setScrollToUp(false);
+    }
+  };
   const scrollToTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
@@ -98,7 +115,14 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <span onClick={scrollToTop}>
+      <span
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+        data-aos-offset="500"
+        data-aos-duration="500"
+        className={scrollToUp && "remove"}
+        onClick={scrollToTop}
+      >
         <i className="fa-regular fa-chevron-up"></i>
       </span>
     </footer>

@@ -11,7 +11,10 @@ function LoginPage() {
     <>
       <Helmet>
         <title>Juan - Shoes Store | Login</title>
-        {/* <link rel="canonical" href="https://www.tacobell.com/" /> */}
+        <link
+          rel="shortcut icon"
+          href="https://htmldemo.net/juan/juan/assets/img/favicon.ico"
+        />
       </Helmet>
       <NavbarHeading />
       <Navbar />

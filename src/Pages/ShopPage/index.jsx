@@ -11,7 +11,10 @@ function ShopPage() {
     <>
       <Helmet>
         <title>Juan - Shoes Store | Shop</title>
-        {/* <link rel="canonical" href="https://www.tacobell.com/" /> */}
+        <link
+          rel="shortcut icon"
+          href="https://htmldemo.net/juan/juan/assets/img/favicon.ico"
+        />
       </Helmet>
       <NavbarHeading />
       <Navbar />
@@ -22,7 +25,7 @@ function ShopPage() {
         prevPage="Home"
         currentPage="Shop"
       />
-      
+
       <ProductCards setCurrentPage={setCurrentPage} currentPage={currentPage} />
       <Footer />
     </>
