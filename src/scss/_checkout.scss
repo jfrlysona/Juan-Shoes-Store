@@ -196,4 +196,181 @@
             }
         }
     }
+
+    .checkout-container {
+        display: flex;
+        gap: 20px;
+        padding: 40px 0;
+
+        .checkout-billing {
+            width: 50%;
+            margin: 0;
+
+            * {
+                margin: 0;
+            }
+
+            h2 {
+                font-size: 24px;
+                line-height: 60px;
+                color: #333;
+                font-family: Montserrat, sans-serif;
+                font-weight: 500;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .checkout-inputs {
+                padding: 40px 0;
+
+                .checkout-input-name {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    column-gap: 25px;
+                }
+
+                div {
+                    label {
+                        color: #333;
+                        font-size: 14px;
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 50px;
+                        color: #666666;
+                        border: 1px solid #ccc;
+                        padding: 12px 10px;
+                        font-size: 14px;
+                        background: #f7f7f7;
+                        outline: none;
+                        margin: 10px 0;
+
+                        &::placeholder {
+                            font-style: italic;
+                            font-size: 13px;
+                            color: #8a8a8a;
+                        }
+
+                        &:focus {
+                            background-color: transparent;
+                            border-radius: 0;
+                            border: 1px solid #e3a51e;
+                        }
+                    }
+
+                    textarea {
+                        padding: 10px;
+                        max-width: 636px;
+                        width: 100%;
+                        height: 100px;
+                        background-color: #f3f6f5;
+                        outline: none;
+                        color: #000;
+                        border: 1px solid #ccc;
+
+                        &::placeholder {
+                            font-style: italic;
+                        }
+
+                        &:focus {
+                            background-color: transparent;
+                            border-radius: 0;
+                            border: 1px solid #e3a51e;
+                        }
+                    }
+
+                    select {
+                        width: 100%;
+                        height: 50px;
+                        color: #666666;
+                        border: 1px solid #ccc;
+                        padding: 12px 10px;
+                        font-size: 14px;
+                        background: #f7f7f7;
+                        outline: none;
+                        margin: 10px 0;
+
+                    }
+                }
+            }
+        }
+
+        .checkout-summary {
+            width: 50%;
+            margin: 0;
+
+            * {
+                margin: 0;
+            }
+
+            h2 {
+                font-size: 24px;
+                line-height: 60px;
+                color: #333;
+                font-family: Montserrat, sans-serif;
+                font-weight: 500;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .summary {
+                margin: 40px 0;
+                background: #f7f7f7;
+
+                .table-summary {
+                    table {
+                        width: 100%;
+                        color: #333;
+                        border: 1px solid #ccc;
+                        font-size: 15px;
+                        padding: 12px 10px;
+                        border-collapse: collapse;
+
+                        tr td,
+                        th {
+                            color: #333;
+                            text-align: center;
+                            border: 1px solid #ccc;
+                            height: 50px;
+                        }
+
+                        td {
+                            width: 60%;
+                        }
+
+                        .total-price {
+                            width: 40%;
+                        }
+                    }
+                }
+
+                .radio {
+                    .css-dmmspl-MuiFormGroup-root {
+                        .css-ahj2mt-MuiTypography-root {
+                            color: #333;
+                            font-size: 14px;
+                        }
+                    }
+
+                    button {
+                        border: none;
+                        cursor: pointer;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 1;
+                        color: #e3a51e;
+                        outline: none;
+                        transition: 0.4s;
+                        display: inline-block;
+                        padding: 14px 25px;
+                        background-color: #333333;
+
+                        &:hover {
+                            background-color: transparent;
+                            color: #666666;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

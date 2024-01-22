@@ -1,9 +1,16 @@
-import { Checkbox } from "@mui/material";
+import {
+  Checkbox,
+  FormControlLabel,
+  FormGroup,
+  Radio,
+  RadioGroup,
+} from "@mui/material";
 import { Formik } from "formik";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { CartContext } from "../../context/CartProvider";
 AOS.init();
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
@@ -11,6 +18,10 @@ const label = { inputProps: { "aria-label": "Checkbox demo" } };
 function Checkout() {
   const [openLogin, setOpenLogin] = useState(false);
   const [openCoupon, setOpenCoupon] = useState(false);
+  const { cart } = useContext(CartContext);
+  const total = cart.reduce((acc, item) => acc + item.price * item.count, 0);
+  const shippingPrice = total * 0.1;
+  const totalPrice = total + shippingPrice;
   return (
     <section id="checkout">
       <div className="checkout-accordion">
@@ -106,7 +117,7 @@ function Checkout() {
         </div>
         <div className="accordion-coupon">
           <div className="accordion-heading">
-            Have A Coupon?{" "}
+            Have A Coupon?
             <span onClick={() => setOpenCoupon((open) => !open)}>
               Click Here To Enter Your Code
             </span>
@@ -131,19 +142,141 @@ function Checkout() {
         <div className="checkout-billing">
           <h2>Billing Details</h2>
           <div className="checkout-inputs">
-            <div className="checkout-input-name"></div>
-            <div className="checkout-input-email"></div>
-            <div className="checkout-input-company"></div>
-            <div className="checkout-input-country"></div>
-            <div className="checkout-input-street"></div>
-            <div className="checkout-input-town"></div>
-            <div className="checkout-input-state"></div>
-            <div className="checkout-input-zip"></div>
-            <div className="checkout-input-phone"></div>
+            <div className="checkout-input-name">
+              <label htmlFor="firstName">First Name</label>
+              <label htmlFor="lastName">Last Name</label>
+              <input type="text" id="firstName" placeholder="First Name" />
+              <input type="text" id="lastName" placeholder="Last Name" />
+            </div>
+            <div className="checkout-input-email">
+              <label htmlFor="email">Email Address</label>
+              <input type="text" id="email" placeholder="Email Address" />
+            </div>
+            <div className="checkout-input-company">
+              <label htmlFor="company">Company Name</label>
+              <input type="text" id="company" placeholder="Company Name" />
+            </div>
+            <div className="checkout-input-country">
+              <label htmlFor="country">Country</label>
+              <select name="country" id="country">
+                <option value="azerbaijan">Azerbaijan</option>
+                <option value="china">China</option>
+                <option value="russia">Russia</option>
+                <option value="usa">USA</option>
+              </select>
+            </div>
+            <div className="checkout-input-street">
+              <label htmlFor="street">Street Address</label>
+              <input
+                type="text"
+                id="street"
+                placeholder="Street address Line 1"
+              />
+              <input
+                type="text"
+                id="street"
+                placeholder="Street address Line 2 (Optional)"
+              />
+            </div>
+            <div className="checkout-input-town">
+              <label htmlFor="town">Town / City</label>
+              <input type="text" id="town" placeholder="Town / City" />
+            </div>
+            <div className="checkout-input-state">
+              <label htmlFor="state">State / Divition</label>
+              <input type="text" id="state" placeholder="State / Divition" />
+            </div>
+            <div className="checkout-input-zip">
+              <label htmlFor="zip">Postcode / ZIP</label>
+              <input type="text" id="zip" placeholder="Postcode / ZIP" />
+            </div>
+            <div className="checkout-input-phone">
+              <label htmlFor="phone">Phone</label>
+              <input type="text" id="phone" placeholder="Phone" />
+            </div>
+            <div className="checkout-input-note">
+              <label htmlFor="note">Order Note</label>
+              <textarea
+                id="note"
+                cols="30"
+                rows="10"
+                placeholder="Notes about your order, e.g special notes for delivery."
+              ></textarea>
+            </div>
           </div>
         </div>
         <div className="checkout-summary">
           <h2>Your Order Summary</h2>
+          <div className="summary">
+            <div className="table-summary">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Products</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {cart.map((x) => (
+                    <tr key={x.id}>
+                      <td>{x.name}</td>
+                      <td>${x.price}</td>
+                    </tr>
+                  ))}
+                  <tr>
+                    <td>Sub Total</td>
+                    <td className="total-price">${total.toFixed(2)}</td>
+                  </tr>
+                  <tr>
+                    <td>Shipping</td>
+                    <td className="total-price">${shippingPrice.toFixed(2)}</td>
+                  </tr>
+                  <tr>
+                    <td>Total Amount</td>
+                    <td className="total-price">${totalPrice.toFixed(2)}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="radio">
+              <FormGroup>
+                <RadioGroup
+                  aria-labelledby="demo-radio-buttons-group-label"
+                  defaultValue="pay"
+                  name="radio-buttons-group"
+                >
+                  <FormControlLabel
+                    value="cash"
+                    control={<Radio size="small" />}
+                    label="Cash On Delivery"
+                  />
+                  <FormControlLabel
+                    value="transfer"
+                    control={<Radio size="small" />}
+                    label="Direct Bank Transfer"
+                  />
+                  <FormControlLabel
+                    value="check"
+                    control={<Radio size="small" />}
+                    label="Pay with Check"
+                  />
+                  <FormControlLabel
+                    value="paypal"
+                    control={<Radio size="small" />}
+                    label="Paypal"
+                  />
+                </RadioGroup>
+                <FormControlLabel
+                  required
+                  control={<Checkbox size="small" />}
+                  label={
+                    "I have read and agree to the website  terms and conditions."
+                  }
+                />
+              </FormGroup>
+              <button>PLACE ORDER</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
