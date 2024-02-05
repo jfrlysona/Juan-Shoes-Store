@@ -14,7 +14,12 @@ function WishlistProvider({ children }) {
   function removeItemWishlist(item) {
     setWishlist(wishlist.filter((x) => x.id !== item.id));
   }
-  const datas = { wishlist, addWishlist, removeItemWishlist };
+
+  function isWishlist(item) {
+    return wishlist.findIndex((x) => x.id === item.id) === -1 ? false : true;
+  }
+
+  const datas = { wishlist, addWishlist, removeItemWishlist, isWishlist };
   return (
     <WishlistContext.Provider value={datas}>
       {children}

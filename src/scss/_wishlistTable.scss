@@ -1,5 +1,6 @@
 #wishlist {
   padding: 80px 0;
+
   .wishlist-table-container {
     max-width: 1320px;
     width: 100%;
@@ -77,17 +78,24 @@
     }
   }
 }
-.wishlist-add-cart{
+
+.wishlist-add-cart {
   transition: all 500ms;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     color: #e3a51e;
   }
 }
+
 .empty-wishlist {
   text-align: center;
   color: #333;
-  height: 55px;
-  line-height: 55px;
+  line-height: 35px;
+  font-size: 17px;
+
+  a {
+    font-weight: 600;
+    color: #e3a51e;
+  }
 }

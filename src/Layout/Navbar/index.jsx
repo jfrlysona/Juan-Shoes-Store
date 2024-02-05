@@ -103,7 +103,7 @@ function Navbar() {
             </MenuItem>
           </Menu>
           <Link to="/wishlist">
-            <i class="fa-sharp fa-light fa-heart"></i>
+            <i className="fa-sharp fa-light fa-heart"></i>
           </Link>
           <i
             className="fa-sharp fa-light fa-bag-shopping"
@@ -120,7 +120,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-      {openSearch ? <Search closeSearch={()=>setOpenSearch(false)}/> : null}
+      {openSearch ? <Search closeSearch={() => setOpenSearch(false)} /> : null}
       {openNavMenu ? <NavMenu closeMenu={() => setOpenNavMenu(false)} /> : null}
       {openCartModal ? (
         <CartModal closeModal={() => setOpenCartModal(false)} />

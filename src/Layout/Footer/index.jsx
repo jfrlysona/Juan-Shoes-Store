@@ -120,7 +120,7 @@ function Footer() {
         data-aos-anchor-placement="bottom-bottom"
         data-aos-offset="500"
         data-aos-duration="500"
-        className={scrollToUp && "remove"}
+        className={scrollToUp ? "remove" : null}
         onClick={scrollToTop}
       >
         <i className="fa-regular fa-chevron-up"></i>

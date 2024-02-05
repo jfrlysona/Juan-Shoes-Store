@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function ProductCard({ title, price, oldPrice, image, item, id, inSlider }) {
   const { addCart } = useContext(CartContext);
-  const { addWishlist } = useContext(WishlistContext);
+  const { addWishlist, isWishlist } = useContext(WishlistContext);
   const [openQuickView, setOpenQuickView] = useState(null);
   const openQuickViewModal = () => {
     document.body.classList.add("overflow-hidden");
@@ -42,7 +42,11 @@ function ProductCard({ title, price, oldPrice, image, item, id, inSlider }) {
           onClick={() => addWishlist(item)}
           data-tooltip-id="wishlist"
         >
-          <i className="fa-sharp fa-light fa-heart"></i>
+          {isWishlist(item) ? (
+            <i className="fa-sharp fa-solid fa-heart"></i>
+          ) : (
+            <i className="fa-sharp fa-light fa-heart"></i>
+          )}
         </div>
         <Tooltip
           id="wishlist"

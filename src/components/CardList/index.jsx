@@ -7,7 +7,7 @@ import { CartContext } from "../../context/CartProvider";
 
 function CardList({ title, price, oldPrice, image, item, id, desc }) {
   const { addCart } = useContext(CartContext);
-  const { addWishlist } = useContext(WishlistContext);
+  const { addWishlist, isWishlist } = useContext(WishlistContext);
   const [openQuickView, setOpenQuickView] = useState(null);
   const openQuickViewModal = () => {
     document.body.classList.add("overflow-hidden");
@@ -23,13 +23,15 @@ function CardList({ title, price, oldPrice, image, item, id, desc }) {
   return (
     <div className="card-list">
       <div className="card-list-img">
-        <Link to={"/details/" + id} onClick={()=>handleLinkClick()}>
+        <Link to={"/details/" + id} onClick={() => handleLinkClick()}>
           <img src={image} alt="product image" />
         </Link>
       </div>
       <div className="card-list-content">
         <div className="card-list-text">
-        <Link to={"/details/" + id} onClick={()=>handleLinkClick()}>{title}</Link>
+          <Link to={"/details/" + id} onClick={() => handleLinkClick()}>
+            {title}
+          </Link>
           <p className="card-list-price">
             ${price.toFixed(2)}{" "}
             <span>
@@ -44,7 +46,11 @@ function CardList({ title, price, oldPrice, image, item, id, desc }) {
             onClick={() => addWishlist(item)}
             data-tooltip-id="wishlist"
           >
-            <i className="fa-sharp fa-light fa-heart"></i>
+            {isWishlist(item) ? (
+              <i className="fa-sharp fa-solid fa-heart"></i>
+            ) : (
+              <i className="fa-sharp fa-light fa-heart"></i>
+            )}
           </div>
           <Tooltip
             id="wishlist"

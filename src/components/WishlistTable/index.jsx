@@ -5,34 +5,40 @@ import { CartContext } from "../../context/CartProvider";
 
 function WishlistTable() {
   const { wishlist, removeItemWishlist } = useContext(WishlistContext);
-  const {addCart}=useContext(CartContext)
+  const { addCart } = useContext(CartContext);
   return (
     <section id="wishlist">
-      <table className="wishlist-table-container">
-        <thead>
-          <tr>
-            <th>THUMBNAIL</th>
-            <th style={{ width: "594px" }}>PRODUCT</th>
-            <th>PRICE</th>
-            <th>STOCK STATUS</th>
-            <th>ADD TO CART</th>
-            <th>REMOVE</th>
-          </tr>
-        </thead>
-        <tbody>
-          {wishlist.length ? (
-            wishlist.map((x) => (
+      {wishlist.length ? (
+        <table className="wishlist-table-container">
+          <thead>
+            <tr>
+              <th>THUMBNAIL</th>
+              <th style={{ width: "594px" }}>PRODUCT</th>
+              <th>PRICE</th>
+              <th>STOCK STATUS</th>
+              <th>ADD TO CART</th>
+              <th>REMOVE</th>
+            </tr>
+          </thead>
+          <tbody>
+            {wishlist.map((x) => (
               <tr key={x.id}>
                 <td>
                   <img src={x.thumbnail} alt="card item" />
                 </td>
                 <td className="product-name">
-                  <Link to={"/details/"+x.id}>{x.name}</Link>
+                  <Link to={"/details/" + x.id}>{x.name}</Link>
                 </td>
-                <td>${(x.price).toFixed(2)}</td>
-                <td className={x.stockStatus === "In Stock" ? "green" : "red"}>{x.stockStatus}</td>
+                <td>${x.price.toFixed(2)}</td>
+                <td className={x.stockStatus === "In Stock" ? "green" : "red"}>
+                  {x.stockStatus}
+                </td>
                 <td>
-                  <Link to="/cart" className="wishlist-add-cart" onClick={()=>addCart(x)}>
+                  <Link
+                    to="/cart"
+                    className="wishlist-add-cart"
+                    onClick={() => addCart(x)}
+                  >
                     Add to Cart
                   </Link>
                 </td>
@@ -43,12 +49,14 @@ function WishlistTable() {
                   ></i>
                 </td>
               </tr>
-            ))
-          ) : (
-            <p className="empty-wishlist">Wishlist is empty</p>
-          )}
-        </tbody>
-      </table>
+            ))}
+          </tbody>
+        </table>
+      ) : (
+        <p className="empty-wishlist">
+          Wishlist is empty <br /> Back to <Link to="/shop">shop page</Link>
+        </p>
+      )}
     </section>
   );
 }

@@ -8,7 +8,7 @@ import QuickView from "../QuickView";
 
 function TopSellerSlider() {
   const { addCart } = useContext(CartContext);
-  const { addWishlist } = useContext(WishlistContext);
+  const { addWishlist,isWishlist } = useContext(WishlistContext);
   const [topSellers, setTopSellers] = useState([]);
 
   useEffect(() => {
@@ -49,7 +49,7 @@ function TopSellerSlider() {
   return (
     <Slider {...settings} className="top-seller-slider">
       {topSellers.map((x) => (
-        <div className="top-seller-card">
+        <div className="top-seller-card" key={x.id}>
           <div className="top-seller-card-img">
             <Link to={"/details/" + x.id}>
               <img src={x.thumbnail} alt="card image" />
@@ -82,7 +82,11 @@ function TopSellerSlider() {
                 onClick={() => addWishlist(x)}
                 data-tooltip-id="wishlist"
               >
-                <i className="fa-sharp fa-light fa-heart"></i>
+                {isWishlist(x) ? (
+                  <i className="fa-sharp fa-solid fa-heart"></i>
+                ) : (
+                  <i className="fa-sharp fa-light fa-heart"></i>
+                )}
               </div>
               <Tooltip
                 id="wishlist"
