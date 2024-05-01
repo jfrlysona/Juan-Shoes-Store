@@ -1,4 +1,4 @@
-import { ErrorMessage, Field, Form, Formik } from "formik";
+import { ErrorMessage, Field, Form, Formik, FieldArray } from "formik";
 import React, { useEffect, useState } from "react";
 import * as Yup from "yup";
 function Admin() {
@@ -51,26 +51,42 @@ function Admin() {
       }
     ).then(() => window.location.reload());
   }
+  function handleSubmitBlog(values) {
+    fetch(
+      "https://6573c101f941bda3f2af1e82.mockapi.io/juan-store/api/v1/blogs",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application.json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      }
+    ).then(() => window.location.reload());
+  }
   return (
     <section className="admin">
-      <button
-        onClick={() => {
-          setOpenProducts(true);
-          setOpenBlogs(false);
-        }}
-      >
-        products
-      </button>
-      <button
-        onClick={() => {
-          setOpenBlogs(true);
-          setOpenProducts(false);
-        }}
-      >
-        blogs
-      </button>
+      <div className="tab-btn">
+        <button
+          onClick={() => {
+            setOpenProducts(true);
+            setOpenBlogs(false);
+          }}
+        >
+          products
+        </button>
+        <button
+          onClick={() => {
+            setOpenBlogs(true);
+            setOpenProducts(false);
+          }}
+        >
+          blogs
+        </button>
+      </div>
+
       {openProducts && (
-        <>
+        <div className="container-table">
           <table>
             <thead>
               <tr>
@@ -217,37 +233,143 @@ function Admin() {
               </Form>
             </Formik>
           </div>
-        </>
+        </div>
       )}
       {openBlogs && (
-        <table>
-          <thead>
-            <tr>
-              <th>Image</th>
-              <th>Title</th>
-              <th>Date</th>
-              <th>Delete</th>
-              <th>Update</th>
-            </tr>
-          </thead>
-          <tbody>
-            {blogs.map((y) => (
-              <tr key={y.id}>
-                <td>
-                  <img src={y.image} alt="" width={"200"} />
-                </td>
-                <td>{y.title}</td>
-                <td>{y.createdAt[1]}</td>
-                <td>
-                  <button onClick={() => deleteBlog(y.id)}>delete</button>
-                </td>
-                <td>
-                  <button>update</button>
-                </td>
+        <div className="container-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Delete</th>
+                <th>Update</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {blogs.map((y) => (
+                <tr key={y.id}>
+                  <td>
+                    <img src={y.image} alt="" width={"200"} />
+                  </td>
+                  <td>{y.title}</td>
+                  <td>{y.createdAt[0]}</td>
+                  <td>
+                    <button onClick={() => deleteBlog(y.id)}>delete</button>
+                  </td>
+                  <td>
+                    <button>update</button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <div className="add-product">
+            <Formik
+              initialValues={{
+                image: "",
+                title: "",
+                author: "",
+                additionalContent: [""],
+                description: "",
+                blockquote: "",
+                createdAt: [new Date().toISOString()],
+              }}
+              validationSchema={Yup.object({
+                image: Yup.string()
+                  .min(2, "Must be 2 characters at least")
+                  .required("Required"),
+                title: Yup.string()
+                  .min(2, "Must be 2 characters at least")
+                  .required("Required"),
+                author: Yup.string()
+                  .min(2, "Must be 2 characters at least")
+                  .required("Required"),
+                additionalContent: Yup.array().of(
+                  Yup.string()
+                    .min(20, "Must be 20 characters at least")
+                    .required("Required")
+                ),
+                description: Yup.string()
+                  .min(100, "Must be 100 characters at least")
+                  .required("Required"),
+                blockquote: Yup.string()
+                  .min(20, "Must be 20 characters at least")
+                  .required("Required"),
+                createdAt: Yup.array().of(
+                  Yup.string().matches(
+                    /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z$/,
+                    "Invalid date format"
+                  )
+                ),
+              })}
+              onSubmit={(values, { setSubmitting }) => {
+                handleSubmitBlog(values);
+                setSubmitting(false);
+              }}
+            >
+              <Form>
+                <label htmlFor="image">Image :</label>
+                <Field name="image" type="text" id="image" />
+                <ErrorMessage name="image" />
+
+                <label htmlFor="title">Title :</label>
+                <Field name="title" type="text" id="title" />
+                <ErrorMessage name="title" />
+
+                <label htmlFor="author">Author :</label>
+                <Field name="author" type="text" id="author" />
+                <ErrorMessage name="author" />
+
+                <label htmlFor="description">Description :</label>
+                <Field
+                  as="textarea"
+                  name="description"
+                  type="text"
+                  id="description"
+                />
+                <ErrorMessage name="description" />
+
+                <label htmlFor="additionalContent">Additional Content :</label>
+                <FieldArray name="additionalContent">
+                  {({ push, remove, form }) => (
+                    <div>
+                      {form.values.additionalContent.map((content, index) => (
+                        <div key={index}>
+                          <Field
+                            as="textarea"
+                            name={`additionalContent.${index}`}
+                            type="text"
+                            id={`additionalContent.${index}`}
+                          />
+                          <ErrorMessage name={`additionalContent.${index}`} />
+                          <button type="button" onClick={() => remove(index)}>
+                            <i className="fa-solid fa-xmark"></i>
+                          </button>
+                        </div>
+                      ))}
+                      <button type="button" onClick={() => push("")}>
+                        <i className="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
+                  )}
+                </FieldArray>
+
+                <label htmlFor="blockquote">Blockquote :</label>
+                <Field
+                  as="textarea"
+                  name="blockquote"
+                  type="text"
+                  id="blockquote"
+                />
+                <ErrorMessage name="blockquote" />
+
+                <button type="submit">Add</button>
+              </Form>
+            </Formik>
+          </div>
+        </div>
       )}
     </section>
   );

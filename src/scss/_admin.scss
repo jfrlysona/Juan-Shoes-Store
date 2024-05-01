@@ -1,0 +1,113 @@
+.admin {
+    padding: 50px 0 100px;
+
+    .tab-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: max-content;
+        margin-bottom: 30px;
+
+        button {
+            width: 88px;
+            height: 44px;
+            background-color: #F6F6F6;
+            transition: all 500ms;
+            display: grid;
+            place-items: center;
+            color: #333;
+            font-size: 20px;
+            border: none;
+            font-variant: small-caps;
+            padding-bottom: 5px;
+
+            &:hover {
+                color: #fff;
+                background-color: #e3a51e;
+            }
+        }
+    }
+
+    .container-table {
+        display: flex;
+        max-width: 1320px;
+        gap: 50px;
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            padding: 0 12px;
+
+            thead {
+                border-collapse: collapse;
+                border: none;
+                box-shadow: (0, 0, 0, 0) 0px 0px 0px 9999px inset;
+
+                tr {
+                    height: 55px;
+                    background-color: #e3a51e;
+
+                    th {
+                        color: white;
+                        font-size: 14px;
+                        line-height: 24px;
+                        text-align: center;
+                        font-weight: 600;
+                        width: 140px;
+                    }
+                }
+            }
+
+            tbody {
+                border: 1px solid #ccc;
+
+                tr {
+                    border: 1px solid #ccc;
+
+                    td {
+                        height: 123px;
+                        width: 140px;
+                        border: 1px solid #ccc;
+                        text-align: center;
+                        color: #333;
+                        line-height: 28px;
+                        font-size: 16px;
+
+                        img {
+                            max-width: max-content;
+                            width: 100%;
+                            max-height: max-content;
+                            height: 100%;
+                        }
+
+                        button {
+                            transition: all 500ms;
+                            cursor: pointer;
+                            border: #e3a51e 1px solid;
+                            padding: 5px 15px;
+                            border-radius: 5px;
+                            color: #e3a51e;
+                            background-color: white;
+
+                            &:hover {
+                                background-color: #e3a51e;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .add-product {
+            background-color: #F6F6F6;
+            padding: 40px 60px;
+            height: max-content;
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+    }
+}
