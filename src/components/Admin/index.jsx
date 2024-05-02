@@ -94,7 +94,6 @@ function Admin() {
                 <th>Title</th>
                 <th>Price</th>
                 <th>Delete</th>
-                <th>Update</th>
               </tr>
             </thead>
             <tbody>
@@ -107,9 +106,6 @@ function Admin() {
                   <td>${x.price}</td>
                   <td>
                     <button onClick={() => deleteProduct(x.id)}>delete</button>
-                  </td>
-                  <td>
-                    <button>update</button>
                   </td>
                 </tr>
               ))}
@@ -169,40 +165,44 @@ function Admin() {
               <Form>
                 <label htmlFor="thumbnail">Image :</label>
                 <Field name="thumbnail" type="text" id="thumbnail" />
-                <ErrorMessage name="thumbnail" />
+                <ErrorMessage name="thumbnail" component={"span"} />
 
                 <label htmlFor="name">Title :</label>
                 <Field name="name" type="text" id="name" />
-                <ErrorMessage name="name" />
+                <ErrorMessage name="name" component={"span"} />
 
                 <label htmlFor="price">Price :</label>
                 <Field name="price" type="number" id="price" />
-                <ErrorMessage name="price" />
+                <ErrorMessage name="price" component={"span"} />
 
                 <label htmlFor="category">Category :</label>
                 <Field name="category" type="text" id="category" />
-                <ErrorMessage name="category" />
+                <ErrorMessage name="category" component={"span"} />
 
                 <label htmlFor="model">Model :</label>
                 <Field name="model" type="text" id="model" />
-                <ErrorMessage name="model" />
+                <ErrorMessage name="model" component={"span"} />
+                <div className="stock">
+                  <p>Stock status :</p>
+                  <div className="stockinp">
+                    <Field
+                      name="stockStatus"
+                      type="radio"
+                      id="stockStatus1"
+                      value="In Stock"
+                    />
+                    <label htmlFor="stockStatus1">In Stock</label>
+                    <Field
+                      name="stockStatus"
+                      type="radio"
+                      id="stockStatus2"
+                      value="Stock Out"
+                    />
+                    <label htmlFor="stockStatus2">Stock Out</label>
+                  </div>
 
-                <span>Stock status :</span>
-                <Field
-                  name="stockStatus"
-                  type="radio"
-                  id="stockStatus1"
-                  value="In Stock"
-                />
-                <label htmlFor="stockStatus1">In Stock</label>
-                <Field
-                  name="stockStatus"
-                  type="radio"
-                  id="stockStatus2"
-                  value="Stock Out"
-                />
-                <label htmlFor="stockStatus2">Stock Out</label>
-                <ErrorMessage name="stockStatus" />
+                  <ErrorMessage name="stockStatus" component={"span"} />
+                </div>
 
                 <label htmlFor="description">Description :</label>
                 <Field
@@ -211,7 +211,7 @@ function Admin() {
                   type="text"
                   id="description"
                 />
-                <ErrorMessage name="description.text" />
+                <ErrorMessage name="description.text" component={"span"} />
 
                 <label htmlFor="information.color">Color :</label>
                 <Field
@@ -219,7 +219,7 @@ function Admin() {
                   type="text"
                   id="information.color"
                 />
-                <ErrorMessage name="information.color" />
+                <ErrorMessage name="information.color" component={"span"} />
 
                 <label htmlFor="information.size">Size :</label>
                 <Field
@@ -227,7 +227,7 @@ function Admin() {
                   type="text"
                   id="information.size"
                 />
-                <ErrorMessage name="information.size" />
+                <ErrorMessage name="information.size" component={"span"} />
 
                 <button type="submit">Add</button>
               </Form>
@@ -244,7 +244,6 @@ function Admin() {
                 <th>Title</th>
                 <th>Date</th>
                 <th>Delete</th>
-                <th>Update</th>
               </tr>
             </thead>
             <tbody>
@@ -257,9 +256,6 @@ function Admin() {
                   <td>{y.createdAt[0]}</td>
                   <td>
                     <button onClick={() => deleteBlog(y.id)}>delete</button>
-                  </td>
-                  <td>
-                    <button>update</button>
                   </td>
                 </tr>
               ))}
@@ -312,15 +308,15 @@ function Admin() {
               <Form>
                 <label htmlFor="image">Image :</label>
                 <Field name="image" type="text" id="image" />
-                <ErrorMessage name="image" />
+                <ErrorMessage name="image" component={"span"} />
 
                 <label htmlFor="title">Title :</label>
                 <Field name="title" type="text" id="title" />
-                <ErrorMessage name="title" />
+                <ErrorMessage name="title" component={"span"} />
 
                 <label htmlFor="author">Author :</label>
                 <Field name="author" type="text" id="author" />
-                <ErrorMessage name="author" />
+                <ErrorMessage name="author" component={"span"} />
 
                 <label htmlFor="description">Description :</label>
                 <Field
@@ -329,29 +325,35 @@ function Admin() {
                   type="text"
                   id="description"
                 />
-                <ErrorMessage name="description" />
+                <ErrorMessage name="description" component={"span"} />
 
                 <label htmlFor="additionalContent">Additional Content :</label>
                 <FieldArray name="additionalContent">
                   {({ push, remove, form }) => (
-                    <div>
+                    <div className="additional">
                       {form.values.additionalContent.map((content, index) => (
-                        <div key={index}>
+                        <div key={index} className="erroradditional">
                           <Field
                             as="textarea"
                             name={`additionalContent.${index}`}
                             type="text"
                             id={`additionalContent.${index}`}
                           />
-                          <ErrorMessage name={`additionalContent.${index}`} />
-                          <button type="button" onClick={() => remove(index)}>
-                            <i className="fa-solid fa-xmark"></i>
-                          </button>
+                          <ErrorMessage
+                            name={`additionalContent.${index}`}
+                            component={"span"}
+                          />
+                          <i
+                            className="fa-solid fa-xmark"
+                            type="button"
+                            onClick={() => remove(index)}
+                          ></i>
                         </div>
                       ))}
-                      <button type="button" onClick={() => push("")}>
-                        <i className="fa-solid fa-plus"></i>
-                      </button>
+                      <i
+                        className="fa-solid fa-plus"
+                        onClick={() => push("")}
+                      ></i>
                     </div>
                   )}
                 </FieldArray>
@@ -363,7 +365,7 @@ function Admin() {
                   type="text"
                   id="blockquote"
                 />
-                <ErrorMessage name="blockquote" />
+                <ErrorMessage name="blockquote" component={"span"} />
 
                 <button type="submit">Add</button>
               </Form>

@@ -1,6 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import emailjs from "@emailjs/browser";
 function Contact() {
+  const form = useRef();
+  const sendEmail = (values) => {
+    const templateParams = {
+      from_name: values.name,
+      from_email: values.email,
+      to_name: "Juan team",
+      message: values.message,
+      subject: values.subject,
+      phone: values.phone,
+    };
+
+    emailjs
+      .send("service_k1d1vbj", "template_r8ulnco", templateParams, {
+        publicKey: "pWNZ_zemwjWdjhKrB",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <div className="contact">
       <div className="contact-container">
@@ -39,15 +64,14 @@ function Contact() {
               }
               return errors;
             }}
-            onSubmit={(values, { setSubmitting }) => {
-              setTimeout(() => {
-                console.log(JSON.stringify(values, null, 2));
-                setSubmitting(false);
-              }, 400);
+            onSubmit={(values, { setSubmitting, resetForm }) => {
+              setSubmitting(false);
+              sendEmail(values);
+              resetForm(values);
             }}
           >
             {({ isSubmitting }) => (
-              <Form>
+              <Form ref={form}>
                 <div className="contact-inputs">
                   <div>
                     <Field type="text" name="name" placeholder="Name *" />
